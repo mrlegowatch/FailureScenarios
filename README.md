@@ -34,7 +34,7 @@ To regenerate a case's evidence, run its `./capture.sh` in Terminal from that fo
 
 ## On Windows
 
-`.\check.ps1`, run from a **Developer PowerShell for Visual Studio** with Swift 6.2 or later installed, builds, tests and runs the cases that run natively on Windows, and records what happened in `check\`. 5.6 and 5.10 build with `nmake /f Makefile.win`. 5.4 and 5.11 use POSIX networking and processes, so on Windows they run in WSL, with `./check.sh 5.4 5.11`. None of this has been tried on Windows yet.
+`.\check.ps1`, run from a **Developer PowerShell for Visual Studio** with Swift 6.2 or later installed, builds, tests and runs the cases that run natively on Windows, and records what happened in `check\`. 5.6 and 5.10 build with `nmake /f Makefile.win`. 5.4 and 5.11 use POSIX networking and processes, so on Windows they run in WSL, with `./check.sh 5.4 5.11`. GitHub Actions runs this script on Windows Server 2025 with Swift 6.2 and Visual Studio's MSVC, and every case passes there.
 
 ## Continuous checks
 
