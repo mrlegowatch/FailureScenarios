@@ -19,11 +19,9 @@ Notes/
 *.o
 *.profraw
 
-# Linux and Windows check scripts' output
-.build-linux*/
-.build-windows*/
-linux-check/
-windows-check/
+# check.sh and check.ps1 output: their build folders and results
+.build-*/
+check/
 
 # Windows (MSVC) build output
 *.obj

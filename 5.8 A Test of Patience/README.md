@@ -43,4 +43,4 @@ From a second Terminal window, `pgrep Instrumentation` prints the process ID, an
 
 To regenerate the evidence on your own Mac, run `./capture.sh` in Terminal from this folder. It moves the current `Evidence/` into `Notes/Previous-<date>` (which git ignores), rebuilds every executable, reruns each step, and logs what it did in `Evidence/CAPTURE-LOG.txt`. If a build fails twice, or a test run produces no results twice, it stops there and says why. It temporarily changes `recordCount` in each `main.swift` and puts the original back when it finishes. A full run takes about five minutes. Because it attaches the debugger to a running process, macOS may ask for your password the first time.
 
-**On Windows,** there's no signal to ask with, so the programs run without snapshots and say so. Run this case in WSL to try them. (Untested so far.)
+**On Windows,** there's no signal to ask with, so the programs run without snapshots and say so. Run this case in WSL to try them.

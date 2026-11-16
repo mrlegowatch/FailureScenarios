@@ -28,10 +28,14 @@ Each folder's `Evidence/` holds the output behind its case, numbered in the orde
 
 To regenerate a case's evidence, run its `./capture.sh` in Terminal from that folder. To regenerate every case in turn, run `./capture-all.sh` from this folder, or name the cases you want: `./capture-all.sh 5.6 5.10`.
 
-## On Linux
+## On Linux (and a second check on macOS)
 
-`./linux-check.sh` builds, tests and runs every case on a Linux machine or container with Swift 6.2 or later, `make` and a C/C++ compiler, and records what happened in `linux-check/`. It leaves the case folders as they were, apart from their build output.
+`./check.sh` builds, tests and runs every case on a Linux machine or container with Swift 6.2 or later, `make` and a C/C++ compiler, and records what happened in `check/`. It runs on macOS too, with nothing more than Xcode or its Command Line Tools. It leaves the case folders as they were, apart from their build output.
 
-## On Windows (untested)
+## On Windows
 
-`.\windows-check.ps1`, run from a **Developer PowerShell for Visual Studio** with Swift 6.2 or later installed, builds, tests and runs the cases that run natively on Windows, and records what happened in `windows-check\`. 5.6 and 5.10 build with `nmake /f Makefile.win`. 5.4 and 5.11 use POSIX networking and processes, so on Windows they run in WSL, with `./linux-check.sh 5.4 5.11`. None of this has been tried on Windows yet.
+`.\check.ps1`, run from a **Developer PowerShell for Visual Studio** with Swift 6.2 or later installed, builds, tests and runs the cases that run natively on Windows, and records what happened in `check\`. 5.6 and 5.10 build with `nmake /f Makefile.win`. 5.4 and 5.11 use POSIX networking and processes, so on Windows they run in WSL, with `./check.sh 5.4 5.11`. None of this has been tried on Windows yet.
+
+## Continuous checks
+
+GitHub Actions runs `check.sh` on Linux and `check.ps1` on Windows on every push, and `check.sh` on macOS when asked: from **Run workflow** on the Actions tab, or by a push whose latest commit message contains `[macos]` (see `.github/workflows/check.yml`). Each run's page shows a summary for each platform. Expected failures are part of the cases, so a run doesn't fail because a case does.

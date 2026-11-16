@@ -1,19 +1,23 @@
-# windows-check.ps1: build, test and run the cases that run natively on Windows, and record
-# what happened. UNTESTED so far. The counterpart of linux-check.sh.
+# check.ps1: build, test and run the cases that run natively on Windows, and record what
+# happened. The Windows counterpart of check.sh.
 #
 # Run from a "Developer PowerShell for Visual Studio" (so cl, nmake and dumpbin are on the
 # PATH), with Swift 6.2 or later installed, in this folder:
-#     .\windows-check.ps1
-# Or name the cases you want:  .\windows-check.ps1 5.6 5.10
-# Results go to windows-check\<case>.txt, with a summary in windows-check\SUMMARY.txt.
+#     .\check.ps1
+# Or name the cases you want:  .\check.ps1 5.6 5.10
+# Results go to check\<case>.txt, with a summary in check\SUMMARY.txt.
 #
 # 5.4 and 5.11 use POSIX networking and processes (select, fork, pipes), so they run in WSL
-# instead: from a WSL shell in this folder, ./linux-check.sh 5.4 5.11
+# instead: from a WSL shell in this folder, ./check.sh 5.4 5.11
 
 param([string[]]$Cases = @("5.2","5.3","5.5","5.6","5.7","5.8","5.9","5.10"))
 
+# Keep going after a step's error: failures are part of the cases, and GitHub Actions starts
+# PowerShell with "stop".
+$ErrorActionPreference = "Continue"
+
 $Root = $PSScriptRoot
-$Out = Join-Path $Root "windows-check"
+$Out = Join-Path $Root "check"
 New-Item -ItemType Directory -Force -Path $Out | Out-Null
 $Summary = Join-Path $Out "SUMMARY.txt"
 $Scratch = ".build-windows"   # keeps Windows build output apart from the Mac's and Linux's
@@ -31,7 +35,14 @@ function Step([string]$Label, [int]$Seconds, [string]$Command) {
     if ($p.WaitForExit($Seconds * 1000)) { $status = $p.ExitCode }
     else { & taskkill /T /F /PID $p.Id 2>&1 | Out-Null; $p.WaitForExit(); $status = "stopped" }
     Get-Content $so, $se | Add-Content $Log
-    Remove-Item $so, $se
+    # A helper the program started (a crash reporter, say) can hold the files open a little
+    # longer; give it a few seconds, then leave the temporary files for Windows to clean up.
+    foreach ($f in $so, $se) {
+        for ($i = 0; $i -lt 10 -and (Test-Path $f); $i++) {
+            Remove-Item $f -ErrorAction SilentlyContinue
+            if (Test-Path $f) { Start-Sleep -Milliseconds 500 }
+        }
+    }
     Add-Content $Log "exit: $status"
     $line = "  {0,-58} exit {1}" -f $Label, $status
     Write-Host $line; Add-Content $Summary $line
@@ -40,7 +51,7 @@ function SB([string]$Extra = "")  { "swift build --scratch-path $Scratch $Extra"
 function SR([string]$Product)     { "swift run --scratch-path $Scratch --skip-build $Product" }
 function ST([string]$Filter = "") { if ($Filter) { "swift test --scratch-path $Scratch --filter $Filter" } else { "swift test --scratch-path $Scratch" } }
 
-Set-Content $Summary "windows-check $(Get-Date)"
+Set-Content $Summary "check.ps1 $(Get-Date)"
 Add-Content $Summary ((& swift --version 2>&1 | Select-Object -First 1) -join "")
 Add-Content $Summary ((& cl 2>&1 | Select-Object -First 1) -join "")
 
