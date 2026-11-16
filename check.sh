@@ -2,8 +2,9 @@
 # check.sh: build, test and run every case on macOS or Linux, and record what happened.
 # (check.ps1 is the Windows counterpart.)
 #
-# Needs Swift 6.2 or later, make, a C/C++ compiler (the Swift toolchain's clang is enough),
-# and GNU timeout (on macOS: brew install coreutils). Run from this folder:  ./check.sh
+# Needs Swift 6.2 or later, make, and a C/C++ compiler (the Swift toolchain's clang is enough;
+# on macOS, Xcode or its Command Line Tools). Nothing else to install: it runs in the bash that
+# macOS ships. Run from this folder:  ./check.sh
 # Or name the cases you want:  ./check.sh 5.4 5.11
 # Results go to check/<case>.txt, with a summary in check/SUMMARY.txt. Nothing in the case
 # folders is changed, except their build output.
@@ -16,17 +17,39 @@ mkdir -p "$OUT"
 CASES="${*:-5.2 5.3 5.4 5.5 5.6 5.7 5.8 5.9 5.10 5.11}"
 # Keeps this script's build output apart from Xcode's .build: .build-linux or .build-darwin.
 SCRATCH=".build-$(echo "$OS" | tr '[:upper:]' '[:lower:]')"
-TIMEOUT=$(command -v timeout || command -v gtimeout) || { echo "check.sh needs GNU timeout (on macOS: brew install coreutils)"; exit 1; }
 
 # step LABEL SECONDS cmd...: runs one command with a time limit and records its output and
 # exit status. 124 means it was stopped at the time limit; 128 + n means it died of signal n.
+# limit SECONDS LOG cmd...: run cmd with its output in LOG for at most SECONDS, then stop it
+# and everything it started (TERM, then KILL five seconds later) and return 124, as GNU
+# timeout would. macOS doesn't ship timeout, so this does its job in plain bash.
+limit() {
+  local t=$1 log=$2 pid n=0; shift 2
+  set -m                     # gives the command its own process group, to stop as a whole
+  "$@" >> "$log" 2>&1 < /dev/null &
+  pid=$!
+  set +m
+  trap 'kill -KILL -- -$pid 2> /dev/null; exit 130' INT TERM   # Control-C stops it too
+  while kill -0 "$pid" 2> /dev/null; do
+    if [ "$n" -ge $((t * 10)) ]; then
+      kill -TERM -- -"$pid" 2> /dev/null
+      n=0; while kill -0 "$pid" 2> /dev/null && [ "$n" -lt 50 ]; do sleep 0.1; n=$((n + 1)); done
+      kill -KILL -- -"$pid" 2> /dev/null
+      wait "$pid" 2> /dev/null
+      return 124
+    fi
+    sleep 0.1; n=$((n + 1))
+  done
+  wait "$pid"
+}
+
 step() {
   local label=$1 t=$2; shift 2
   { echo; echo "---- $label"; echo "\$ $*"; } >> "$LOG"
   # The subshell keeps bash's own "Segmentation fault" notices out of the summary; the
   # exit status still says what happened.
-  # bash -c runs the helper functions below as well as programs (timeout alone can't).
-  ( "$TIMEOUT" --kill-after=5 "$t" bash -c '"$@"' _ "$@" >> "$LOG" 2>&1 < /dev/null ) 2> /dev/null
+  # bash -c runs the helper functions below as well as programs.
+  ( limit "$t" "$LOG" bash -c '"$@"' _ "$@" ) 2> /dev/null
   local st=$?
   echo "exit: $st" >> "$LOG"
   printf '  %-58s exit %s\n' "$label" "$st" | tee -a "$OUT/SUMMARY.txt"

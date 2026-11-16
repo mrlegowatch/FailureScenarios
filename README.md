@@ -30,7 +30,7 @@ To regenerate a case's evidence, run its `./capture.sh` in Terminal from that fo
 
 ## On Linux (and a second check on macOS)
 
-`./check.sh` builds, tests and runs every case on a Linux machine or container with Swift 6.2 or later, `make` and a C/C++ compiler, and records what happened in `check/`. It runs on macOS too, with GNU `timeout` installed (`brew install coreutils`). It leaves the case folders as they were, apart from their build output.
+`./check.sh` builds, tests and runs every case on a Linux machine or container with Swift 6.2 or later, `make` and a C/C++ compiler, and records what happened in `check/`. It runs on macOS too, with nothing more than Xcode or its Command Line Tools. It leaves the case folders as they were, apart from their build output.
 
 ## On Windows (untested)
 
