@@ -1,0 +1,92 @@
+# Builds, tests and runs every case on Linux and Windows (and on macOS when asked), using the
+# same check scripts a person would run by hand. Expected failures are part of the cases, so a
+# job doesn't fail because a case does; read each job's summary on the run's page instead.
+# Each job also keeps its logs as a small artifact, for 7 days.
+
+name: Check
+
+on:
+  push:
+  workflow_dispatch:
+    inputs:
+      macos:
+        description: "Also run on macOS (macOS minutes count 10x against a private repo's allowance)"
+        type: boolean
+        default: false
+
+jobs:
+  linux:
+    runs-on: ubuntu-latest
+    container:
+      image: swift:latest
+      # Privileged so the step below can set a kernel setting the sanitizers need.
+      options: --privileged
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install make and a C++ compiler
+        run: apt-get update && apt-get install -y --no-install-recommends build-essential
+      - name: Let Thread and Address Sanitizer map memory
+        # Newer kernels randomize memory addresses more than older sanitizers expect.
+        run: sysctl -w vm.mmap_rnd_bits=28 || true
+      - name: Check every case
+        run: ./check.sh
+      - name: Summary
+        if: always()
+        run: |
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          cat check/SUMMARY.txt >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: check-linux
+          path: check/*.txt
+          retention-days: 7
+
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Swift
+        uses: compnerd/gha-setup-swift@main
+        with:
+          branch: swift-6.2-release
+          tag: 6.2-RELEASE
+      - name: Set up the Visual Studio command-line tools (cl, nmake, dumpbin)
+        uses: ilammy/msvc-dev-cmd@v1
+      - name: Check the cases that run natively on Windows
+        shell: pwsh
+        run: ./check.ps1
+      - name: Summary
+        if: always()
+        shell: pwsh
+        run: |
+          Add-Content $env:GITHUB_STEP_SUMMARY ('```', (Get-Content check/SUMMARY.txt), '```')
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: check-windows
+          path: check/*.txt
+          retention-days: 7
+
+  macos:
+    if: github.event_name == 'workflow_dispatch' && inputs.macos
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install GNU timeout
+        run: brew install coreutils
+      - name: Check every case
+        run: ./check.sh
+      - name: Summary
+        if: always()
+        run: |
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          cat check/SUMMARY.txt >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: check-macos
+          path: check/*.txt
+          retention-days: 7

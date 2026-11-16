@@ -1,19 +1,19 @@
-# windows-check.ps1: build, test and run the cases that run natively on Windows, and record
-# what happened. UNTESTED so far. The counterpart of linux-check.sh.
+# check.ps1: build, test and run the cases that run natively on Windows, and record what
+# happened. UNTESTED so far. The Windows counterpart of check.sh.
 #
 # Run from a "Developer PowerShell for Visual Studio" (so cl, nmake and dumpbin are on the
 # PATH), with Swift 6.2 or later installed, in this folder:
-#     .\windows-check.ps1
-# Or name the cases you want:  .\windows-check.ps1 5.6 5.10
-# Results go to windows-check\<case>.txt, with a summary in windows-check\SUMMARY.txt.
+#     .\check.ps1
+# Or name the cases you want:  .\check.ps1 5.6 5.10
+# Results go to check\<case>.txt, with a summary in check\SUMMARY.txt.
 #
 # 5.4 and 5.11 use POSIX networking and processes (select, fork, pipes), so they run in WSL
-# instead: from a WSL shell in this folder, ./linux-check.sh 5.4 5.11
+# instead: from a WSL shell in this folder, ./check.sh 5.4 5.11
 
 param([string[]]$Cases = @("5.2","5.3","5.5","5.6","5.7","5.8","5.9","5.10"))
 
 $Root = $PSScriptRoot
-$Out = Join-Path $Root "windows-check"
+$Out = Join-Path $Root "check"
 New-Item -ItemType Directory -Force -Path $Out | Out-Null
 $Summary = Join-Path $Out "SUMMARY.txt"
 $Scratch = ".build-windows"   # keeps Windows build output apart from the Mac's and Linux's
@@ -40,7 +40,7 @@ function SB([string]$Extra = "")  { "swift build --scratch-path $Scratch $Extra"
 function SR([string]$Product)     { "swift run --scratch-path $Scratch --skip-build $Product" }
 function ST([string]$Filter = "") { if ($Filter) { "swift test --scratch-path $Scratch --filter $Filter" } else { "swift test --scratch-path $Scratch" } }
 
-Set-Content $Summary "windows-check $(Get-Date)"
+Set-Content $Summary "check.ps1 $(Get-Date)"
 Add-Content $Summary ((& swift --version 2>&1 | Select-Object -First 1) -join "")
 Add-Content $Summary ((& cl 2>&1 | Select-Object -First 1) -join "")
 
