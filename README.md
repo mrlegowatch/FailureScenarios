@@ -38,4 +38,4 @@ To regenerate a case's evidence, run its `./capture.sh` in Terminal from that fo
 
 ## Continuous checks
 
-GitHub Actions runs `check.sh` on Linux and `check.ps1` on Windows on every push, and `check.sh` on macOS when started by hand from the Actions tab (see `.github/workflows/check.yml`). Each run's page shows a summary for each platform. Expected failures are part of the cases, so a run doesn't fail because a case does.
+GitHub Actions runs `check.sh` on Linux and `check.ps1` on Windows on every push, and `check.sh` on macOS when asked: from **Run workflow** on the Actions tab, or by a push whose latest commit message contains `[macos]` (see `.github/workflows/check.yml`). Each run's page shows a summary for each platform. Expected failures are part of the cases, so a run doesn't fail because a case does.

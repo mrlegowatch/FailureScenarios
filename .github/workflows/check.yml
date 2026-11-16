@@ -1,4 +1,5 @@
-# Builds, tests and runs every case on Linux and Windows (and on macOS when asked), using the
+# Builds, tests and runs every case on Linux and Windows (and on macOS when asked; see the
+# macos job), using the
 # same check scripts a person would run by hand. Expected failures are part of the cases, so a
 # job doesn't fail because a case does; read each job's summary on the run's page instead.
 # Each job also keeps its logs as a small artifact, for 7 days.
@@ -70,7 +71,10 @@ jobs:
           retention-days: 7
 
   macos:
-    if: github.event_name == 'workflow_dispatch' && inputs.macos
+    # macOS minutes count 10x against a private repo, so this job runs only when asked: from
+    # Run workflow on the Actions tab (once this file is on the default branch), or by a push
+    # whose latest commit message contains [macos].
+    if: (github.event_name == 'workflow_dispatch' && inputs.macos) || contains(github.event.head_commit.message, '[macos]')
     runs-on: macos-26
     steps:
       - uses: actions/checkout@v4
