@@ -1,6 +1,6 @@
 # Failure Scenarios
 
-Companion code for Chapter 5 of *The Art of Software Debugging*, "Failure Scenarios." Each folder reproduces one case file. Read the case first; then the folder lets you run it, break it, and fix it yourself. Each folder's own README says what's in it and how to follow along.
+Companion code for Chapter 5, "Failure Scenarios," of a book on debugging. Each folder reproduces one case file. Read the case first; then the folder lets you run it, break it, and fix it yourself. Each folder's own README says what's in it and how to follow along.
 
 | Case | Language | Open with |
 |---|---|---|
