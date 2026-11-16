@@ -12,6 +12,10 @@
 
 param([string[]]$Cases = @("5.2","5.3","5.5","5.6","5.7","5.8","5.9","5.10"))
 
+# Keep going after a step's error: failures are part of the cases, and GitHub Actions starts
+# PowerShell with "stop".
+$ErrorActionPreference = "Continue"
+
 $Root = $PSScriptRoot
 $Out = Join-Path $Root "check"
 New-Item -ItemType Directory -Force -Path $Out | Out-Null
@@ -31,7 +35,14 @@ function Step([string]$Label, [int]$Seconds, [string]$Command) {
     if ($p.WaitForExit($Seconds * 1000)) { $status = $p.ExitCode }
     else { & taskkill /T /F /PID $p.Id 2>&1 | Out-Null; $p.WaitForExit(); $status = "stopped" }
     Get-Content $so, $se | Add-Content $Log
-    Remove-Item $so, $se
+    # A helper the program started (a crash reporter, say) can hold the files open a little
+    # longer; give it a few seconds, then leave the temporary files for Windows to clean up.
+    foreach ($f in $so, $se) {
+        for ($i = 0; $i -lt 10 -and (Test-Path $f); $i++) {
+            Remove-Item $f -ErrorAction SilentlyContinue
+            if (Test-Path $f) { Start-Sleep -Milliseconds 500 }
+        }
+    }
     Add-Content $Log "exit: $status"
     $line = "  {0,-58} exit {1}" -f $Label, $status
     Write-Host $line; Add-Content $Summary $line
