@@ -1,4 +1,4 @@
-# Makefile.win: the Windows (MSVC) version of this folder's Makefile. UNTESTED so far.
+# Makefile.win: the Windows (MSVC) version of this folder's Makefile.
 # From a Developer Command Prompt for Visual Studio, in this folder:
 #   nmake /f Makefile.win stale    once: recreates the stale object as readiness.obj
 #   nmake /f Makefile.win          expected to fail at link time (LNK2019), as the case shows

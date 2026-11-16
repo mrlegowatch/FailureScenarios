@@ -32,7 +32,7 @@ To regenerate a case's evidence, run its `./capture.sh` in Terminal from that fo
 
 `./check.sh` builds, tests and runs every case on a Linux machine or container with Swift 6.2 or later, `make` and a C/C++ compiler, and records what happened in `check/`. It runs on macOS too, with nothing more than Xcode or its Command Line Tools. It leaves the case folders as they were, apart from their build output.
 
-## On Windows (untested)
+## On Windows
 
 `.\check.ps1`, run from a **Developer PowerShell for Visual Studio** with Swift 6.2 or later installed, builds, tests and runs the cases that run natively on Windows, and records what happened in `check\`. 5.6 and 5.10 build with `nmake /f Makefile.win`. 5.4 and 5.11 use POSIX networking and processes, so on Windows they run in WSL, with `./check.sh 5.4 5.11`. None of this has been tried on Windows yet.
 

@@ -48,6 +48,6 @@ Work through the folders in the order shown in the table, building each one in T
 
 To regenerate the evidence on your own Mac, run `./capture.sh` in Terminal from this folder. It moves the current `Evidence/` into `Notes/Previous-<date>` (which git ignores), rebuilds every target, reruns each step, and logs what it did in `Evidence/CAPTURE-LOG.txt`. If a build fails twice, or a test run produces no results twice, it stops there and says why.
 
-## On Windows (untested)
+## On Windows
 
 Each folder also has a `Makefile.win` for Microsoft's C and C++ compiler. From a **Developer Command Prompt for Visual Studio**, in a step's folder, `nmake /f Makefile.win` builds `build\ReadinessScore.exe`. In `LinkerError`, run `nmake /f Makefile.win stale` once first: the checked-in `readiness.o` is a macOS object, and `stale` makes a Windows one the way the original was built. Windows names its symbols differently, so use `dumpbin /symbols readiness.obj` where the case uses `nm`, and expect the linker to report error LNK2019. Visual Studio's own Debug builds add run-time checks (`/RTC1`) that stop at the uninitialized pointer before it's used; `Makefile.win` leaves them off, like the Makefile.

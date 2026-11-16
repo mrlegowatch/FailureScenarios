@@ -1,4 +1,4 @@
-# Makefile.win: the Windows (MSVC) version of this folder's Makefile. UNTESTED so far.
+# Makefile.win: the Windows (MSVC) version of this folder's Makefile.
 # From a Developer Command Prompt for Visual Studio, in this folder:
 #   nmake /f Makefile.win          builds build\ReadinessScore.exe
 #   nmake /f Makefile.win clean    removes build

@@ -49,6 +49,6 @@ To see what the fix changed: `diff -ru WithChorus WithChorusFixed`, run from thi
 
 To regenerate the evidence on your own Mac, run `./capture.sh` in Terminal from this folder. It moves the current `Evidence/` into `Notes/Previous-<date>` (which git ignores), rebuilds every target, reruns each step, and logs what it did in `Evidence/CAPTURE-LOG.txt`. If a build fails twice, or a test run produces no results twice, it stops there and says why.
 
-## On Windows (untested)
+## On Windows
 
 Each folder also has a `Makefile.win` for Microsoft's C++ compiler. From a **Developer Command Prompt for Visual Studio**, in a folder, `nmake /f Makefile.win` builds `build\safe\AudioFilters.exe` (or `build\AudioFilters.exe` in `Baseline`), and `nmake /f Makefile.win ORDER=unsafe` builds the other link order. Each `Makefile.win` lists the objects in link order, and the comment at its top shows how to build with AddressSanitizer.

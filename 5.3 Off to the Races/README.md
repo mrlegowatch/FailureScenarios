@@ -34,4 +34,4 @@ Each has a matching `…Tests` target that runs the same diagnostic test against
 
 To regenerate the evidence on your own Mac, run `./capture.sh` in Terminal from this folder. It moves the current `Evidence/` into `Notes/Previous-<date>` (which git ignores), rebuilds every target with `swift build` (into `build/`), reruns each step (repeated test runs are separate `swift test` runs, so a crash ends only its own run), and logs what it did in `Evidence/CAPTURE-LOG.txt`. If a build fails twice, or a test run produces no results twice, it stops there and says why. The Thread Sanitizer runs sometimes hang inside the sanitizer itself; the script stops each one after three minutes, so a full run can take ten minutes or more.
 
-**On Windows,** everything builds and runs except Thread Sanitizer, which Swift doesn't support there. (Untested so far.)
+**On Windows,** everything builds and runs except Thread Sanitizer, which Swift doesn't support there.

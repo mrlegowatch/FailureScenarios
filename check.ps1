@@ -1,5 +1,5 @@
 # check.ps1: build, test and run the cases that run natively on Windows, and record what
-# happened. UNTESTED so far. The Windows counterpart of check.sh.
+# happened. The Windows counterpart of check.sh.
 #
 # Run from a "Developer PowerShell for Visual Studio" (so cl, nmake and dumpbin are on the
 # PATH), with Swift 6.2 or later installed, in this folder:
