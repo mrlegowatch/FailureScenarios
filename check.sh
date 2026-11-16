@@ -88,7 +88,7 @@ for c in $CASES; do
   5.4)
     step "build" 600 sb
     for n in 1020 1024; do step "run LimitedSelection $n" 10 bash -c "ulimit -n 4096; sr LimitedSelection $n"; done
-    step "run LimitedSelection 1024, check off (waits on select: stopped)" 10 bash -c "ulimit -n 4096; ALLOW_FD_OVERFLOW=1 sr LimitedSelection 1024"
+    step "run LimitedSelection 1024, check off (Linux waits on select: stopped)" 10 bash -c "ulimit -n 4096; ALLOW_FD_OVERFLOW=1 sr LimitedSelection 1024"
     rm -f /tmp/Dummy*.txt ;;
   5.5)
     step "build" 600 sb
