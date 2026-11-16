@@ -1,0 +1,33 @@
+(lldb) target create "RuntimeCrashLoud/build/ReadinessScore"
+Current executable set to '/Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.6 A Clean Bill of Health/RuntimeCrashLoud/build/ReadinessScore' (arm64).
+(lldb) process launch -i /var/folders/jl/4s4mjc9j1ddcq_zskhr66kw40000gp/T//readiness-input.Reg4yh
+Process 22337 launched: '/Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.6 A Clean Bill of Health/RuntimeCrashLoud/build/ReadinessScore' (arm64)
+Process 22337 stopped
+* thread #1, queue = 'com.apple.main-thread', stop reason = EXC_BAD_ACCESS (code=1, address=0x0)
+       frame #0: 0x0000000100000874 ReadinessScore`compute_readiness(restingHR=60, baselineHR=55, sleepHours=7, targetSleepHours=8, workoutLoad=3, soreness=2, result=0x0000000000000000) at readiness.cpp:36:19
+   33  	    double loadComponent     = pinComponent(1.0 - workoutLoad / 10.0, 0.0, 1.0);
+   34  	    double sorenessComponent = pinComponent(1.0 - soreness    / 10.0, 0.0, 1.0);
+   35  	
+-> 36  	    result->score = 0.30 * hrComponent
+    	                  ^
+   37  	                  + 0.30 * sleepComponent
+   38  	                  + 0.20 * loadComponent
+   39  	                  + 0.20 * sorenessComponent;
+Target 0: (ReadinessScore) stopped.
+(lldb) thread list
+Process 22337 stopped
+* thread #1: tid = 0x7723d, 0x0000000100000874 ReadinessScore`compute_readiness(restingHR=60, baselineHR=55, sleepHours=7, targetSleepHours=8, workoutLoad=3, soreness=2, result=0x0000000000000000) at readiness.cpp:36:19, queue = 'com.apple.main-thread', stop reason = EXC_BAD_ACCESS (code=1, address=0x0)
+(lldb) bt
+* thread #1, queue = 'com.apple.main-thread', stop reason = EXC_BAD_ACCESS (code=1, address=0x0)
+   * frame #0: 0x0000000100000874 ReadinessScore`compute_readiness(restingHR=60, baselineHR=55, sleepHours=7, targetSleepHours=8, workoutLoad=3, soreness=2, result=0x0000000000000000) at readiness.cpp:36:19
+     frame #1: 0x00000001000005ec ReadinessScore`main at main.cpp:28:5
+     frame #2: 0x000000019d7fbe80 dyld`start + 6688
+(lldb) disassemble --pc --count 5
+ReadinessScore`compute_readiness:
+->  0x100000874 <+376>: str    d1, [x9]
+    0x100000878 <+380>: ldr    d1, [sp, #0x50]
+    0x10000087c <+384>: str    d1, [x8]
+    0x100000880 <+388>: ldr    d1, [sp, #0x40]
+    0x100000884 <+392>: str    d1, [x8, #0x8]
+(lldb) quit
+exit: 0

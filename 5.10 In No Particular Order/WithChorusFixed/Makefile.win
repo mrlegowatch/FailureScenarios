@@ -1,0 +1,41 @@
+# Makefile.win: the Windows (MSVC) version of this folder's Makefile. UNTESTED so far.
+# From a Developer Command Prompt for Visual Studio, in this folder:
+#   nmake /f Makefile.win                  builds build\safe\AudioFilters.exe
+#   nmake /f Makefile.win ORDER=unsafe     builds build\unsafe\AudioFilters.exe
+#   nmake /f Makefile.win clean            removes build
+# For AddressSanitizer, add both (the linker needs it too):
+#   "CXXFLAGS=/nologo /std:c++20 /EHsc /Zi /Od /fsanitize=address" LINKFLAGS=/fsanitize=address
+# and set ASAN_OPTIONS=check_initialization_order=1 before running, as the case does.
+
+CXX      = cl
+CXXFLAGS = /nologo /std:c++20 /EHsc /W4 /Zi /Od
+!IFNDEF ORDER
+ORDER    = safe
+!ENDIF
+BUILD    = build\$(ORDER)
+TARGET   = $(BUILD)\AudioFilters.exe
+
+# Link order: the order the objects are listed here is the order they're linked in.
+!IF "$(ORDER)" == "unsafe"
+# unsafe: OutputChain before DelayLineFactory; crashes during static construction.
+OBJS = $(BUILD)\InitLog.obj $(BUILD)\main.obj $(BUILD)\OutputChain.obj \
+       $(BUILD)\DelayLineFactory.obj $(BUILD)\FilterRegistry.obj $(BUILD)\Gain.obj \
+       $(BUILD)\LowPassFilter.obj $(BUILD)\Delay.obj $(BUILD)\Reverb.obj $(BUILD)\Chorus.obj
+!ELSEIF "$(ORDER)" == "safe"
+# safe: DelayLineFactory constructed before OutputChain.
+OBJS = $(BUILD)\InitLog.obj $(BUILD)\main.obj $(BUILD)\DelayLineFactory.obj \
+       $(BUILD)\FilterRegistry.obj $(BUILD)\Gain.obj $(BUILD)\LowPassFilter.obj \
+       $(BUILD)\Delay.obj $(BUILD)\Reverb.obj $(BUILD)\OutputChain.obj $(BUILD)\Chorus.obj
+!ELSE
+!ERROR ORDER must be safe or unsafe
+!ENDIF
+
+all: $(TARGET)
+
+$(TARGET): *.cpp *.h
+	@if not exist $(BUILD) mkdir $(BUILD)
+	$(CXX) $(CXXFLAGS) /c /Fo$(BUILD)/ /Fd$(BUILD)/ *.cpp
+	$(CXX) /nologo /Zi $(LINKFLAGS) /Fe$@ $(OBJS)
+
+clean:
+	@if exist build rmdir /s /q build

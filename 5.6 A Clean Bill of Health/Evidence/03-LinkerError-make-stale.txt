@@ -1,0 +1,6 @@
+printf 'extern "C" {\n#include "readiness.hpp"\n}\n' > stale-extern-c.h
+clang++ -g -Wall -Wextra -std=c++20 -include stale-extern-c.h -c -o readiness.o readiness.cpp
+rm -f stale-extern-c.h
+0000000000000000 T _compute_readiness
+00000000000002bc s l___const.compute_readiness.codes
+exit: 0

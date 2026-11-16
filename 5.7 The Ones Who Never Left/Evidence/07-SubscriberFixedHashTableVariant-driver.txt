@@ -1,0 +1,9 @@
+Sessions run:         300
+Normal completions:   210
+Cancellations:        90
+
+Subscribers live:     300
+Dispatcher retained:  90
+
+Event payloads live:  3  (3 unique values × 300 sessions = 900 total dispatches)
+exit: 0

@@ -1,0 +1,30 @@
+# Makefile.win: the Windows (MSVC) version of this folder's Makefile. UNTESTED so far.
+# From a Developer Command Prompt for Visual Studio, in this folder:
+#   nmake /f Makefile.win          builds build\ReadinessScore.exe
+#   nmake /f Makefile.win clean    removes build
+# MSVC doesn't fill uninitialized locals unless asked to (no /RTC or /sdl here), so the
+# runtime-crash steps behave as they do with the Makefile. Visual Studio's own Debug builds
+# add /RTC1, which stops at the uninitialized pointer with a run-time check failure instead.
+
+CXX      = cl
+CXXFLAGS = /nologo /std:c++20 /EHsc /W4 /Zi /Od
+
+BUILD_DIR = build
+TARGET    = $(BUILD_DIR)\ReadinessScore.exe
+OBJS      = $(BUILD_DIR)\main.obj $(BUILD_DIR)\readiness.obj
+
+all: $(TARGET)
+
+$(BUILD_DIR)\main.obj: main.cpp readiness.hpp
+	@if not exist $(BUILD_DIR) mkdir $(BUILD_DIR)
+	$(CXX) $(CXXFLAGS) /c /Fo$@ /Fd$(BUILD_DIR)/ main.cpp
+
+$(BUILD_DIR)\readiness.obj: readiness.cpp readiness.hpp
+	@if not exist $(BUILD_DIR) mkdir $(BUILD_DIR)
+	$(CXX) $(CXXFLAGS) /c /Fo$@ /Fd$(BUILD_DIR)/ readiness.cpp
+
+$(TARGET): $(OBJS)
+	$(CXX) /nologo /Zi /Fe$@ $(OBJS)
+
+clean:
+	@if exist $(BUILD_DIR) rmdir /s /q $(BUILD_DIR)

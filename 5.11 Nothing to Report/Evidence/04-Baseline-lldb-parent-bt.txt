@@ -1,0 +1,60 @@
+(lldb) process attach --pid 21233
+Process 21233 stopped
+* thread #1, queue = 'com.apple.main-thread', stop reason = signal SIGSTOP
+       frame #0: 0x000000019db944d0 libsystem_kernel.dylib`__wait4 + 8
+libsystem_kernel.dylib`__wait4:
+->  0x19db944d0 <+8>:  b.lo   0x19db944f0               ; <+40>
+    0x19db944d4 <+12>: pacibsp 
+    0x19db944d8 <+16>: stp    x29, x30, [sp, #-0x10]!
+    0x19db944dc <+20>: mov    x29, sp
+Target 0: (Baseline) stopped.
+Executable binary set to "/Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.11 Nothing to Report/build/swiftpm/out/Products/Debug/Baseline".
+Architecture set to: arm64-apple-macosx-.
+(lldb) bt
+* thread #1, queue = 'com.apple.main-thread', stop reason = signal SIGSTOP
+   * frame #0: 0x000000019db944d0 libsystem_kernel.dylib`__wait4 + 8
+     frame #1: 0x000000010474d230 Baseline`runParent(argc=2, argv=0x000000016b6b3700) at main.cpp:247:9
+     frame #2: 0x000000010474c534 Baseline`main(argc=2, argv=0x000000016b6b3700) at main.cpp:266:12
+     frame #3: 0x000000019d7fbe80 dyld`start + 6688
+(lldb) frame select 1
+frame #1: 0x000000010474d230 Baseline`runParent(argc=2, argv=0x000000016b6b3700) at main.cpp:247:9
+   244 	    int result = 0;
+   245 	    for (const auto& child : children) {
+   246 	        int status = 0;
+-> 247 	        waitpid(child.pid, &status, 0);
+    	        ^
+   248 	        if (WIFEXITED(status) && WEXITSTATUS(status) != 0) result = 1;
+   249 	
+   250 	        std::cout << "=== " << child.filename << " ===\n";
+(lldb) frame variable
+(int) argc = 2
+(char **) argv = 0x000000016b6b3700
+(const std::string) dir = "/Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.11 Nothing to Report/Fixtures"
+(std::vector<std::string>) filenames = size=6 {
+  [0] = "device-01.csv"
+  [1] = "device-02.csv"
+  [2] = "device-03.csv"
+  [3] = "device-04.csv"
+  [4] = "device-05.csv"
+  [5] = "device-06.csv"
+}
+(DIR *) dp = 0x00000001047a56d0
+(dirent *) entry = nullptr
+(std::vector<ChildInfo>) children = size=6 {
+  [0] = (pid = 21235, stdoutReadFd = 6, filename = "device-01.csv")
+  [1] = (pid = 21236, stdoutReadFd = 7, filename = "device-02.csv")
+  [2] = (pid = 21237, stdoutReadFd = 8, filename = "device-03.csv")
+  [3] = (pid = 21238, stdoutReadFd = 9, filename = "device-04.csv")
+  [4] = (pid = 21239, stdoutReadFd = 10, filename = "device-05.csv")
+  [5] = (pid = 21240, stdoutReadFd = 11, filename = "device-06.csv")
+}
+(char[9]) workerFlag = "--worker"
+(char *[3]) workerArgv = ([0] = "/Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.11 Nothing to Report/build/swiftpm/debug/Baseline", [1] = "--worker", [2] = 0x0000000000000000)
+(int) result = 0
+(const ChildInfo &) child = 0x00000001047a5ed0 (pid = 21237, stdoutReadFd = 8, filename = "device-03.csv")
+(int) status = 0
+(char[4096]) buf = "validated 18 rows, 0 errors\n\U00000002\0\0\0P\x80\U00000012\t\U00000001\0\0\0\xe0\U0000001ekk\U00000001\0\0\0\0\U0000001ekk\U00000001\0\0\0`Ѓ\x9d\U00000001\0\0\0@\xd5\U00000012\t\U00000001\0\0\0`\U0000001ekk\U00000001\0\0\00\U0000001ekk\U00000001\0\0\0\xc4ǃ\x9d\U00000001\0\0\0\xe0\U0000001fkk\U00000001\0\0\0x\U0000001fkk\U00000001\0\0\0\xe0\U0000001ekk\U00000001\0\0\0`\U0000001ekk\U00000001\0\0\0P\U0000001ekk\U00000001\0\0\0h\xc1\x83\x9d\U00000001\0\0\0`\U0000001ekk\U00000001\0\0\0 BB\U00000003\U00000002\0\0\0\xd0\U0000001fkk\U00000001\0\0\0\U0000001c{\x81\x9d\U00000001\0\0\0\f\0\0\0(\0\0\x80\U00000010\xc4t\U00000004\U00000001\0\0\0\U00000018\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0`\U0000001ekk\U00000001\0\0\0\xe0\U0000001ekk\U00000001\0\0\0\0\0\0\0\0\0\0\0 \U0000001fkk\U00000001\0\0\0\xd0\U0000001ekk\U00000001\0\0\0\xa0\0\0\0\0\0\0\0@\U0000001fkk\U00000001\0\0\0\0\0\0\0\0\0\0\0\x91\U0000001ekk\U00000001\0\0\0!\U0000001fkk\U00000001\0\0\0`\U0000001ekk\U00000001\0\0\0\U00000010\x80\U00000012\t\U00000001\0\0\0\x90\U0000001ekk\U00000001\0\0\0P\x80\U00000012\t\U00000001\0\0\0\0\x80\U00000012\t\U00000001\0\0\0\0\0\U00000002\0\0\0\0\U00000001x+kk\U00000001\0\xf3\xb8@(\xd1\xf9\U00000002\0\0\0\xf8iB\U00000003\U00000002\0\0\0x+kk\U00000001\0\xf3\xb8\xe0\U0000001fkk\U00000001\0\0\0\0\0\0\0\0\0\0\0\U00000010RB\U00000003\U00000002\0\0\0\xe0(kk\U00000001\0\0\0\xd0\U0000001fkk\U00000001\0\0\0\U00000004\U00000085\x9d\U00000001\0\0\0\xa0Ms\U00000001\U00000002\0\0\0\0\0\0B\0\0\0\0H\U00000085\x9d\U00000001\0\0\08\x925\U00000005\U00000002\0\0\0\x88\U0000001fkk\U00000001\0\0\0\0\0\0\0\0\0\0\0\x88\U0000001fkk\U00000001\0\0\0\0\0\0\U000000028\0\0\00\U00000085\x9d\U00000001\0\0\0D\U00000085\x9d\U00000001\0\0\0\xd8\U00000004\0\0\0\0\0\0\U00000001\0\0\0\0\0\0\0\U00000010RB\U00000003\U00000002\0\0\0\xe0(kk\U00000001\0\0\0\00kk\U00000001\0\0\0\xe8\xdd\U0000007f\x9d\U00000001\0\0\0\U00000010 kk\U00000001\0\0\0\U00000010 kk\U00000001\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\xe0\U0000001fkk\U00000001\0\0\0` kk\U00000001\0\0\0\0\0\0\0\0\0\0\0\xa0 kk\U00000001\0\0\0P kk\U00000001\0\0\0p\U00000003\0\0\0\0\0\0`#kk\U00000001\0\0\0\0\0\0\0\0\0\0\0\U00000011 kk\U00000001\0\0\0\xa1 kk\U00000001\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0P kk\U00000001\0\0\0\xc2#kk\U00000001\0\0\0\U00000010 kk\U00000001\0\0\0P\xb7\x9f\xf9\U00000002\0\0\0\xa0\xb9\x9f\xf9\U00000002\0\0\00T\xa1\xf9\U00000002\0\0\0\xf8Q\xa1\xf9\U00000002\0\0\08;\xa1\xf9\U00000002\0\0\0HD\xa1\xf9\U00000002\0\0\0\0B\xa1\xf9\U00000002\0\0\0\0\xab\x9f\xf9\U00000002\0\0\0௟\xf9\U00000002\0\0\0Ȟ\x9f\xf9\U00000002\0\0\0XM\xa1\xf9\U00000002\0\0\0\xd06\xa1\xf9\U00000002\0\0\0\xe0\xfd\xa0\xf9\U00000002\0\0\0\U00000018K\xa1\xf9\U00000002\0\0\0@!\xa0\xf9\U00000002\0\0\0x\xa3\x9f\xf9\U00000002\0\0\0ȴ\x9f\xf9\U00000002\0\0\0\x88F\xa1\xf9\U00000002\0\0\0\xf8͠\xf9\U00000002\0\0\0Ȩ\xa0\xf9\U00000002\0\0\0\0#\xa1\xf9\U00000002\0\0\0P\xf2\x9f\xf9\U00000002\0\0\0\xf8\xd6\xc8\xf9\U00000002\0\0\0\x88O\xa1\xf9\U00000002\0\0\0P\xd9\xc8\xf9\U00000002\0\0\0X\xb2\x9f\xf9\U00000002\0\0\0\xf8\U0000009f\xf9\U00000002\0\0\0x2\xa1\xf9\U00000002\0\0\0h\xad\x9f\xf9\U00000002\0\0\0(\U0000001a\xa0\xf9\U00000002\0\0\0X\xff\x9f\xf9\U00000002"...
+(ssize_t) n = 0
+(lldb) process kill
+Process 21233 exited with status = 9 (0x00000009) killed
+./capture.sh: line 47: 21233 Killed: 9               "$B" "$FX" > "$DD/logs/baseline-run.log" 2>&1

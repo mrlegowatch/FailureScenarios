@@ -1,0 +1,21 @@
+Standalone Reverb — impulse response (4096 samples)
+  peak   : 0.700000
+  energy : 0.512500
+  RMS    : 0.011186
+  t=   0 (dry)  :  0.700000  (expected  0.700000)
+  t=1013 (tap1) :  0.075000  (expected  0.075000)
+  t=1327 (tap2) :  0.075000  (expected  0.075000)
+  t=1637 (tap3) :  0.075000  (expected  0.075000)
+  t=2053 (tap4) :  0.075000  (expected  0.075000)
+
+gDefaultOutputChain — impulse response (4096 samples)
+  peak   : 0.700000
+  energy : 0.512500
+  RMS    : 0.011186
+  t=   0 (dry)  :  0.700000  (expected  0.700000)
+  t=1013 (tap1) :  0.075000  (expected  0.075000)
+  t=1327 (tap2) :  0.075000  (expected  0.075000)
+  t=1637 (tap3) :  0.075000  (expected  0.075000)
+  t=2053 (tap4) :  0.075000  (expected  0.075000)
+
+exit: 0

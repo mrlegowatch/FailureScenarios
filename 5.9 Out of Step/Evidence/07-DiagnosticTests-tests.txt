@@ -1,0 +1,37 @@
+􀟈  Test run started.
+􀄵  Testing Library Version: 2084
+􀄵  Target Platform: arm64e-apple-macos14.0
+􀟈  Suite "Diagnostic — expected to fail against current (buggy) code" started.
+􀟈  Test reEncodedSyncedRecordPreservesSchemaVersion() started.
+􀟈  Test brokenRecordsHaveZeroFreezesRemaining() started.
+􀟈  Test statusMatchesOldSchemaIntent() started.
+􀢂  Test statusMatchesOldSchemaIntent() recorded a known issue at DiagnosticTests.swift:51:13: Expectation failed: streaks[1].status == .broken
+􀄵  Enum drift: raw 1 is .broken in old schema, .frozen in new
+􀄵  streaks[1].status == .broken → false
+􀄵    streaks[1].status → .frozen
+􀢂  Test brokenRecordsHaveZeroFreezesRemaining() recorded a known issue at DiagnosticTests.swift:77:13: Expectation failed: streaks[1].freezesRemaining == 0
+􀄵  Uniform default of 1 applied; broken records should decode to 0
+􀄵  streaks[1].freezesRemaining == 0 → false
+􀄵    streaks[1].freezesRemaining → 1
+􀢂  Test reEncodedSyncedRecordPreservesSchemaVersion() recorded a known issue at DiagnosticTests.swift:96:13: Expectation failed: reEncodedDict["schemaVersion"] != nil
+􀄵  Streak.CodingKeys omits schemaVersion — dropped on decode, absent from re-encode
+􀄵  reEncodedDict["schemaVersion"] != nil → false
+􀄵    reEncodedDict["schemaVersion"] → nil
+􀢂  Test statusMatchesOldSchemaIntent() recorded a known issue at DiagnosticTests.swift:56:13: Expectation failed: streaks[2].status == .completed
+􀄵  Enum drift: raw 2 is .completed in old schema, .broken in new
+􀄵  streaks[2].status == .completed → false
+􀄵    streaks[2].status → .broken
+􀢂  Test brokenRecordsHaveZeroFreezesRemaining() recorded a known issue at DiagnosticTests.swift:82:13: Expectation failed: streaks[4].freezesRemaining == 0
+􀄵  Uniform default of 1 applied; broken records should decode to 0
+􀄵  streaks[4].freezesRemaining == 0 → false
+􀄵    streaks[4].freezesRemaining → 1
+􀢂  Test reEncodedSyncedRecordPreservesSchemaVersion() passed after 0.001 seconds with 1 known issue.
+􀢂  Test statusMatchesOldSchemaIntent() recorded a known issue at DiagnosticTests.swift:64:13: Expectation failed: streaks[4].status == .broken
+􀄵  Enum drift: raw 1 is .broken in old schema, .frozen in new
+􀄵  streaks[4].status == .broken → false
+􀄵    streaks[4].status → .frozen
+􀢂  Test brokenRecordsHaveZeroFreezesRemaining() passed after 0.001 seconds with 2 known issues.
+􀢂  Test statusMatchesOldSchemaIntent() passed after 0.001 seconds with 3 known issues.
+􀢂  Suite "Diagnostic — expected to fail against current (buggy) code" passed after 0.001 seconds with 6 known issues.
+􀢂  Test run with 3 tests in 1 suite passed after 0.001 seconds with 6 known issues.
+exit: 0

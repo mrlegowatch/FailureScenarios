@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXFileReference section */
+		B614397A2FE9860400074944 /* main.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = main.o; sourceTree = "<group>"; };
+		B614397B2FE9860400074944 /* readiness.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = readiness.o; sourceTree = "<group>"; };
+		B614397C2FE9860400074944 /* ReadinessScore */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ReadinessScore; sourceTree = "<group>"; };
+		B614397E2FE9860400074944 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		B614397F2FE9860400074944 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		B61439802FE9860400074944 /* readiness.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = readiness.h; sourceTree = "<group>"; };
+		B61439812FE9860400074944 /* readiness.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = readiness.c; sourceTree = "<group>"; };
+		B61439872FE9893C00074944 /* main.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = main.o; sourceTree = "<group>"; };
+		B61439892FE9893C00074944 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B614398A2FE9893C00074944 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		B614398C2FE9893C00074944 /* readiness.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = readiness.hpp; sourceTree = "<group>"; };
+		B614398D2FE9893C00074944 /* readiness.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = readiness.cpp; sourceTree = "<group>"; };
+		B614398E2FE9893C00074944 /* readiness.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = readiness.o; sourceTree = "<group>"; };
+		B61439902FE9894200074944 /* main.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = main.o; sourceTree = "<group>"; };
+		B61439912FE9894200074944 /* readiness.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = readiness.o; sourceTree = "<group>"; };
+		B61439922FE9894200074944 /* ReadinessScore */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ReadinessScore; sourceTree = "<group>"; };
+		B61439942FE9894200074944 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B61439952FE9894200074944 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		B61439962FE9894200074944 /* readiness.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = readiness.hpp; sourceTree = "<group>"; };
+		B61439972FE9894200074944 /* readiness.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = readiness.cpp; sourceTree = "<group>"; };
+		B61439992FE9894A00074944 /* main.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = main.o; sourceTree = "<group>"; };
+		B614399A2FE9894A00074944 /* readiness.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = readiness.o; sourceTree = "<group>"; };
+		B614399B2FE9894A00074944 /* ReadinessScore */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ReadinessScore; sourceTree = "<group>"; };
+		B614399E2FE9894A00074944 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B614399F2FE9894A00074944 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		B61439A02FE9894A00074944 /* readiness.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = readiness.hpp; sourceTree = "<group>"; };
+		B61439A12FE9894A00074944 /* readiness.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = readiness.cpp; sourceTree = "<group>"; };
+		B61439A42FE9895100074944 /* main.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = main.o; sourceTree = "<group>"; };
+		B61439A52FE9895100074944 /* readiness.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = readiness.o; sourceTree = "<group>"; };
+		B61439A62FE9895100074944 /* ReadinessScore */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ReadinessScore; sourceTree = "<group>"; };
+		B61439A92FE9895100074944 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B61439AA2FE9895100074944 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		B61439AB2FE9895100074944 /* readiness.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = readiness.hpp; sourceTree = "<group>"; };
+		B61439AC2FE9895100074944 /* readiness.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = readiness.cpp; sourceTree = "<group>"; };
+		B61439AE2FE9895800074944 /* main.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = main.o; sourceTree = "<group>"; };
+		B61439AF2FE9895800074944 /* readiness.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = readiness.o; sourceTree = "<group>"; };
+		B61439B02FE9895800074944 /* ReadinessScore */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ReadinessScore; sourceTree = "<group>"; };
+		B61439B22FE9895800074944 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B61439B32FE9895800074944 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		B61439B42FE9895800074944 /* readiness.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = readiness.hpp; sourceTree = "<group>"; };
+		B61439B52FE9895800074944 /* readiness.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = readiness.cpp; sourceTree = "<group>"; };
+		B61439CB2FE9B1ED00074944 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		B614396F2FE9857900074944 = {
+			isa = PBXGroup;
+			children = (
+				B61439CB2FE9B1ED00074944 /* README.md */,
+				B61439822FE9860400074944 /* Baseline */,
+				B614398F2FE9893C00074944 /* LinkerError */,
+				B61439982FE9894200074944 /* LinkerErrorFixed */,
+				B61439A32FE9894A00074944 /* RuntimeCrashSilent */,
+				B61439AD2FE9895100074944 /* RuntimeCrashLoud */,
+				B61439B62FE9895800074944 /* RuntimeCrashFixed */,
+			);
+			sourceTree = "<group>";
+		};
+		B614397D2FE9860400074944 /* build */ = {
+			isa = PBXGroup;
+			children = (
+				B614397A2FE9860400074944 /* main.o */,
+				B614397B2FE9860400074944 /* readiness.o */,
+				B614397C2FE9860400074944 /* ReadinessScore */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
+		B61439822FE9860400074944 /* Baseline */ = {
+			isa = PBXGroup;
+			children = (
+				B614397D2FE9860400074944 /* build */,
+				B614397E2FE9860400074944 /* main.c */,
+				B614397F2FE9860400074944 /* Makefile */,
+				B61439802FE9860400074944 /* readiness.h */,
+				B61439812FE9860400074944 /* readiness.c */,
+			);
+			path = Baseline;
+			sourceTree = "<group>";
+		};
+		B61439882FE9893C00074944 /* build */ = {
+			isa = PBXGroup;
+			children = (
+				B61439872FE9893C00074944 /* main.o */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
+		B614398F2FE9893C00074944 /* LinkerError */ = {
+			isa = PBXGroup;
+			children = (
+				B61439882FE9893C00074944 /* build */,
+				B61439892FE9893C00074944 /* main.cpp */,
+				B614398A2FE9893C00074944 /* Makefile */,
+				B614398C2FE9893C00074944 /* readiness.hpp */,
+				B614398D2FE9893C00074944 /* readiness.cpp */,
+				B614398E2FE9893C00074944 /* readiness.o */,
+			);
+			path = LinkerError;
+			sourceTree = "<group>";
+		};
+		B61439932FE9894200074944 /* build */ = {
+			isa = PBXGroup;
+			children = (
+				B61439902FE9894200074944 /* main.o */,
+				B61439912FE9894200074944 /* readiness.o */,
+				B61439922FE9894200074944 /* ReadinessScore */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
+		B61439982FE9894200074944 /* LinkerErrorFixed */ = {
+			isa = PBXGroup;
+			children = (
+				B61439932FE9894200074944 /* build */,
+				B61439942FE9894200074944 /* main.cpp */,
+				B61439952FE9894200074944 /* Makefile */,
+				B61439962FE9894200074944 /* readiness.hpp */,
+				B61439972FE9894200074944 /* readiness.cpp */,
+			);
+			path = LinkerErrorFixed;
+			sourceTree = "<group>";
+		};
+		B614399C2FE9894A00074944 /* build */ = {
+			isa = PBXGroup;
+			children = (
+				B61439992FE9894A00074944 /* main.o */,
+				B614399A2FE9894A00074944 /* readiness.o */,
+				B614399B2FE9894A00074944 /* ReadinessScore */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
+		B61439A32FE9894A00074944 /* RuntimeCrashSilent */ = {
+			isa = PBXGroup;
+			children = (
+				B614399C2FE9894A00074944 /* build */,
+				B614399E2FE9894A00074944 /* main.cpp */,
+				B614399F2FE9894A00074944 /* Makefile */,
+				B61439A02FE9894A00074944 /* readiness.hpp */,
+				B61439A12FE9894A00074944 /* readiness.cpp */,
+			);
+			path = RuntimeCrashSilent;
+			sourceTree = "<group>";
+		};
+		B61439A72FE9895100074944 /* build */ = {
+			isa = PBXGroup;
+			children = (
+				B61439A42FE9895100074944 /* main.o */,
+				B61439A52FE9895100074944 /* readiness.o */,
+				B61439A62FE9895100074944 /* ReadinessScore */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
+		B61439AD2FE9895100074944 /* RuntimeCrashLoud */ = {
+			isa = PBXGroup;
+			children = (
+				B61439A72FE9895100074944 /* build */,
+				B61439A92FE9895100074944 /* main.cpp */,
+				B61439AA2FE9895100074944 /* Makefile */,
+				B61439AB2FE9895100074944 /* readiness.hpp */,
+				B61439AC2FE9895100074944 /* readiness.cpp */,
+			);
+			path = RuntimeCrashLoud;
+			sourceTree = "<group>";
+		};
+		B61439B12FE9895800074944 /* build */ = {
+			isa = PBXGroup;
+			children = (
+				B61439AE2FE9895800074944 /* main.o */,
+				B61439AF2FE9895800074944 /* readiness.o */,
+				B61439B02FE9895800074944 /* ReadinessScore */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
+		B61439B62FE9895800074944 /* RuntimeCrashFixed */ = {
+			isa = PBXGroup;
+			children = (
+				B61439B12FE9895800074944 /* build */,
+				B61439B22FE9895800074944 /* main.cpp */,
+				B61439B32FE9895800074944 /* Makefile */,
+				B61439B42FE9895800074944 /* readiness.hpp */,
+				B61439B52FE9895800074944 /* readiness.cpp */,
+			);
+			path = RuntimeCrashFixed;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		B61439832FE987D600074944 /* Baseline */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = B61439842FE987D600074944 /* Build configuration list for PBXLegacyTarget "Baseline" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "$(SRCROOT)/Baseline";
+			dependencies = (
+			);
+			name = Baseline;
+			packageProductDependencies = (
+			);
+			passBuildSettingsInEnvironment = 1;
+			productName = Baseline;
+		};
+		B61439B72FE9899800074944 /* LinkerError */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = B61439B82FE9899800074944 /* Build configuration list for PBXLegacyTarget "LinkerError" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "$(SRCROOT)/LinkerError";
+			dependencies = (
+			);
+			name = LinkerError;
+			packageProductDependencies = (
+			);
+			passBuildSettingsInEnvironment = 1;
+			productName = LinkerError;
+		};
+		B61439BB2FE989B700074944 /* LinkerErrorFixed */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = B61439BC2FE989B700074944 /* Build configuration list for PBXLegacyTarget "LinkerErrorFixed" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "$(SRCROOT)/LinkerErrorFixed";
+			dependencies = (
+			);
+			name = LinkerErrorFixed;
+			packageProductDependencies = (
+			);
+			passBuildSettingsInEnvironment = 1;
+			productName = LinkerErrorFixed;
+		};
+		B61439BF2FE989CD00074944 /* RuntimeCrashSilent */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = B61439C02FE989CD00074944 /* Build configuration list for PBXLegacyTarget "RuntimeCrashSilent" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "$(SRCROOT)/RuntimeCrashSilent";
+			dependencies = (
+			);
+			name = RuntimeCrashSilent;
+			packageProductDependencies = (
+			);
+			passBuildSettingsInEnvironment = 1;
+			productName = RuntimeCrashSilent;
+		};
+		B61439C32FE989EA00074944 /* RuntimeCrashLoud */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = B61439C42FE989EA00074944 /* Build configuration list for PBXLegacyTarget "RuntimeCrashLoud" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "$(SRCROOT)/RuntimeCrashLoud";
+			dependencies = (
+			);
+			name = RuntimeCrashLoud;
+			packageProductDependencies = (
+			);
+			passBuildSettingsInEnvironment = 1;
+			productName = RuntimeCrashLoud;
+		};
+		B61439C72FE98A0300074944 /* RuntimeCrashFixed */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = B61439C82FE98A0300074944 /* Build configuration list for PBXLegacyTarget "RuntimeCrashFixed" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "$(SRCROOT)/RuntimeCrashFixed";
+			dependencies = (
+			);
+			name = RuntimeCrashFixed;
+			packageProductDependencies = (
+			);
+			passBuildSettingsInEnvironment = 1;
+			productName = RuntimeCrashFixed;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		B61439702FE9857900074944 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					B61439832FE987D600074944 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					B61439B72FE9899800074944 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					B61439BB2FE989B700074944 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					B61439BF2FE989CD00074944 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					B61439C32FE989EA00074944 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					B61439C72FE98A0300074944 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+				};
+			};
+			buildConfigurationList = B61439732FE9857900074944 /* Build configuration list for PBXProject "ReadinessScore" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B614396F2FE9857900074944;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B61439832FE987D600074944 /* Baseline */,
+				B61439B72FE9899800074944 /* LinkerError */,
+				B61439BB2FE989B700074944 /* LinkerErrorFixed */,
+				B61439BF2FE989CD00074944 /* RuntimeCrashSilent */,
+				B61439C32FE989EA00074944 /* RuntimeCrashLoud */,
+				B61439C72FE98A0300074944 /* RuntimeCrashFixed */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		B61439752FE9857900074944 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		B61439762FE9857900074944 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+			};
+			name = Release;
+		};
+		B61439852FE987D600074944 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B61439862FE987D600074944 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B61439B92FE9899800074944 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B61439BA2FE9899800074944 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B61439BD2FE989B700074944 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B61439BE2FE989B700074944 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B61439C12FE989CD00074944 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B61439C22FE989CD00074944 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B61439C52FE989EA00074944 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B61439C62FE989EA00074944 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B61439C92FE98A0300074944 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B61439CA2FE98A0300074944 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B61439732FE9857900074944 /* Build configuration list for PBXProject "ReadinessScore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B61439752FE9857900074944 /* Debug */,
+				B61439762FE9857900074944 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B61439842FE987D600074944 /* Build configuration list for PBXLegacyTarget "Baseline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B61439852FE987D600074944 /* Debug */,
+				B61439862FE987D600074944 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B61439B82FE9899800074944 /* Build configuration list for PBXLegacyTarget "LinkerError" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B61439B92FE9899800074944 /* Debug */,
+				B61439BA2FE9899800074944 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B61439BC2FE989B700074944 /* Build configuration list for PBXLegacyTarget "LinkerErrorFixed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B61439BD2FE989B700074944 /* Debug */,
+				B61439BE2FE989B700074944 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B61439C02FE989CD00074944 /* Build configuration list for PBXLegacyTarget "RuntimeCrashSilent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B61439C12FE989CD00074944 /* Debug */,
+				B61439C22FE989CD00074944 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B61439C42FE989EA00074944 /* Build configuration list for PBXLegacyTarget "RuntimeCrashLoud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B61439C52FE989EA00074944 /* Debug */,
+				B61439C62FE989EA00074944 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B61439C82FE98A0300074944 /* Build configuration list for PBXLegacyTarget "RuntimeCrashFixed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B61439C92FE98A0300074944 /* Debug */,
+				B61439CA2FE98A0300074944 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B61439702FE9857900074944 /* Project object */;
+}

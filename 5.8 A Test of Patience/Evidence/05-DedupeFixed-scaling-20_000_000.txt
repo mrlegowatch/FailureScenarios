@@ -1,0 +1,3 @@
+Processing records...
+Done. Processed: 20000000, Unique: 18399539, Duplicates: 1600461, Elapsed: 35.04s
+exit: 0

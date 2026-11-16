@@ -1,0 +1,101 @@
+--- run 1
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 2
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 3
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 4
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 5
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 6
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 7
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 8
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 9
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 10
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 11
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 12
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 13
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 14
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 15
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 16
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 17
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 18
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 19
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 20
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+=== 20 runs: 20 passed, 0 failed, 0 crashed

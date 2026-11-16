@@ -1,0 +1,86 @@
+[Computing dependencies]
+􀟈  Test run started.
+􀄵  Testing Library Version: 2084
+􀄵  Target Platform: arm64e-apple-macos14.0
+􀟈  Suite "Change 2 — Geometry labeled params, circle internal radius, ShapeData computed properties" started.
+􀟈  Suite "Change 1 — Geometry.init(kind:) and ShapeData.geometry" started.
+􀟈  Suite "Change 3 — ShapeData.isEmpty and guard !shapeData.isEmpty" started.
+􀟈  Suite "Change 4 — Geometry.ellipse case" started.
+􀟈  Test geometryPerimeterCircle() started.
+􀟈  Test shapeDataComputedPerimeterRectangle() started.
+􀟈  Test kindTriangleMapsToTriangle() started.
+􀟈  Test geometryPerimeterTriangle() started.
+􀟈  Test geometryAreaCircle() started.
+􀟈  Test shapeDataComputedPerimeterTriangle() started.
+􀟈  Test isEmptyTrueWhenWidthIsZero() started.
+􀟈  Test isEmptyFalseWhenBothPositive() started.
+􀟈  Test shapeDataGeometryForTriangle() started.
+􀟈  Test shapeDataComputedAreaCircle() started.
+􀟈  Test shapeDataGeometryForRectangle() started.
+􀟈  Test geometryAreaRectangle() started.
+􀟈  Test unknownKindDefaultsToRectangle() started.
+􀟈  Test isEmptyTrueWhenBothZero() started.
+􀟈  Test isEmptyTrueWhenHeightIsZero() started.
+􀟈  Test geometryAreaTriangle() started.
+􀟈  Test kindCircleMapsToCircle() started.
+􀟈  Test geometryPerimeterRectangle() started.
+􀟈  Test boundingInsetReturnsZeroWhenWidthIsZero() started.
+􀟈  Test shapeDataComputedAreaRectangle() started.
+􀟈  Test displayLabelReturnsNormalLabelWhenNotEmpty() started.
+􀟈  Test shapeDataComputedPerimeterCircle() started.
+􀟈  Test shapeDataComputedAreaEllipse() started.
+􀟈  Test ellipsePerimeterDegeneratesForCircle() started.
+􀟈  Test displayLabelReturnsEmptyLabelWhenWidthIsZero() started.
+􀟈  Test kindRectangleMapsToRectangle() started.
+􀟈  Test kindEllipseMapsToEllipse() started.
+􀟈  Test ellipsePerimeter() started.
+􀟈  Test shapeDataGeometryForCircle() started.
+􀟈  Test ellipseAreaDegeneratesForCircle() started.
+􀟈  Test displayLabelReturnsEmptyLabelWhenHeightIsZero() started.
+􀟈  Test boundingInsetReturnsZeroWhenHeightIsZero() started.
+􀟈  Test boundingInsetReturnsNonZeroWhenNotEmpty() started.
+􀟈  Test shapeDataComputedAreaTriangle() started.
+􀟈  Test ellipseArea() started.
+􀟈  Test shapeDataComputedPerimeterEllipse() started.
+􁁛  Test isEmptyFalseWhenBothPositive() passed after 0.001 seconds.
+􁁛  Test isEmptyTrueWhenWidthIsZero() passed after 0.001 seconds.
+􁁛  Test geometryPerimeterTriangle() passed after 0.001 seconds.
+􁁛  Test geometryAreaCircle() passed after 0.001 seconds.
+􁁛  Test shapeDataComputedPerimeterTriangle() passed after 0.001 seconds.
+􁁛  Test shapeDataComputedAreaCircle() passed after 0.001 seconds.
+􁁛  Test geometryAreaRectangle() passed after 0.001 seconds.
+􁁛  Test geometryAreaTriangle() passed after 0.001 seconds.
+􁁛  Test shapeDataComputedPerimeterRectangle() passed after 0.001 seconds.
+􁁛  Test kindTriangleMapsToTriangle() passed after 0.001 seconds.
+􁁛  Test isEmptyTrueWhenBothZero() passed after 0.001 seconds.
+􁁛  Test geometryPerimeterCircle() passed after 0.001 seconds.
+􁁛  Test shapeDataGeometryForTriangle() passed after 0.001 seconds.
+􁁛  Test kindCircleMapsToCircle() passed after 0.001 seconds.
+􁁛  Test shapeDataComputedAreaRectangle() passed after 0.001 seconds.
+􁁛  Test isEmptyTrueWhenHeightIsZero() passed after 0.001 seconds.
+􁁛  Test shapeDataGeometryForRectangle() passed after 0.001 seconds.
+􁁛  Test displayLabelReturnsNormalLabelWhenNotEmpty() passed after 0.001 seconds.
+􁁛  Test geometryPerimeterRectangle() passed after 0.001 seconds.
+􁁛  Test shapeDataComputedAreaEllipse() passed after 0.001 seconds.
+􁁛  Test ellipsePerimeterDegeneratesForCircle() passed after 0.001 seconds.
+􁁛  Test shapeDataComputedPerimeterCircle() passed after 0.001 seconds.
+􁁛  Test boundingInsetReturnsZeroWhenWidthIsZero() passed after 0.001 seconds.
+􁁛  Test kindEllipseMapsToEllipse() passed after 0.001 seconds.
+􁁛  Test displayLabelReturnsEmptyLabelWhenWidthIsZero() passed after 0.001 seconds.
+􁁛  Test displayLabelReturnsEmptyLabelWhenHeightIsZero() passed after 0.001 seconds.
+􁁛  Test boundingInsetReturnsZeroWhenHeightIsZero() passed after 0.001 seconds.
+􁁛  Test boundingInsetReturnsNonZeroWhenNotEmpty() passed after 0.001 seconds.
+􁁛  Test ellipsePerimeter() passed after 0.001 seconds.
+􁁛  Test shapeDataComputedPerimeterEllipse() passed after 0.001 seconds.
+􁁛  Test shapeDataGeometryForCircle() passed after 0.001 seconds.
+􁁛  Test shapeDataComputedAreaTriangle() passed after 0.001 seconds.
+􁁛  Test unknownKindDefaultsToRectangle() passed after 0.001 seconds.
+􁁛  Test ellipseAreaDegeneratesForCircle() passed after 0.001 seconds.
+􁁛  Test ellipseArea() passed after 0.001 seconds.
+􁁛  Test kindRectangleMapsToRectangle() passed after 0.001 seconds.
+􁁛  Suite "Change 3 — ShapeData.isEmpty and guard !shapeData.isEmpty" passed after 0.001 seconds.
+􁁛  Suite "Change 1 — Geometry.init(kind:) and ShapeData.geometry" passed after 0.001 seconds.
+􁁛  Suite "Change 2 — Geometry labeled params, circle internal radius, ShapeData computed properties" passed after 0.001 seconds.
+􁁛  Suite "Change 4 — Geometry.ellipse case" passed after 0.001 seconds.
+􁁛  Test run with 36 tests in 4 suites passed after 0.001 seconds.
+exit: 0

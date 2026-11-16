@@ -1,0 +1,152 @@
+(lldb) target create "WithChorus/build/safe/AudioFilters"
+Current executable set to '/Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.10 In No Particular Order/WithChorus/build/safe/AudioFilters' (arm64).
+(lldb) breakpoint set -n OutputChain::~OutputChain -C bt -G true
+Breakpoint 1: 2 locations.
+(lldb) breakpoint set -n Delay::~Delay -C "frame info" -G true
+Breakpoint 2: 2 locations.
+(lldb) breakpoint set -n DelayLineFactory::release -C "frame info" -G true
+Breakpoint 3: where = AudioFilters`DelayLineFactory::release(unsigned long) + 28 at DelayLineFactory.cpp:31:44, address = 0x00000001000021bc
+(lldb) breakpoint set -n DelayLineFactory::~DelayLineFactory -C bt -G true
+Breakpoint 4: 2 locations.
+(lldb) run
+[ 1] gFactory         constructed  (pool=8 buffers)
+[ 2] gRegistry        constructed
+[ 3] GainRegistrar    constructed  (registered "Gain")
+[ 4] LPFRegistrar     constructed  (registered "LowPassFilter")
+[ 5] DelayRegistrar   constructed  (registered "Delay")
+[ 6] ReverbRegistrar  constructed  (registered "Reverb")
+[ 7] OutputChain.cpp  gDefaultOutputChain  init  STARTING
+[ 8] borrow()         called  inUse_.size()=8
+[ 9] borrow()         called  inUse_.size()=8
+[10] borrow()         called  inUse_.size()=8
+[11] borrow()         called  inUse_.size()=8
+[12] OutputChain      gDefaultOutputChain  constructed  (Delays borrowed)
+[13] ChorusRegistrar  constructed  (registered "Chorus")
+[14] === main() started ===
+[15] borrow()         called  inUse_.size()=8
+[16] borrow()         called  inUse_.size()=8
+[17] borrow()         called  inUse_.size()=8
+[18] borrow()         called  inUse_.size()=8
+Standalone Reverb — impulse response (4096 samples)
+  peak   : 0.700000
+  energy : 0.512500
+  RMS    : 0.011186
+  t=   0 (dry)  :  0.700000  (expected  0.700000)
+  t=1013 (tap1) :  0.075000  (expected  0.075000)
+  t=1327 (tap2) :  0.075000  (expected  0.075000)
+  t=1637 (tap3) :  0.075000  (expected  0.075000)
+  t=2053 (tap4) :  0.075000  (expected  0.075000)
+
+(lldb)  frame info
+frame #0: 0x00000001000063c8 AudioFilters`Delay::~Delay(this=0x000000016fdfee48) at Delay.cpp:13:17
+(lldb)  frame info
+frame #0: 0x000000010000637c AudioFilters`Delay::~Delay(this=0x000000016fdfee48) at Delay.cpp:14:5
+(lldb)  frame info
+frame #0: 0x00000001000021bc AudioFilters`DelayLineFactory::release(this=0x0000000100010008, h=7) at DelayLineFactory.cpp:31:44
+[19] release()        handle=7
+(lldb)  frame info
+frame #0: 0x00000001000063c8 AudioFilters`Delay::~Delay(this=0x000000016fdfee30) at Delay.cpp:13:17
+(lldb)  frame info
+frame #0: 0x000000010000637c AudioFilters`Delay::~Delay(this=0x000000016fdfee30) at Delay.cpp:14:5
+(lldb)  frame info
+frame #0: 0x00000001000021bc AudioFilters`DelayLineFactory::release(this=0x0000000100010008, h=6) at DelayLineFactory.cpp:31:44
+[20] release()        handle=6
+(lldb)  frame info
+frame #0: 0x00000001000063c8 AudioFilters`Delay::~Delay(this=0x000000016fdfee18) at Delay.cpp:13:17
+(lldb)  frame info
+frame #0: 0x000000010000637c AudioFilters`Delay::~Delay(this=0x000000016fdfee18) at Delay.cpp:14:5
+(lldb)  frame info
+frame #0: 0x00000001000021bc AudioFilters`DelayLineFactory::release(this=0x0000000100010008, h=5) at DelayLineFactory.cpp:31:44
+[21] release()        handle=5
+(lldb)  frame info
+frame #0: 0x00000001000063c8 AudioFilters`Delay::~Delay(this=0x000000016fdfee00) at Delay.cpp:13:17
+(lldb)  frame info
+frame #0: 0x000000010000637c AudioFilters`Delay::~Delay(this=0x000000016fdfee00) at Delay.cpp:14:5
+(lldb)  frame info
+frame #0: 0x00000001000021bc AudioFilters`DelayLineFactory::release(this=0x0000000100010008, h=4) at DelayLineFactory.cpp:31:44
+[22] release()        handle=4
+gDefaultOutputChain — impulse response (4096 samples)
+  peak   : 0.700000
+  energy : 0.512500
+  RMS    : 0.011186
+  t=   0 (dry)  :  0.700000  (expected  0.700000)
+  t=1013 (tap1) :  0.075000  (expected  0.075000)
+  t=1327 (tap2) :  0.075000  (expected  0.075000)
+  t=1637 (tap3) :  0.075000  (expected  0.075000)
+  t=2053 (tap4) :  0.075000  (expected  0.075000)
+
+[23] === main() returning ===
+[24] ChorusRegistrar  DESTROYED
+(lldb)  bt
+* thread #1, queue = 'com.apple.main-thread', stop reason = breakpoint 1.2
+   * frame #0: 0x0000000100006e5c AudioFilters`OutputChain::~OutputChain(this=0x0000000100010060) at OutputChain.cpp:10:29
+     frame #1: 0x000000019da81bb0 libsystem_c.dylib`__cxa_finalize_ranges + 436
+     frame #2: 0x000000019da8199c libsystem_c.dylib`exit + 44
+     frame #3: 0x000000019d7aad34 libdyld.dylib`dyld4::LibSystemHelpers::exit(int) const + 20
+     frame #4: 0x000000019d7fc45c dyld`dyld4::LibSystemHelpersWrapper::exit(int) const + 320
+     frame #5: 0x000000019d7fbeb0 dyld`start + 6736
+(lldb)  bt
+* thread #1, queue = 'com.apple.main-thread', stop reason = breakpoint 1.1
+   * frame #0: 0x0000000100006e18 AudioFilters`OutputChain::~OutputChain(this=0x0000000100010060) at OutputChain.cpp:12:5
+     frame #1: 0x0000000100006e60 AudioFilters`OutputChain::~OutputChain(this=0x0000000100010060) at OutputChain.cpp:10:29
+     frame #2: 0x000000019da81bb0 libsystem_c.dylib`__cxa_finalize_ranges + 436
+     frame #3: 0x000000019da8199c libsystem_c.dylib`exit + 44
+     frame #4: 0x000000019d7aad34 libdyld.dylib`dyld4::LibSystemHelpers::exit(int) const + 20
+     frame #5: 0x000000019d7fc45c dyld`dyld4::LibSystemHelpersWrapper::exit(int) const + 320
+     frame #6: 0x000000019d7fbeb0 dyld`start + 6736
+[25] OutputChain      gDefaultOutputChain  DESTROYING   (about to release Delays)
+(lldb)  frame info
+frame #0: 0x00000001000063c8 AudioFilters`Delay::~Delay(this=0x00000001000100a8) at Delay.cpp:13:17
+(lldb)  frame info
+frame #0: 0x000000010000637c AudioFilters`Delay::~Delay(this=0x00000001000100a8) at Delay.cpp:14:5
+(lldb)  frame info
+frame #0: 0x00000001000021bc AudioFilters`DelayLineFactory::release(this=0x0000000100010008, h=3) at DelayLineFactory.cpp:31:44
+[26] release()        handle=3
+(lldb)  frame info
+frame #0: 0x00000001000063c8 AudioFilters`Delay::~Delay(this=0x0000000100010090) at Delay.cpp:13:17
+(lldb)  frame info
+frame #0: 0x000000010000637c AudioFilters`Delay::~Delay(this=0x0000000100010090) at Delay.cpp:14:5
+(lldb)  frame info
+frame #0: 0x00000001000021bc AudioFilters`DelayLineFactory::release(this=0x0000000100010008, h=2) at DelayLineFactory.cpp:31:44
+[27] release()        handle=2
+(lldb)  frame info
+frame #0: 0x00000001000063c8 AudioFilters`Delay::~Delay(this=0x0000000100010078) at Delay.cpp:13:17
+(lldb)  frame info
+frame #0: 0x000000010000637c AudioFilters`Delay::~Delay(this=0x0000000100010078) at Delay.cpp:14:5
+(lldb)  frame info
+frame #0: 0x00000001000021bc AudioFilters`DelayLineFactory::release(this=0x0000000100010008, h=1) at DelayLineFactory.cpp:31:44
+[28] release()        handle=1
+(lldb)  frame info
+frame #0: 0x00000001000063c8 AudioFilters`Delay::~Delay(this=0x0000000100010060) at Delay.cpp:13:17
+(lldb)  frame info
+frame #0: 0x000000010000637c AudioFilters`Delay::~Delay(this=0x0000000100010060) at Delay.cpp:14:5
+(lldb)  frame info
+frame #0: 0x00000001000021bc AudioFilters`DelayLineFactory::release(this=0x0000000100010008, h=0) at DelayLineFactory.cpp:31:44
+[29] release()        handle=0
+[30] OutputChain.cpp  gDefaultOutputChain  fini  COMPLETE
+[31] ReverbRegistrar  DESTROYED
+[32] DelayRegistrar   DESTROYED
+[33] LPFRegistrar     DESTROYED
+[34] GainRegistrar    DESTROYED
+[35] gRegistry        DESTROYED
+(lldb)  bt
+* thread #1, queue = 'com.apple.main-thread', stop reason = breakpoint 4.2
+   * frame #0: 0x0000000100001f74 AudioFilters`DelayLineFactory::~DelayLineFactory(this=0x0000000100010008) at DelayLineFactory.cpp:11:39
+     frame #1: 0x000000019da81bb0 libsystem_c.dylib`__cxa_finalize_ranges + 436
+     frame #2: 0x000000019da8199c libsystem_c.dylib`exit + 44
+     frame #3: 0x000000019d7aad34 libdyld.dylib`dyld4::LibSystemHelpers::exit(int) const + 20
+     frame #4: 0x000000019d7fc45c dyld`dyld4::LibSystemHelpersWrapper::exit(int) const + 320
+     frame #5: 0x000000019d7fbeb0 dyld`start + 6736
+(lldb)  bt
+* thread #1, queue = 'com.apple.main-thread', stop reason = breakpoint 4.1
+   * frame #0: 0x0000000100001f24 AudioFilters`DelayLineFactory::~DelayLineFactory(this=0x0000000100010008) at DelayLineFactory.cpp:12:5
+     frame #1: 0x0000000100001f78 AudioFilters`DelayLineFactory::~DelayLineFactory(this=0x0000000100010008) at DelayLineFactory.cpp:11:39
+     frame #2: 0x000000019da81bb0 libsystem_c.dylib`__cxa_finalize_ranges + 436
+     frame #3: 0x000000019da8199c libsystem_c.dylib`exit + 44
+     frame #4: 0x000000019d7aad34 libdyld.dylib`dyld4::LibSystemHelpers::exit(int) const + 20
+     frame #5: 0x000000019d7fc45c dyld`dyld4::LibSystemHelpersWrapper::exit(int) const + 320
+     frame #6: 0x000000019d7fbeb0 dyld`start + 6736
+[36] gFactory         DESTROYED
+Process 23039 launched: '/Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.10 In No Particular Order/WithChorus/build/safe/AudioFilters' (arm64)
+Process 23039 exited with status = 0 (0x00000000)
+exit: 0

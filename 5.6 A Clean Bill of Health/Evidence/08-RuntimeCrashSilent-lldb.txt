@@ -1,0 +1,46 @@
+(lldb) target create "RuntimeCrashSilent/build/ReadinessScore"
+Current executable set to '/Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.6 A Clean Bill of Health/RuntimeCrashSilent/build/ReadinessScore' (arm64).
+(lldb) breakpoint set --file main.cpp --line 28
+Breakpoint 1: where = ReadinessScore`main + 224 at main.cpp:28:23, address = 0x00000001000005c8
+(lldb) process launch -i /var/folders/jl/4s4mjc9j1ddcq_zskhr66kw40000gp/T//readiness-input.Reg4yh
+Process 22301 launched: '/Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.6 A Clean Bill of Health/RuntimeCrashSilent/build/ReadinessScore' (arm64)
+Process 22301 stopped
+* thread #1, queue = 'com.apple.main-thread', stop reason = breakpoint 1.1
+       frame #0: 0x00000001000005c8 ReadinessScore`main at main.cpp:28:23
+   25  	    std::printf("Soreness (0-10):           "); std::scanf("%lf", &soreness);
+   26  	
+   27  	    ReadinessResult *result;
+-> 28  	    compute_readiness(restingHR, baselineHR, sleepHours, targetSleepHours,
+    	                      ^
+   29  	                      workoutLoad, soreness, result);
+   30  	
+   31  	    std::printf("Score:           %.3f\n", result->score);
+Target 0: (ReadinessScore) stopped.
+(lldb) frame variable result
+(ReadinessResult *) result = 0x0000000000000001
+(lldb) memory region result
+[0x0000000000000001-0x0000000100000000) ---
+(lldb) continue
+Process 22301 resuming
+Process 22301 stopped
+* thread #1, queue = 'com.apple.main-thread', stop reason = EXC_BAD_ACCESS (code=1, address=0x1)
+       frame #0: 0x0000000100000870 ReadinessScore`compute_readiness(restingHR=60, baselineHR=55, sleepHours=7, targetSleepHours=8, workoutLoad=3, soreness=2, result=0x0000000000000001) at readiness.cpp:36:19
+   33  	    double loadComponent     = pinComponent(1.0 - workoutLoad / 10.0, 0.0, 1.0);
+   34  	    double sorenessComponent = pinComponent(1.0 - soreness    / 10.0, 0.0, 1.0);
+   35  	
+-> 36  	    result->score = 0.30 * hrComponent
+    	                  ^
+   37  	                  + 0.30 * sleepComponent
+   38  	                  + 0.20 * loadComponent
+   39  	                  + 0.20 * sorenessComponent;
+Target 0: (ReadinessScore) stopped.
+(lldb) thread list
+Process 22301 stopped
+* thread #1: tid = 0x770fa, 0x0000000100000870 ReadinessScore`compute_readiness(restingHR=60, baselineHR=55, sleepHours=7, targetSleepHours=8, workoutLoad=3, soreness=2, result=0x0000000000000001) at readiness.cpp:36:19, queue = 'com.apple.main-thread', stop reason = EXC_BAD_ACCESS (code=1, address=0x1)
+(lldb) bt
+* thread #1, queue = 'com.apple.main-thread', stop reason = EXC_BAD_ACCESS (code=1, address=0x1)
+   * frame #0: 0x0000000100000870 ReadinessScore`compute_readiness(restingHR=60, baselineHR=55, sleepHours=7, targetSleepHours=8, workoutLoad=3, soreness=2, result=0x0000000000000001) at readiness.cpp:36:19
+     frame #1: 0x00000001000005e8 ReadinessScore`main at main.cpp:28:5
+     frame #2: 0x000000019d7fbe80 dyld`start + 6688
+(lldb) quit
+exit: 0

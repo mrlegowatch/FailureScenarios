@@ -1,0 +1,2181 @@
+worker PID 21278 starting
+worker PID 21279 starting
+worker PID 21280 starting
+worker PID 21281 starting
+worker PID 21282 starting
+worker PID 21283 starting
+=== device-01.csv ===
+validated 15 rows, 0 errors
+=== device-02.csv ===
+validated 18 rows, 0 errors
+=== device-03.csv ===
+row 1: timestamp invalid: not a valid integer
+row 1: value invalid: not a valid number
+row 2: timestamp invalid: not a valid integer
+row 2: sensorID invalid: contains non-alphanumeric character
+row 2: value invalid: not a valid number
+row 3: timestamp invalid: not a valid integer
+row 3: sensorID invalid: contains non-alphanumeric character
+row 3: value invalid: not a valid number
+row 4: timestamp invalid: not a valid integer
+row 4: sensorID invalid: contains non-alphanumeric character
+row 4: value invalid: not a valid number
+row 5: timestamp invalid: not a valid integer
+row 5: sensorID invalid: contains non-alphanumeric character
+row 5: value invalid: not a valid number
+row 6: timestamp invalid: not a valid integer
+row 6: sensorID invalid: contains non-alphanumeric character
+row 6: value invalid: not a valid number
+row 7: timestamp invalid: not a valid integer
+row 7: sensorID invalid: contains non-alphanumeric character
+row 7: value invalid: not a valid number
+row 8: timestamp invalid: not a valid integer
+row 8: sensorID invalid: contains non-alphanumeric character
+row 8: value invalid: not a valid number
+row 9: timestamp invalid: not a valid integer
+row 9: sensorID invalid: contains non-alphanumeric character
+row 9: value invalid: not a valid number
+row 10: timestamp invalid: not a valid integer
+row 10: sensorID invalid: contains non-alphanumeric character
+row 10: value invalid: not a valid number
+row 11: timestamp invalid: not a valid integer
+row 11: sensorID invalid: contains non-alphanumeric character
+row 11: value invalid: not a valid number
+row 12: timestamp invalid: not a valid integer
+row 12: sensorID invalid: contains non-alphanumeric character
+row 12: value invalid: not a valid number
+row 13: timestamp invalid: not a valid integer
+row 13: sensorID invalid: contains non-alphanumeric character
+row 13: value invalid: not a valid number
+row 14: timestamp invalid: not a valid integer
+row 14: sensorID invalid: contains non-alphanumeric character
+row 14: value invalid: not a valid number
+row 15: timestamp invalid: not a valid integer
+row 15: sensorID invalid: contains non-alphanumeric character
+row 15: value invalid: not a valid number
+row 16: timestamp invalid: not a valid integer
+row 16: sensorID invalid: contains non-alphanumeric character
+row 16: value invalid: not a valid number
+row 17: timestamp invalid: not a valid integer
+row 17: sensorID invalid: contains non-alphanumeric character
+row 17: value invalid: not a valid number
+row 18: timestamp invalid: not a valid integer
+row 18: sensorID invalid: contains non-alphanumeric character
+row 18: value invalid: not a valid number
+row 19: timestamp invalid: not a valid integer
+row 19: sensorID invalid: contains non-alphanumeric character
+row 19: value invalid: not a valid number
+row 20: timestamp invalid: not a valid integer
+row 20: sensorID invalid: contains non-alphanumeric character
+row 20: value invalid: not a valid number
+row 21: timestamp invalid: not a valid integer
+row 21: sensorID invalid: contains non-alphanumeric character
+row 21: value invalid: not a valid number
+row 22: timestamp invalid: not a valid integer
+row 22: sensorID invalid: contains non-alphanumeric character
+row 22: value invalid: not a valid number
+row 23: timestamp invalid: not a valid integer
+row 23: sensorID invalid: contains non-alphanumeric character
+row 23: value invalid: not a valid number
+row 24: timestamp invalid: not a valid integer
+row 24: sensorID invalid: contains non-alphanumeric character
+row 24: value invalid: not a valid number
+row 25: timestamp invalid: not a valid integer
+row 25: sensorID invalid: contains non-alphanumeric character
+row 25: value invalid: not a valid number
+row 26: timestamp invalid: not a valid integer
+row 26: sensorID invalid: contains non-alphanumeric character
+row 26: value invalid: not a valid number
+row 27: timestamp invalid: not a valid integer
+row 27: sensorID invalid: contains non-alphanumeric character
+row 27: value invalid: not a valid number
+row 28: timestamp invalid: not a valid integer
+row 28: sensorID invalid: contains non-alphanumeric character
+row 28: value invalid: not a valid number
+row 29: timestamp invalid: not a valid integer
+row 29: sensorID invalid: contains non-alphanumeric character
+row 29: value invalid: not a valid number
+row 30: timestamp invalid: not a valid integer
+row 30: sensorID invalid: contains non-alphanumeric character
+row 30: value invalid: not a valid number
+row 31: timestamp invalid: not a valid integer
+row 31: sensorID invalid: contains non-alphanumeric character
+row 31: value invalid: not a valid number
+row 32: timestamp invalid: not a valid integer
+row 32: sensorID invalid: contains non-alphanumeric character
+row 32: value invalid: not a valid number
+row 33: timestamp invalid: not a valid integer
+row 33: sensorID invalid: contains non-alphanumeric character
+row 33: value invalid: not a valid number
+row 34: timestamp invalid: not a valid integer
+row 34: sensorID invalid: contains non-alphanumeric character
+row 34: value invalid: not a valid number
+row 35: timestamp invalid: not a valid integer
+row 35: sensorID invalid: contains non-alphanumeric character
+row 35: value invalid: not a valid number
+row 36: timestamp invalid: not a valid integer
+row 36: sensorID invalid: contains non-alphanumeric character
+row 36: value invalid: not a valid number
+row 37: timestamp invalid: not a valid integer
+row 37: sensorID invalid: contains non-alphanumeric character
+row 37: value invalid: not a valid number
+row 38: timestamp invalid: not a valid integer
+row 38: sensorID invalid: contains non-alphanumeric character
+row 38: value invalid: not a valid number
+row 39: timestamp invalid: not a valid integer
+row 39: sensorID invalid: contains non-alphanumeric character
+row 39: value invalid: not a valid number
+row 40: timestamp invalid: not a valid integer
+row 40: sensorID invalid: contains non-alphanumeric character
+row 40: value invalid: not a valid number
+row 41: timestamp invalid: not a valid integer
+row 41: sensorID invalid: contains non-alphanumeric character
+row 41: value invalid: not a valid number
+row 42: timestamp invalid: not a valid integer
+row 42: sensorID invalid: contains non-alphanumeric character
+row 42: value invalid: not a valid number
+row 43: timestamp invalid: not a valid integer
+row 43: sensorID invalid: contains non-alphanumeric character
+row 43: value invalid: not a valid number
+row 44: timestamp invalid: not a valid integer
+row 44: sensorID invalid: contains non-alphanumeric character
+row 44: value invalid: not a valid number
+row 45: timestamp invalid: not a valid integer
+row 45: sensorID invalid: contains non-alphanumeric character
+row 45: value invalid: not a valid number
+row 46: timestamp invalid: not a valid integer
+row 46: sensorID invalid: contains non-alphanumeric character
+row 46: value invalid: not a valid number
+row 47: timestamp invalid: not a valid integer
+row 47: sensorID invalid: contains non-alphanumeric character
+row 47: value invalid: not a valid number
+row 48: timestamp invalid: not a valid integer
+row 48: sensorID invalid: contains non-alphanumeric character
+row 48: value invalid: not a valid number
+row 49: timestamp invalid: not a valid integer
+row 49: sensorID invalid: contains non-alphanumeric character
+row 49: value invalid: not a valid number
+row 50: timestamp invalid: not a valid integer
+row 50: sensorID invalid: contains non-alphanumeric character
+row 50: value invalid: not a valid number
+row 51: timestamp invalid: not a valid integer
+row 51: sensorID invalid: contains non-alphanumeric character
+row 51: value invalid: not a valid number
+row 52: timestamp invalid: not a valid integer
+row 52: sensorID invalid: contains non-alphanumeric character
+row 52: value invalid: not a valid number
+row 53: timestamp invalid: not a valid integer
+row 53: sensorID invalid: contains non-alphanumeric character
+row 53: value invalid: not a valid number
+row 54: timestamp invalid: not a valid integer
+row 54: sensorID invalid: contains non-alphanumeric character
+row 54: value invalid: not a valid number
+row 55: timestamp invalid: not a valid integer
+row 55: sensorID invalid: contains non-alphanumeric character
+row 55: value invalid: not a valid number
+row 56: timestamp invalid: not a valid integer
+row 56: sensorID invalid: contains non-alphanumeric character
+row 56: value invalid: not a valid number
+row 57: timestamp invalid: not a valid integer
+row 57: sensorID invalid: contains non-alphanumeric character
+row 57: value invalid: not a valid number
+row 58: timestamp invalid: not a valid integer
+row 58: sensorID invalid: contains non-alphanumeric character
+row 58: value invalid: not a valid number
+row 59: timestamp invalid: not a valid integer
+row 59: sensorID invalid: contains non-alphanumeric character
+row 59: value invalid: not a valid number
+row 60: timestamp invalid: not a valid integer
+row 60: sensorID invalid: contains non-alphanumeric character
+row 60: value invalid: not a valid number
+row 61: timestamp invalid: not a valid integer
+row 61: sensorID invalid: contains non-alphanumeric character
+row 61: value invalid: not a valid number
+row 62: timestamp invalid: not a valid integer
+row 62: sensorID invalid: contains non-alphanumeric character
+row 62: value invalid: not a valid number
+row 63: timestamp invalid: not a valid integer
+row 63: sensorID invalid: contains non-alphanumeric character
+row 63: value invalid: not a valid number
+row 64: timestamp invalid: not a valid integer
+row 64: sensorID invalid: contains non-alphanumeric character
+row 64: value invalid: not a valid number
+row 65: timestamp invalid: not a valid integer
+row 65: sensorID invalid: contains non-alphanumeric character
+row 65: value invalid: not a valid number
+row 66: timestamp invalid: not a valid integer
+row 66: sensorID invalid: contains non-alphanumeric character
+row 66: value invalid: not a valid number
+row 67: timestamp invalid: not a valid integer
+row 67: sensorID invalid: contains non-alphanumeric character
+row 67: value invalid: not a valid number
+row 68: timestamp invalid: not a valid integer
+row 68: sensorID invalid: contains non-alphanumeric character
+row 68: value invalid: not a valid number
+row 69: timestamp invalid: not a valid integer
+row 69: sensorID invalid: contains non-alphanumeric character
+row 69: value invalid: not a valid number
+row 70: timestamp invalid: not a valid integer
+row 70: sensorID invalid: contains non-alphanumeric character
+row 70: value invalid: not a valid number
+row 71: timestamp invalid: not a valid integer
+row 71: sensorID invalid: contains non-alphanumeric character
+row 71: value invalid: not a valid number
+row 72: timestamp invalid: not a valid integer
+row 72: sensorID invalid: contains non-alphanumeric character
+row 72: value invalid: not a valid number
+row 73: timestamp invalid: not a valid integer
+row 73: sensorID invalid: contains non-alphanumeric character
+row 73: value invalid: not a valid number
+row 74: timestamp invalid: not a valid integer
+row 74: sensorID invalid: contains non-alphanumeric character
+row 74: value invalid: not a valid number
+row 75: timestamp invalid: not a valid integer
+row 75: sensorID invalid: contains non-alphanumeric character
+row 75: value invalid: not a valid number
+row 76: timestamp invalid: not a valid integer
+row 76: sensorID invalid: contains non-alphanumeric character
+row 76: value invalid: not a valid number
+row 77: timestamp invalid: not a valid integer
+row 77: sensorID invalid: contains non-alphanumeric character
+row 77: value invalid: not a valid number
+row 78: timestamp invalid: not a valid integer
+row 78: sensorID invalid: contains non-alphanumeric character
+row 78: value invalid: not a valid number
+row 79: timestamp invalid: not a valid integer
+row 79: sensorID invalid: contains non-alphanumeric character
+row 79: value invalid: not a valid number
+row 80: timestamp invalid: not a valid integer
+row 80: sensorID invalid: contains non-alphanumeric character
+row 80: value invalid: not a valid number
+row 81: timestamp invalid: not a valid integer
+row 81: sensorID invalid: contains non-alphanumeric character
+row 81: value invalid: not a valid number
+row 82: timestamp invalid: not a valid integer
+row 82: sensorID invalid: contains non-alphanumeric character
+row 82: value invalid: not a valid number
+row 83: timestamp invalid: not a valid integer
+row 83: sensorID invalid: contains non-alphanumeric character
+row 83: value invalid: not a valid number
+row 84: timestamp invalid: not a valid integer
+row 84: sensorID invalid: contains non-alphanumeric character
+row 84: value invalid: not a valid number
+row 85: timestamp invalid: not a valid integer
+row 85: sensorID invalid: contains non-alphanumeric character
+row 85: value invalid: not a valid number
+row 86: timestamp invalid: not a valid integer
+row 86: sensorID invalid: contains non-alphanumeric character
+row 86: value invalid: not a valid number
+row 87: timestamp invalid: not a valid integer
+row 87: sensorID invalid: contains non-alphanumeric character
+row 87: value invalid: not a valid number
+row 88: timestamp invalid: not a valid integer
+row 88: sensorID invalid: contains non-alphanumeric character
+row 88: value invalid: not a valid number
+row 89: timestamp invalid: not a valid integer
+row 89: sensorID invalid: contains non-alphanumeric character
+row 89: value invalid: not a valid number
+row 90: timestamp invalid: not a valid integer
+row 90: sensorID invalid: contains non-alphanumeric character
+row 90: value invalid: not a valid number
+row 91: timestamp invalid: not a valid integer
+row 91: sensorID invalid: contains non-alphanumeric character
+row 91: value invalid: not a valid number
+row 92: timestamp invalid: not a valid integer
+row 92: sensorID invalid: contains non-alphanumeric character
+row 92: value invalid: not a valid number
+row 93: timestamp invalid: not a valid integer
+row 93: sensorID invalid: contains non-alphanumeric character
+row 93: value invalid: not a valid number
+row 94: timestamp invalid: not a valid integer
+row 94: sensorID invalid: contains non-alphanumeric character
+row 94: value invalid: not a valid number
+row 95: timestamp invalid: not a valid integer
+row 95: sensorID invalid: contains non-alphanumeric character
+row 95: value invalid: not a valid number
+row 96: timestamp invalid: not a valid integer
+row 96: sensorID invalid: contains non-alphanumeric character
+row 96: value invalid: not a valid number
+row 97: timestamp invalid: not a valid integer
+row 97: sensorID invalid: contains non-alphanumeric character
+row 97: value invalid: not a valid number
+row 98: timestamp invalid: not a valid integer
+row 98: sensorID invalid: contains non-alphanumeric character
+row 98: value invalid: not a valid number
+row 99: timestamp invalid: not a valid integer
+row 99: sensorID invalid: contains non-alphanumeric character
+row 99: value invalid: not a valid number
+row 100: timestamp invalid: not a valid integer
+row 100: sensorID invalid: contains non-alphanumeric character
+row 100: value invalid: not a valid number
+row 101: timestamp invalid: not a valid integer
+row 101: sensorID invalid: contains non-alphanumeric character
+row 101: value invalid: not a valid number
+row 102: timestamp invalid: not a valid integer
+row 102: sensorID invalid: contains non-alphanumeric character
+row 102: value invalid: not a valid number
+row 103: timestamp invalid: not a valid integer
+row 103: sensorID invalid: contains non-alphanumeric character
+row 103: value invalid: not a valid number
+row 104: timestamp invalid: not a valid integer
+row 104: sensorID invalid: contains non-alphanumeric character
+row 104: value invalid: not a valid number
+row 105: timestamp invalid: not a valid integer
+row 105: sensorID invalid: contains non-alphanumeric character
+row 105: value invalid: not a valid number
+row 106: timestamp invalid: not a valid integer
+row 106: sensorID invalid: contains non-alphanumeric character
+row 106: value invalid: not a valid number
+row 107: timestamp invalid: not a valid integer
+row 107: sensorID invalid: contains non-alphanumeric character
+row 107: value invalid: not a valid number
+row 108: timestamp invalid: not a valid integer
+row 108: sensorID invalid: contains non-alphanumeric character
+row 108: value invalid: not a valid number
+row 109: timestamp invalid: not a valid integer
+row 109: sensorID invalid: contains non-alphanumeric character
+row 109: value invalid: not a valid number
+row 110: timestamp invalid: not a valid integer
+row 110: sensorID invalid: contains non-alphanumeric character
+row 110: value invalid: not a valid number
+row 111: timestamp invalid: not a valid integer
+row 111: sensorID invalid: contains non-alphanumeric character
+row 111: value invalid: not a valid number
+row 112: timestamp invalid: not a valid integer
+row 112: sensorID invalid: contains non-alphanumeric character
+row 112: value invalid: not a valid number
+row 113: timestamp invalid: not a valid integer
+row 113: sensorID invalid: contains non-alphanumeric character
+row 113: value invalid: not a valid number
+row 114: timestamp invalid: not a valid integer
+row 114: sensorID invalid: contains non-alphanumeric character
+row 114: value invalid: not a valid number
+row 115: timestamp invalid: not a valid integer
+row 115: sensorID invalid: contains non-alphanumeric character
+row 115: value invalid: not a valid number
+row 116: timestamp invalid: not a valid integer
+row 116: sensorID invalid: contains non-alphanumeric character
+row 116: value invalid: not a valid number
+row 117: timestamp invalid: not a valid integer
+row 117: sensorID invalid: contains non-alphanumeric character
+row 117: value invalid: not a valid number
+row 118: timestamp invalid: not a valid integer
+row 118: sensorID invalid: contains non-alphanumeric character
+row 118: value invalid: not a valid number
+row 119: timestamp invalid: not a valid integer
+row 119: sensorID invalid: contains non-alphanumeric character
+row 119: value invalid: not a valid number
+row 120: timestamp invalid: not a valid integer
+row 120: sensorID invalid: contains non-alphanumeric character
+row 120: value invalid: not a valid number
+row 121: timestamp invalid: not a valid integer
+row 121: sensorID invalid: contains non-alphanumeric character
+row 121: value invalid: not a valid number
+row 122: timestamp invalid: not a valid integer
+row 122: sensorID invalid: contains non-alphanumeric character
+row 122: value invalid: not a valid number
+row 123: timestamp invalid: not a valid integer
+row 123: sensorID invalid: contains non-alphanumeric character
+row 123: value invalid: not a valid number
+row 124: timestamp invalid: not a valid integer
+row 124: sensorID invalid: contains non-alphanumeric character
+row 124: value invalid: not a valid number
+row 125: timestamp invalid: not a valid integer
+row 125: sensorID invalid: contains non-alphanumeric character
+row 125: value invalid: not a valid number
+row 126: timestamp invalid: not a valid integer
+row 126: sensorID invalid: contains non-alphanumeric character
+row 126: value invalid: not a valid number
+row 127: timestamp invalid: not a valid integer
+row 127: sensorID invalid: contains non-alphanumeric character
+row 127: value invalid: not a valid number
+row 128: timestamp invalid: not a valid integer
+row 128: sensorID invalid: contains non-alphanumeric character
+row 128: value invalid: not a valid number
+row 129: timestamp invalid: not a valid integer
+row 129: sensorID invalid: contains non-alphanumeric character
+row 129: value invalid: not a valid number
+row 130: timestamp invalid: not a valid integer
+row 130: sensorID invalid: contains non-alphanumeric character
+row 130: value invalid: not a valid number
+row 131: timestamp invalid: not a valid integer
+row 131: sensorID invalid: contains non-alphanumeric character
+row 131: value invalid: not a valid number
+row 132: timestamp invalid: not a valid integer
+row 132: sensorID invalid: contains non-alphanumeric character
+row 132: value invalid: not a valid number
+row 133: timestamp invalid: not a valid integer
+row 133: sensorID invalid: contains non-alphanumeric character
+row 133: value invalid: not a valid number
+row 134: timestamp invalid: not a valid integer
+row 134: sensorID invalid: contains non-alphanumeric character
+row 134: value invalid: not a valid number
+row 135: timestamp invalid: not a valid integer
+row 135: sensorID invalid: contains non-alphanumeric character
+row 135: value invalid: not a valid number
+row 136: timestamp invalid: not a valid integer
+row 136: sensorID invalid: contains non-alphanumeric character
+row 136: value invalid: not a valid number
+row 137: timestamp invalid: not a valid integer
+row 137: sensorID invalid: contains non-alphanumeric character
+row 137: value invalid: not a valid number
+row 138: timestamp invalid: not a valid integer
+row 138: sensorID invalid: contains non-alphanumeric character
+row 138: value invalid: not a valid number
+row 139: timestamp invalid: not a valid integer
+row 139: sensorID invalid: contains non-alphanumeric character
+row 139: value invalid: not a valid number
+row 140: timestamp invalid: not a valid integer
+row 140: sensorID invalid: contains non-alphanumeric character
+row 140: value invalid: not a valid number
+row 141: timestamp invalid: not a valid integer
+row 141: sensorID invalid: contains non-alphanumeric character
+row 141: value invalid: not a valid number
+row 142: timestamp invalid: not a valid integer
+row 142: sensorID invalid: contains non-alphanumeric character
+row 142: value invalid: not a valid number
+row 143: timestamp invalid: not a valid integer
+row 143: sensorID invalid: contains non-alphanumeric character
+row 143: value invalid: not a valid number
+row 144: timestamp invalid: not a valid integer
+row 144: sensorID invalid: contains non-alphanumeric character
+row 144: value invalid: not a valid number
+row 145: timestamp invalid: not a valid integer
+row 145: sensorID invalid: contains non-alphanumeric character
+row 145: value invalid: not a valid number
+row 146: timestamp invalid: not a valid integer
+row 146: sensorID invalid: contains non-alphanumeric character
+row 146: value invalid: not a valid number
+row 147: timestamp invalid: not a valid integer
+row 147: sensorID invalid: contains non-alphanumeric character
+row 147: value invalid: not a valid number
+row 148: timestamp invalid: not a valid integer
+row 148: sensorID invalid: contains non-alphanumeric character
+row 148: value invalid: not a valid number
+row 149: timestamp invalid: not a valid integer
+row 149: sensorID invalid: contains non-alphanumeric character
+row 149: value invalid: not a valid number
+row 150: timestamp invalid: not a valid integer
+row 150: sensorID invalid: contains non-alphanumeric character
+row 150: value invalid: not a valid number
+row 151: timestamp invalid: not a valid integer
+row 151: sensorID invalid: contains non-alphanumeric character
+row 151: value invalid: not a valid number
+row 152: timestamp invalid: not a valid integer
+row 152: sensorID invalid: contains non-alphanumeric character
+row 152: value invalid: not a valid number
+row 153: timestamp invalid: not a valid integer
+row 153: sensorID invalid: contains non-alphanumeric character
+row 153: value invalid: not a valid number
+row 154: timestamp invalid: not a valid integer
+row 154: sensorID invalid: contains non-alphanumeric character
+row 154: value invalid: not a valid number
+row 155: timestamp invalid: not a valid integer
+row 155: sensorID invalid: contains non-alphanumeric character
+row 155: value invalid: not a valid number
+row 156: timestamp invalid: not a valid integer
+row 156: sensorID invalid: contains non-alphanumeric character
+row 156: value invalid: not a valid number
+row 157: timestamp invalid: not a valid integer
+row 157: sensorID invalid: contains non-alphanumeric character
+row 157: value invalid: not a valid number
+row 158: timestamp invalid: not a valid integer
+row 158: sensorID invalid: contains non-alphanumeric character
+row 158: value invalid: not a valid number
+row 159: timestamp invalid: not a valid integer
+row 159: sensorID invalid: contains non-alphanumeric character
+row 159: value invalid: not a valid number
+row 160: timestamp invalid: not a valid integer
+row 160: sensorID invalid: contains non-alphanumeric character
+row 160: value invalid: not a valid number
+row 161: timestamp invalid: not a valid integer
+row 161: sensorID invalid: contains non-alphanumeric character
+row 161: value invalid: not a valid number
+row 162: timestamp invalid: not a valid integer
+row 162: sensorID invalid: contains non-alphanumeric character
+row 162: value invalid: not a valid number
+row 163: timestamp invalid: not a valid integer
+row 163: sensorID invalid: contains non-alphanumeric character
+row 163: value invalid: not a valid number
+row 164: timestamp invalid: not a valid integer
+row 164: sensorID invalid: contains non-alphanumeric character
+row 164: value invalid: not a valid number
+row 165: timestamp invalid: not a valid integer
+row 165: sensorID invalid: contains non-alphanumeric character
+row 165: value invalid: not a valid number
+row 166: timestamp invalid: not a valid integer
+row 166: sensorID invalid: contains non-alphanumeric character
+row 166: value invalid: not a valid number
+row 167: timestamp invalid: not a valid integer
+row 167: sensorID invalid: contains non-alphanumeric character
+row 167: value invalid: not a valid number
+row 168: timestamp invalid: not a valid integer
+row 168: sensorID invalid: contains non-alphanumeric character
+row 168: value invalid: not a valid number
+row 169: timestamp invalid: not a valid integer
+row 169: sensorID invalid: contains non-alphanumeric character
+row 169: value invalid: not a valid number
+row 170: timestamp invalid: not a valid integer
+row 170: sensorID invalid: contains non-alphanumeric character
+row 170: value invalid: not a valid number
+row 171: timestamp invalid: not a valid integer
+row 171: sensorID invalid: contains non-alphanumeric character
+row 171: value invalid: not a valid number
+row 172: timestamp invalid: not a valid integer
+row 172: sensorID invalid: contains non-alphanumeric character
+row 172: value invalid: not a valid number
+row 173: timestamp invalid: not a valid integer
+row 173: sensorID invalid: contains non-alphanumeric character
+row 173: value invalid: not a valid number
+row 174: timestamp invalid: not a valid integer
+row 174: sensorID invalid: contains non-alphanumeric character
+row 174: value invalid: not a valid number
+row 175: timestamp invalid: not a valid integer
+row 175: sensorID invalid: contains non-alphanumeric character
+row 175: value invalid: not a valid number
+row 176: timestamp invalid: not a valid integer
+row 176: sensorID invalid: contains non-alphanumeric character
+row 176: value invalid: not a valid number
+row 177: timestamp invalid: not a valid integer
+row 177: sensorID invalid: contains non-alphanumeric character
+row 177: value invalid: not a valid number
+row 178: timestamp invalid: not a valid integer
+row 178: sensorID invalid: contains non-alphanumeric character
+row 178: value invalid: not a valid number
+row 179: timestamp invalid: not a valid integer
+row 179: sensorID invalid: contains non-alphanumeric character
+row 179: value invalid: not a valid number
+row 180: timestamp invalid: not a valid integer
+row 180: sensorID invalid: contains non-alphanumeric character
+row 180: value invalid: not a valid number
+row 181: timestamp invalid: not a valid integer
+row 181: sensorID invalid: contains non-alphanumeric character
+row 181: value invalid: not a valid number
+row 182: timestamp invalid: not a valid integer
+row 182: sensorID invalid: contains non-alphanumeric character
+row 182: value invalid: not a valid number
+row 183: timestamp invalid: not a valid integer
+row 183: sensorID invalid: contains non-alphanumeric character
+row 183: value invalid: not a valid number
+row 184: timestamp invalid: not a valid integer
+row 184: sensorID invalid: contains non-alphanumeric character
+row 184: value invalid: not a valid number
+row 185: timestamp invalid: not a valid integer
+row 185: sensorID invalid: contains non-alphanumeric character
+row 185: value invalid: not a valid number
+row 186: timestamp invalid: not a valid integer
+row 186: sensorID invalid: contains non-alphanumeric character
+row 186: value invalid: not a valid number
+row 187: timestamp invalid: not a valid integer
+row 187: sensorID invalid: contains non-alphanumeric character
+row 187: value invalid: not a valid number
+row 188: timestamp invalid: not a valid integer
+row 188: sensorID invalid: contains non-alphanumeric character
+row 188: value invalid: not a valid number
+row 189: timestamp invalid: not a valid integer
+row 189: sensorID invalid: contains non-alphanumeric character
+row 189: value invalid: not a valid number
+row 190: timestamp invalid: not a valid integer
+row 190: sensorID invalid: contains non-alphanumeric character
+row 190: value invalid: not a valid number
+row 191: timestamp invalid: not a valid integer
+row 191: sensorID invalid: contains non-alphanumeric character
+row 191: value invalid: not a valid number
+row 192: timestamp invalid: not a valid integer
+row 192: sensorID invalid: contains non-alphanumeric character
+row 192: value invalid: not a valid number
+row 193: timestamp invalid: not a valid integer
+row 193: sensorID invalid: contains non-alphanumeric character
+row 193: value invalid: not a valid number
+row 194: timestamp invalid: not a valid integer
+row 194: sensorID invalid: contains non-alphanumeric character
+row 194: value invalid: not a valid number
+row 195: timestamp invalid: not a valid integer
+row 195: sensorID invalid: contains non-alphanumeric character
+row 195: value invalid: not a valid number
+row 196: timestamp invalid: not a valid integer
+row 196: sensorID invalid: contains non-alphanumeric character
+row 196: value invalid: not a valid number
+row 197: timestamp invalid: not a valid integer
+row 197: sensorID invalid: contains non-alphanumeric character
+row 197: value invalid: not a valid number
+row 198: timestamp invalid: not a valid integer
+row 198: sensorID invalid: contains non-alphanumeric character
+row 198: value invalid: not a valid number
+row 199: timestamp invalid: not a valid integer
+row 199: sensorID invalid: contains non-alphanumeric character
+row 199: value invalid: not a valid number
+row 200: timestamp invalid: not a valid integer
+row 200: sensorID invalid: contains non-alphanumeric character
+row 200: value invalid: not a valid number
+row 201: timestamp invalid: not a valid integer
+row 201: sensorID invalid: contains non-alphanumeric character
+row 201: value invalid: not a valid number
+row 202: timestamp invalid: not a valid integer
+row 202: sensorID invalid: contains non-alphanumeric character
+row 202: value invalid: not a valid number
+row 203: timestamp invalid: not a valid integer
+row 203: sensorID invalid: contains non-alphanumeric character
+row 203: value invalid: not a valid number
+row 204: timestamp invalid: not a valid integer
+row 204: sensorID invalid: contains non-alphanumeric character
+row 204: value invalid: not a valid number
+row 205: timestamp invalid: not a valid integer
+row 205: sensorID invalid: contains non-alphanumeric character
+row 205: value invalid: not a valid number
+row 206: timestamp invalid: not a valid integer
+row 206: sensorID invalid: contains non-alphanumeric character
+row 206: value invalid: not a valid number
+row 207: timestamp invalid: not a valid integer
+row 207: sensorID invalid: contains non-alphanumeric character
+row 207: value invalid: not a valid number
+row 208: timestamp invalid: not a valid integer
+row 208: sensorID invalid: contains non-alphanumeric character
+row 208: value invalid: not a valid number
+row 209: timestamp invalid: not a valid integer
+row 209: sensorID invalid: contains non-alphanumeric character
+row 209: value invalid: not a valid number
+row 210: timestamp invalid: not a valid integer
+row 210: sensorID invalid: contains non-alphanumeric character
+row 210: value invalid: not a valid number
+row 211: timestamp invalid: not a valid integer
+row 211: sensorID invalid: contains non-alphanumeric character
+row 211: value invalid: not a valid number
+row 212: timestamp invalid: not a valid integer
+row 212: sensorID invalid: contains non-alphanumeric character
+row 212: value invalid: not a valid number
+row 213: timestamp invalid: not a valid integer
+row 213: sensorID invalid: contains non-alphanumeric character
+row 213: value invalid: not a valid number
+row 214: timestamp invalid: not a valid integer
+row 214: sensorID invalid: contains non-alphanumeric character
+row 214: value invalid: not a valid number
+row 215: timestamp invalid: not a valid integer
+row 215: sensorID invalid: contains non-alphanumeric character
+row 215: value invalid: not a valid number
+row 216: timestamp invalid: not a valid integer
+row 216: sensorID invalid: contains non-alphanumeric character
+row 216: value invalid: not a valid number
+row 217: timestamp invalid: not a valid integer
+row 217: sensorID invalid: contains non-alphanumeric character
+row 217: value invalid: not a valid number
+row 218: timestamp invalid: not a valid integer
+row 218: sensorID invalid: contains non-alphanumeric character
+row 218: value invalid: not a valid number
+row 219: timestamp invalid: not a valid integer
+row 219: sensorID invalid: contains non-alphanumeric character
+row 219: value invalid: not a valid number
+row 220: timestamp invalid: not a valid integer
+row 220: sensorID invalid: contains non-alphanumeric character
+row 220: value invalid: not a valid number
+row 221: timestamp invalid: not a valid integer
+row 221: sensorID invalid: contains non-alphanumeric character
+row 221: value invalid: not a valid number
+row 222: timestamp invalid: not a valid integer
+row 222: sensorID invalid: contains non-alphanumeric character
+row 222: value invalid: not a valid number
+row 223: timestamp invalid: not a valid integer
+row 223: sensorID invalid: contains non-alphanumeric character
+row 223: value invalid: not a valid number
+row 224: timestamp invalid: not a valid integer
+row 224: sensorID invalid: contains non-alphanumeric character
+row 224: value invalid: not a valid number
+row 225: timestamp invalid: not a valid integer
+row 225: sensorID invalid: contains non-alphanumeric character
+row 225: value invalid: not a valid number
+row 226: timestamp invalid: not a valid integer
+row 226: sensorID invalid: contains non-alphanumeric character
+row 226: value invalid: not a valid number
+row 227: timestamp invalid: not a valid integer
+row 227: sensorID invalid: contains non-alphanumeric character
+row 227: value invalid: not a valid number
+row 228: timestamp invalid: not a valid integer
+row 228: sensorID invalid: contains non-alphanumeric character
+row 228: value invalid: not a valid number
+row 229: timestamp invalid: not a valid integer
+row 229: sensorID invalid: contains non-alphanumeric character
+row 229: value invalid: not a valid number
+row 230: timestamp invalid: not a valid integer
+row 230: sensorID invalid: contains non-alphanumeric character
+row 230: value invalid: not a valid number
+row 231: timestamp invalid: not a valid integer
+row 231: sensorID invalid: contains non-alphanumeric character
+row 231: value invalid: not a valid number
+row 232: timestamp invalid: not a valid integer
+row 232: sensorID invalid: contains non-alphanumeric character
+row 232: value invalid: not a valid number
+row 233: timestamp invalid: not a valid integer
+row 233: sensorID invalid: contains non-alphanumeric character
+row 233: value invalid: not a valid number
+row 234: timestamp invalid: not a valid integer
+row 234: sensorID invalid: contains non-alphanumeric character
+row 234: value invalid: not a valid number
+row 235: timestamp invalid: not a valid integer
+row 235: sensorID invalid: contains non-alphanumeric character
+row 235: value invalid: not a valid number
+row 236: timestamp invalid: not a valid integer
+row 236: sensorID invalid: contains non-alphanumeric character
+row 236: value invalid: not a valid number
+row 237: timestamp invalid: not a valid integer
+row 237: sensorID invalid: contains non-alphanumeric character
+row 237: value invalid: not a valid number
+row 238: timestamp invalid: not a valid integer
+row 238: sensorID invalid: contains non-alphanumeric character
+row 238: value invalid: not a valid number
+row 239: timestamp invalid: not a valid integer
+row 239: sensorID invalid: contains non-alphanumeric character
+row 239: value invalid: not a valid number
+row 240: timestamp invalid: not a valid integer
+row 240: sensorID invalid: contains non-alphanumeric character
+row 240: value invalid: not a valid number
+row 241: timestamp invalid: not a valid integer
+row 241: sensorID invalid: contains non-alphanumeric character
+row 241: value invalid: not a valid number
+row 242: timestamp invalid: not a valid integer
+row 242: sensorID invalid: contains non-alphanumeric character
+row 242: value invalid: not a valid number
+row 243: timestamp invalid: not a valid integer
+row 243: sensorID invalid: contains non-alphanumeric character
+row 243: value invalid: not a valid number
+row 244: timestamp invalid: not a valid integer
+row 244: sensorID invalid: contains non-alphanumeric character
+row 244: value invalid: not a valid number
+row 245: timestamp invalid: not a valid integer
+row 245: sensorID invalid: contains non-alphanumeric character
+row 245: value invalid: not a valid number
+row 246: timestamp invalid: not a valid integer
+row 246: sensorID invalid: contains non-alphanumeric character
+row 246: value invalid: not a valid number
+row 247: timestamp invalid: not a valid integer
+row 247: sensorID invalid: contains non-alphanumeric character
+row 247: value invalid: not a valid number
+row 248: timestamp invalid: not a valid integer
+row 248: sensorID invalid: contains non-alphanumeric character
+row 248: value invalid: not a valid number
+row 249: timestamp invalid: not a valid integer
+row 249: sensorID invalid: contains non-alphanumeric character
+row 249: value invalid: not a valid number
+row 250: timestamp invalid: not a valid integer
+row 250: sensorID invalid: contains non-alphanumeric character
+row 250: value invalid: not a valid number
+row 251: timestamp invalid: not a valid integer
+row 251: sensorID invalid: contains non-alphanumeric character
+row 251: value invalid: not a valid number
+row 252: timestamp invalid: not a valid integer
+row 252: sensorID invalid: contains non-alphanumeric character
+row 252: value invalid: not a valid number
+row 253: timestamp invalid: not a valid integer
+row 253: sensorID invalid: contains non-alphanumeric character
+row 253: value invalid: not a valid number
+row 254: timestamp invalid: not a valid integer
+row 254: sensorID invalid: contains non-alphanumeric character
+row 254: value invalid: not a valid number
+row 255: timestamp invalid: not a valid integer
+row 255: sensorID invalid: contains non-alphanumeric character
+row 255: value invalid: not a valid number
+row 256: timestamp invalid: not a valid integer
+row 256: sensorID invalid: contains non-alphanumeric character
+row 256: value invalid: not a valid number
+row 257: timestamp invalid: not a valid integer
+row 257: sensorID invalid: contains non-alphanumeric character
+row 257: value invalid: not a valid number
+row 258: timestamp invalid: not a valid integer
+row 258: sensorID invalid: contains non-alphanumeric character
+row 258: value invalid: not a valid number
+row 259: timestamp invalid: not a valid integer
+row 259: sensorID invalid: contains non-alphanumeric character
+row 259: value invalid: not a valid number
+row 260: timestamp invalid: not a valid integer
+row 260: sensorID invalid: contains non-alphanumeric character
+row 260: value invalid: not a valid number
+row 261: timestamp invalid: not a valid integer
+row 261: sensorID invalid: contains non-alphanumeric character
+row 261: value invalid: not a valid number
+row 262: timestamp invalid: not a valid integer
+row 262: sensorID invalid: contains non-alphanumeric character
+row 262: value invalid: not a valid number
+row 263: timestamp invalid: not a valid integer
+row 263: sensorID invalid: contains non-alphanumeric character
+row 263: value invalid: not a valid number
+row 264: timestamp invalid: not a valid integer
+row 264: sensorID invalid: contains non-alphanumeric character
+row 264: value invalid: not a valid number
+row 265: timestamp invalid: not a valid integer
+row 265: sensorID invalid: contains non-alphanumeric character
+row 265: value invalid: not a valid number
+row 266: timestamp invalid: not a valid integer
+row 266: sensorID invalid: contains non-alphanumeric character
+row 266: value invalid: not a valid number
+row 267: timestamp invalid: not a valid integer
+row 267: sensorID invalid: contains non-alphanumeric character
+row 267: value invalid: not a valid number
+row 268: timestamp invalid: not a valid integer
+row 268: sensorID invalid: contains non-alphanumeric character
+row 268: value invalid: not a valid number
+row 269: timestamp invalid: not a valid integer
+row 269: sensorID invalid: contains non-alphanumeric character
+row 269: value invalid: not a valid number
+row 270: timestamp invalid: not a valid integer
+row 270: sensorID invalid: contains non-alphanumeric character
+row 270: value invalid: not a valid number
+row 271: timestamp invalid: not a valid integer
+row 271: sensorID invalid: contains non-alphanumeric character
+row 271: value invalid: not a valid number
+row 272: timestamp invalid: not a valid integer
+row 272: sensorID invalid: contains non-alphanumeric character
+row 272: value invalid: not a valid number
+row 273: timestamp invalid: not a valid integer
+row 273: sensorID invalid: contains non-alphanumeric character
+row 273: value invalid: not a valid number
+row 274: timestamp invalid: not a valid integer
+row 274: sensorID invalid: contains non-alphanumeric character
+row 274: value invalid: not a valid number
+row 275: timestamp invalid: not a valid integer
+row 275: sensorID invalid: contains non-alphanumeric character
+row 275: value invalid: not a valid number
+row 276: timestamp invalid: not a valid integer
+row 276: sensorID invalid: contains non-alphanumeric character
+row 276: value invalid: not a valid number
+row 277: timestamp invalid: not a valid integer
+row 277: sensorID invalid: contains non-alphanumeric character
+row 277: value invalid: not a valid number
+row 278: timestamp invalid: not a valid integer
+row 278: sensorID invalid: contains non-alphanumeric character
+row 278: value invalid: not a valid number
+row 279: timestamp invalid: not a valid integer
+row 279: sensorID invalid: contains non-alphanumeric character
+row 279: value invalid: not a valid number
+row 280: timestamp invalid: not a valid integer
+row 280: sensorID invalid: contains non-alphanumeric character
+row 280: value invalid: not a valid number
+row 281: timestamp invalid: not a valid integer
+row 281: sensorID invalid: contains non-alphanumeric character
+row 281: value invalid: not a valid number
+row 282: timestamp invalid: not a valid integer
+row 282: sensorID invalid: contains non-alphanumeric character
+row 282: value invalid: not a valid number
+row 283: timestamp invalid: not a valid integer
+row 283: sensorID invalid: contains non-alphanumeric character
+row 283: value invalid: not a valid number
+row 284: timestamp invalid: not a valid integer
+row 284: sensorID invalid: contains non-alphanumeric character
+row 284: value invalid: not a valid number
+row 285: timestamp invalid: not a valid integer
+row 285: sensorID invalid: contains non-alphanumeric character
+row 285: value invalid: not a valid number
+row 286: timestamp invalid: not a valid integer
+row 286: sensorID invalid: contains non-alphanumeric character
+row 286: value invalid: not a valid number
+row 287: timestamp invalid: not a valid integer
+row 287: sensorID invalid: contains non-alphanumeric character
+row 287: value invalid: not a valid number
+row 288: timestamp invalid: not a valid integer
+row 288: sensorID invalid: contains non-alphanumeric character
+row 288: value invalid: not a valid number
+row 289: timestamp invalid: not a valid integer
+row 289: sensorID invalid: contains non-alphanumeric character
+row 289: value invalid: not a valid number
+row 290: timestamp invalid: not a valid integer
+row 290: sensorID invalid: contains non-alphanumeric character
+row 290: value invalid: not a valid number
+row 291: timestamp invalid: not a valid integer
+row 291: sensorID invalid: contains non-alphanumeric character
+row 291: value invalid: not a valid number
+row 292: timestamp invalid: not a valid integer
+row 292: sensorID invalid: contains non-alphanumeric character
+row 292: value invalid: not a valid number
+row 293: timestamp invalid: not a valid integer
+row 293: sensorID invalid: contains non-alphanumeric character
+row 293: value invalid: not a valid number
+row 294: timestamp invalid: not a valid integer
+row 294: sensorID invalid: contains non-alphanumeric character
+row 294: value invalid: not a valid number
+row 295: timestamp invalid: not a valid integer
+row 295: sensorID invalid: contains non-alphanumeric character
+row 295: value invalid: not a valid number
+row 296: timestamp invalid: not a valid integer
+row 296: sensorID invalid: contains non-alphanumeric character
+row 296: value invalid: not a valid number
+row 297: timestamp invalid: not a valid integer
+row 297: sensorID invalid: contains non-alphanumeric character
+row 297: value invalid: not a valid number
+row 298: timestamp invalid: not a valid integer
+row 298: sensorID invalid: contains non-alphanumeric character
+row 298: value invalid: not a valid number
+row 299: timestamp invalid: not a valid integer
+row 299: sensorID invalid: contains non-alphanumeric character
+row 299: value invalid: not a valid number
+row 300: timestamp invalid: not a valid integer
+row 300: sensorID invalid: contains non-alphanumeric character
+row 300: value invalid: not a valid number
+row 301: timestamp invalid: not a valid integer
+row 301: sensorID invalid: contains non-alphanumeric character
+row 301: value invalid: not a valid number
+row 302: timestamp invalid: not a valid integer
+row 302: sensorID invalid: contains non-alphanumeric character
+row 302: value invalid: not a valid number
+row 303: timestamp invalid: not a valid integer
+row 303: sensorID invalid: contains non-alphanumeric character
+row 303: value invalid: not a valid number
+row 304: timestamp invalid: not a valid integer
+row 304: sensorID invalid: contains non-alphanumeric character
+row 304: value invalid: not a valid number
+row 305: timestamp invalid: not a valid integer
+row 305: sensorID invalid: contains non-alphanumeric character
+row 305: value invalid: not a valid number
+row 306: timestamp invalid: not a valid integer
+row 306: sensorID invalid: contains non-alphanumeric character
+row 306: value invalid: not a valid number
+row 307: timestamp invalid: not a valid integer
+row 307: sensorID invalid: contains non-alphanumeric character
+row 307: value invalid: not a valid number
+row 308: timestamp invalid: not a valid integer
+row 308: sensorID invalid: contains non-alphanumeric character
+row 308: value invalid: not a valid number
+row 309: timestamp invalid: not a valid integer
+row 309: sensorID invalid: contains non-alphanumeric character
+row 309: value invalid: not a valid number
+row 310: timestamp invalid: not a valid integer
+row 310: sensorID invalid: contains non-alphanumeric character
+row 310: value invalid: not a valid number
+row 311: timestamp invalid: not a valid integer
+row 311: sensorID invalid: contains non-alphanumeric character
+row 311: value invalid: not a valid number
+row 312: timestamp invalid: not a valid integer
+row 312: sensorID invalid: contains non-alphanumeric character
+row 312: value invalid: not a valid number
+row 313: timestamp invalid: not a valid integer
+row 313: sensorID invalid: contains non-alphanumeric character
+row 313: value invalid: not a valid number
+row 314: timestamp invalid: not a valid integer
+row 314: sensorID invalid: contains non-alphanumeric character
+row 314: value invalid: not a valid number
+row 315: timestamp invalid: not a valid integer
+row 315: sensorID invalid: contains non-alphanumeric character
+row 315: value invalid: not a valid number
+row 316: timestamp invalid: not a valid integer
+row 316: sensorID invalid: contains non-alphanumeric character
+row 316: value invalid: not a valid number
+row 317: timestamp invalid: not a valid integer
+row 317: sensorID invalid: contains non-alphanumeric character
+row 317: value invalid: not a valid number
+row 318: timestamp invalid: not a valid integer
+row 318: sensorID invalid: contains non-alphanumeric character
+row 318: value invalid: not a valid number
+row 319: timestamp invalid: not a valid integer
+row 319: sensorID invalid: contains non-alphanumeric character
+row 319: value invalid: not a valid number
+row 320: timestamp invalid: not a valid integer
+row 320: sensorID invalid: contains non-alphanumeric character
+row 320: value invalid: not a valid number
+row 321: timestamp invalid: not a valid integer
+row 321: sensorID invalid: contains non-alphanumeric character
+row 321: value invalid: not a valid number
+row 322: timestamp invalid: not a valid integer
+row 322: sensorID invalid: contains non-alphanumeric character
+row 322: value invalid: not a valid number
+row 323: timestamp invalid: not a valid integer
+row 323: sensorID invalid: contains non-alphanumeric character
+row 323: value invalid: not a valid number
+row 324: timestamp invalid: not a valid integer
+row 324: sensorID invalid: contains non-alphanumeric character
+row 324: value invalid: not a valid number
+row 325: timestamp invalid: not a valid integer
+row 325: sensorID invalid: contains non-alphanumeric character
+row 325: value invalid: not a valid number
+row 326: timestamp invalid: not a valid integer
+row 326: sensorID invalid: contains non-alphanumeric character
+row 326: value invalid: not a valid number
+row 327: timestamp invalid: not a valid integer
+row 327: sensorID invalid: contains non-alphanumeric character
+row 327: value invalid: not a valid number
+row 328: timestamp invalid: not a valid integer
+row 328: sensorID invalid: contains non-alphanumeric character
+row 328: value invalid: not a valid number
+row 329: timestamp invalid: not a valid integer
+row 329: sensorID invalid: contains non-alphanumeric character
+row 329: value invalid: not a valid number
+row 330: timestamp invalid: not a valid integer
+row 330: sensorID invalid: contains non-alphanumeric character
+row 330: value invalid: not a valid number
+row 331: timestamp invalid: not a valid integer
+row 331: sensorID invalid: contains non-alphanumeric character
+row 331: value invalid: not a valid number
+row 332: timestamp invalid: not a valid integer
+row 332: sensorID invalid: contains non-alphanumeric character
+row 332: value invalid: not a valid number
+row 333: timestamp invalid: not a valid integer
+row 333: sensorID invalid: contains non-alphanumeric character
+row 333: value invalid: not a valid number
+row 334: timestamp invalid: not a valid integer
+row 334: sensorID invalid: contains non-alphanumeric character
+row 334: value invalid: not a valid number
+row 335: timestamp invalid: not a valid integer
+row 335: sensorID invalid: contains non-alphanumeric character
+row 335: value invalid: not a valid number
+row 336: timestamp invalid: not a valid integer
+row 336: sensorID invalid: contains non-alphanumeric character
+row 336: value invalid: not a valid number
+row 337: timestamp invalid: not a valid integer
+row 337: sensorID invalid: contains non-alphanumeric character
+row 337: value invalid: not a valid number
+row 338: timestamp invalid: not a valid integer
+row 338: sensorID invalid: contains non-alphanumeric character
+row 338: value invalid: not a valid number
+row 339: timestamp invalid: not a valid integer
+row 339: sensorID invalid: contains non-alphanumeric character
+row 339: value invalid: not a valid number
+row 340: timestamp invalid: not a valid integer
+row 340: sensorID invalid: contains non-alphanumeric character
+row 340: value invalid: not a valid number
+row 341: timestamp invalid: not a valid integer
+row 341: sensorID invalid: contains non-alphanumeric character
+row 341: value invalid: not a valid number
+row 342: timestamp invalid: not a valid integer
+row 342: sensorID invalid: contains non-alphanumeric character
+row 342: value invalid: not a valid number
+row 343: timestamp invalid: not a valid integer
+row 343: sensorID invalid: contains non-alphanumeric character
+row 343: value invalid: not a valid number
+row 344: timestamp invalid: not a valid integer
+row 344: sensorID invalid: contains non-alphanumeric character
+row 344: value invalid: not a valid number
+row 345: timestamp invalid: not a valid integer
+row 345: sensorID invalid: contains non-alphanumeric character
+row 345: value invalid: not a valid number
+row 346: timestamp invalid: not a valid integer
+row 346: sensorID invalid: contains non-alphanumeric character
+row 346: value invalid: not a valid number
+row 347: timestamp invalid: not a valid integer
+row 347: sensorID invalid: contains non-alphanumeric character
+row 347: value invalid: not a valid number
+row 348: timestamp invalid: not a valid integer
+row 348: sensorID invalid: contains non-alphanumeric character
+row 348: value invalid: not a valid number
+row 349: timestamp invalid: not a valid integer
+row 349: sensorID invalid: contains non-alphanumeric character
+row 349: value invalid: not a valid number
+row 350: timestamp invalid: not a valid integer
+row 350: sensorID invalid: contains non-alphanumeric character
+row 350: value invalid: not a valid number
+row 351: timestamp invalid: not a valid integer
+row 351: sensorID invalid: contains non-alphanumeric character
+row 351: value invalid: not a valid number
+row 352: timestamp invalid: not a valid integer
+row 352: sensorID invalid: contains non-alphanumeric character
+row 352: value invalid: not a valid number
+row 353: timestamp invalid: not a valid integer
+row 353: sensorID invalid: contains non-alphanumeric character
+row 353: value invalid: not a valid number
+row 354: timestamp invalid: not a valid integer
+row 354: sensorID invalid: contains non-alphanumeric character
+row 354: value invalid: not a valid number
+row 355: timestamp invalid: not a valid integer
+row 355: sensorID invalid: contains non-alphanumeric character
+row 355: value invalid: not a valid number
+row 356: timestamp invalid: not a valid integer
+row 356: sensorID invalid: contains non-alphanumeric character
+row 356: value invalid: not a valid number
+row 357: timestamp invalid: not a valid integer
+row 357: sensorID invalid: contains non-alphanumeric character
+row 357: value invalid: not a valid number
+row 358: timestamp invalid: not a valid integer
+row 358: sensorID invalid: contains non-alphanumeric character
+row 358: value invalid: not a valid number
+row 359: timestamp invalid: not a valid integer
+row 359: sensorID invalid: contains non-alphanumeric character
+row 359: value invalid: not a valid number
+row 360: timestamp invalid: not a valid integer
+row 360: sensorID invalid: contains non-alphanumeric character
+row 360: value invalid: not a valid number
+row 361: timestamp invalid: not a valid integer
+row 361: sensorID invalid: contains non-alphanumeric character
+row 361: value invalid: not a valid number
+row 362: timestamp invalid: not a valid integer
+row 362: sensorID invalid: contains non-alphanumeric character
+row 362: value invalid: not a valid number
+row 363: timestamp invalid: not a valid integer
+row 363: sensorID invalid: contains non-alphanumeric character
+row 363: value invalid: not a valid number
+row 364: timestamp invalid: not a valid integer
+row 364: sensorID invalid: contains non-alphanumeric character
+row 364: value invalid: not a valid number
+row 365: timestamp invalid: not a valid integer
+row 365: sensorID invalid: contains non-alphanumeric character
+row 365: value invalid: not a valid number
+row 366: timestamp invalid: not a valid integer
+row 366: sensorID invalid: contains non-alphanumeric character
+row 366: value invalid: not a valid number
+row 367: timestamp invalid: not a valid integer
+row 367: sensorID invalid: contains non-alphanumeric character
+row 367: value invalid: not a valid number
+row 368: timestamp invalid: not a valid integer
+row 368: sensorID invalid: contains non-alphanumeric character
+row 368: value invalid: not a valid number
+row 369: timestamp invalid: not a valid integer
+row 369: sensorID invalid: contains non-alphanumeric character
+row 369: value invalid: not a valid number
+row 370: timestamp invalid: not a valid integer
+row 370: sensorID invalid: contains non-alphanumeric character
+row 370: value invalid: not a valid number
+row 371: timestamp invalid: not a valid integer
+row 371: sensorID invalid: contains non-alphanumeric character
+row 371: value invalid: not a valid number
+row 372: timestamp invalid: not a valid integer
+row 372: sensorID invalid: contains non-alphanumeric character
+row 372: value invalid: not a valid number
+row 373: timestamp invalid: not a valid integer
+row 373: sensorID invalid: contains non-alphanumeric character
+row 373: value invalid: not a valid number
+row 374: timestamp invalid: not a valid integer
+row 374: sensorID invalid: contains non-alphanumeric character
+row 374: value invalid: not a valid number
+row 375: timestamp invalid: not a valid integer
+row 375: sensorID invalid: contains non-alphanumeric character
+row 375: value invalid: not a valid number
+row 376: timestamp invalid: not a valid integer
+row 376: sensorID invalid: contains non-alphanumeric character
+row 376: value invalid: not a valid number
+row 377: timestamp invalid: not a valid integer
+row 377: sensorID invalid: contains non-alphanumeric character
+row 377: value invalid: not a valid number
+row 378: timestamp invalid: not a valid integer
+row 378: sensorID invalid: contains non-alphanumeric character
+row 378: value invalid: not a valid number
+row 379: timestamp invalid: not a valid integer
+row 379: sensorID invalid: contains non-alphanumeric character
+row 379: value invalid: not a valid number
+row 380: timestamp invalid: not a valid integer
+row 380: sensorID invalid: contains non-alphanumeric character
+row 380: value invalid: not a valid number
+row 381: timestamp invalid: not a valid integer
+row 381: sensorID invalid: contains non-alphanumeric character
+row 381: value invalid: not a valid number
+row 382: timestamp invalid: not a valid integer
+row 382: sensorID invalid: contains non-alphanumeric character
+row 382: value invalid: not a valid number
+row 383: timestamp invalid: not a valid integer
+row 383: sensorID invalid: contains non-alphanumeric character
+row 383: value invalid: not a valid number
+row 384: timestamp invalid: not a valid integer
+row 384: sensorID invalid: contains non-alphanumeric character
+row 384: value invalid: not a valid number
+row 385: timestamp invalid: not a valid integer
+row 385: sensorID invalid: contains non-alphanumeric character
+row 385: value invalid: not a valid number
+row 386: timestamp invalid: not a valid integer
+row 386: sensorID invalid: contains non-alphanumeric character
+row 386: value invalid: not a valid number
+row 387: timestamp invalid: not a valid integer
+row 387: sensorID invalid: contains non-alphanumeric character
+row 387: value invalid: not a valid number
+row 388: timestamp invalid: not a valid integer
+row 388: sensorID invalid: contains non-alphanumeric character
+row 388: value invalid: not a valid number
+row 389: timestamp invalid: not a valid integer
+row 389: sensorID invalid: contains non-alphanumeric character
+row 389: value invalid: not a valid number
+row 390: timestamp invalid: not a valid integer
+row 390: sensorID invalid: contains non-alphanumeric character
+row 390: value invalid: not a valid number
+row 391: timestamp invalid: not a valid integer
+row 391: sensorID invalid: contains non-alphanumeric character
+row 391: value invalid: not a valid number
+row 392: timestamp invalid: not a valid integer
+row 392: sensorID invalid: contains non-alphanumeric character
+row 392: value invalid: not a valid number
+row 393: timestamp invalid: not a valid integer
+row 393: sensorID invalid: contains non-alphanumeric character
+row 393: value invalid: not a valid number
+row 394: timestamp invalid: not a valid integer
+row 394: sensorID invalid: contains non-alphanumeric character
+row 394: value invalid: not a valid number
+row 395: timestamp invalid: not a valid integer
+row 395: sensorID invalid: contains non-alphanumeric character
+row 395: value invalid: not a valid number
+row 396: timestamp invalid: not a valid integer
+row 396: sensorID invalid: contains non-alphanumeric character
+row 396: value invalid: not a valid number
+row 397: timestamp invalid: not a valid integer
+row 397: sensorID invalid: contains non-alphanumeric character
+row 397: value invalid: not a valid number
+row 398: timestamp invalid: not a valid integer
+row 398: sensorID invalid: contains non-alphanumeric character
+row 398: value invalid: not a valid number
+row 399: timestamp invalid: not a valid integer
+row 399: sensorID invalid: contains non-alphanumeric character
+row 399: value invalid: not a valid number
+row 400: timestamp invalid: not a valid integer
+row 400: sensorID invalid: contains non-alphanumeric character
+row 400: value invalid: not a valid number
+row 401: timestamp invalid: not a valid integer
+row 401: sensorID invalid: contains non-alphanumeric character
+row 401: value invalid: not a valid number
+row 402: timestamp invalid: not a valid integer
+row 402: sensorID invalid: contains non-alphanumeric character
+row 402: value invalid: not a valid number
+row 403: timestamp invalid: not a valid integer
+row 403: sensorID invalid: contains non-alphanumeric character
+row 403: value invalid: not a valid number
+row 404: timestamp invalid: not a valid integer
+row 404: sensorID invalid: contains non-alphanumeric character
+row 404: value invalid: not a valid number
+row 405: timestamp invalid: not a valid integer
+row 405: sensorID invalid: contains non-alphanumeric character
+row 405: value invalid: not a valid number
+row 406: timestamp invalid: not a valid integer
+row 406: sensorID invalid: contains non-alphanumeric character
+row 406: value invalid: not a valid number
+row 407: timestamp invalid: not a valid integer
+row 407: sensorID invalid: contains non-alphanumeric character
+row 407: value invalid: not a valid number
+row 408: timestamp invalid: not a valid integer
+row 408: sensorID invalid: contains non-alphanumeric character
+row 408: value invalid: not a valid number
+row 409: timestamp invalid: not a valid integer
+row 409: sensorID invalid: contains non-alphanumeric character
+row 409: value invalid: not a valid number
+row 410: timestamp invalid: not a valid integer
+row 410: sensorID invalid: contains non-alphanumeric character
+row 410: value invalid: not a valid number
+row 411: timestamp invalid: not a valid integer
+row 411: sensorID invalid: contains non-alphanumeric character
+row 411: value invalid: not a valid number
+row 412: timestamp invalid: not a valid integer
+row 412: sensorID invalid: contains non-alphanumeric character
+row 412: value invalid: not a valid number
+row 413: timestamp invalid: not a valid integer
+row 413: sensorID invalid: contains non-alphanumeric character
+row 413: value invalid: not a valid number
+row 414: timestamp invalid: not a valid integer
+row 414: sensorID invalid: contains non-alphanumeric character
+row 414: value invalid: not a valid number
+row 415: timestamp invalid: not a valid integer
+row 415: sensorID invalid: contains non-alphanumeric character
+row 415: value invalid: not a valid number
+row 416: timestamp invalid: not a valid integer
+row 416: sensorID invalid: contains non-alphanumeric character
+row 416: value invalid: not a valid number
+row 417: timestamp invalid: not a valid integer
+row 417: sensorID invalid: contains non-alphanumeric character
+row 417: value invalid: not a valid number
+row 418: timestamp invalid: not a valid integer
+row 418: sensorID invalid: contains non-alphanumeric character
+row 418: value invalid: not a valid number
+row 419: timestamp invalid: not a valid integer
+row 419: sensorID invalid: contains non-alphanumeric character
+row 419: value invalid: not a valid number
+row 420: timestamp invalid: not a valid integer
+row 420: sensorID invalid: contains non-alphanumeric character
+row 420: value invalid: not a valid number
+row 421: timestamp invalid: not a valid integer
+row 421: sensorID invalid: contains non-alphanumeric character
+row 421: value invalid: not a valid number
+row 422: timestamp invalid: not a valid integer
+row 422: sensorID invalid: contains non-alphanumeric character
+row 422: value invalid: not a valid number
+row 423: timestamp invalid: not a valid integer
+row 423: sensorID invalid: contains non-alphanumeric character
+row 423: value invalid: not a valid number
+row 424: timestamp invalid: not a valid integer
+row 424: sensorID invalid: contains non-alphanumeric character
+row 424: value invalid: not a valid number
+row 425: timestamp invalid: not a valid integer
+row 425: sensorID invalid: contains non-alphanumeric character
+row 425: value invalid: not a valid number
+row 426: timestamp invalid: not a valid integer
+row 426: sensorID invalid: contains non-alphanumeric character
+row 426: value invalid: not a valid number
+row 427: timestamp invalid: not a valid integer
+row 427: sensorID invalid: contains non-alphanumeric character
+row 427: value invalid: not a valid number
+row 428: timestamp invalid: not a valid integer
+row 428: sensorID invalid: contains non-alphanumeric character
+row 428: value invalid: not a valid number
+row 429: timestamp invalid: not a valid integer
+row 429: sensorID invalid: contains non-alphanumeric character
+row 429: value invalid: not a valid number
+row 430: timestamp invalid: not a valid integer
+row 430: sensorID invalid: contains non-alphanumeric character
+row 430: value invalid: not a valid number
+row 431: timestamp invalid: not a valid integer
+row 431: sensorID invalid: contains non-alphanumeric character
+row 431: value invalid: not a valid number
+row 432: timestamp invalid: not a valid integer
+row 432: sensorID invalid: contains non-alphanumeric character
+row 432: value invalid: not a valid number
+row 433: timestamp invalid: not a valid integer
+row 433: sensorID invalid: contains non-alphanumeric character
+row 433: value invalid: not a valid number
+row 434: timestamp invalid: not a valid integer
+row 434: sensorID invalid: contains non-alphanumeric character
+row 434: value invalid: not a valid number
+row 435: timestamp invalid: not a valid integer
+row 435: sensorID invalid: contains non-alphanumeric character
+row 435: value invalid: not a valid number
+row 436: timestamp invalid: not a valid integer
+row 436: sensorID invalid: contains non-alphanumeric character
+row 436: value invalid: not a valid number
+row 437: timestamp invalid: not a valid integer
+row 437: sensorID invalid: contains non-alphanumeric character
+row 437: value invalid: not a valid number
+row 438: timestamp invalid: not a valid integer
+row 438: sensorID invalid: contains non-alphanumeric character
+row 438: value invalid: not a valid number
+row 439: timestamp invalid: not a valid integer
+row 439: sensorID invalid: contains non-alphanumeric character
+row 439: value invalid: not a valid number
+row 440: timestamp invalid: not a valid integer
+row 440: sensorID invalid: contains non-alphanumeric character
+row 440: value invalid: not a valid number
+row 441: timestamp invalid: not a valid integer
+row 441: sensorID invalid: contains non-alphanumeric character
+row 441: value invalid: not a valid number
+row 442: timestamp invalid: not a valid integer
+row 442: sensorID invalid: contains non-alphanumeric character
+row 442: value invalid: not a valid number
+row 443: timestamp invalid: not a valid integer
+row 443: sensorID invalid: contains non-alphanumeric character
+row 443: value invalid: not a valid number
+row 444: timestamp invalid: not a valid integer
+row 444: sensorID invalid: contains non-alphanumeric character
+row 444: value invalid: not a valid number
+row 445: timestamp invalid: not a valid integer
+row 445: sensorID invalid: contains non-alphanumeric character
+row 445: value invalid: not a valid number
+row 446: timestamp invalid: not a valid integer
+row 446: sensorID invalid: contains non-alphanumeric character
+row 446: value invalid: not a valid number
+row 447: timestamp invalid: not a valid integer
+row 447: sensorID invalid: contains non-alphanumeric character
+row 447: value invalid: not a valid number
+row 448: timestamp invalid: not a valid integer
+row 448: sensorID invalid: contains non-alphanumeric character
+row 448: value invalid: not a valid number
+row 449: timestamp invalid: not a valid integer
+row 449: sensorID invalid: contains non-alphanumeric character
+row 449: value invalid: not a valid number
+row 450: timestamp invalid: not a valid integer
+row 450: sensorID invalid: contains non-alphanumeric character
+row 450: value invalid: not a valid number
+row 451: timestamp invalid: not a valid integer
+row 451: sensorID invalid: contains non-alphanumeric character
+row 451: value invalid: not a valid number
+row 452: timestamp invalid: not a valid integer
+row 452: sensorID invalid: contains non-alphanumeric character
+row 452: value invalid: not a valid number
+row 453: timestamp invalid: not a valid integer
+row 453: sensorID invalid: contains non-alphanumeric character
+row 453: value invalid: not a valid number
+row 454: timestamp invalid: not a valid integer
+row 454: sensorID invalid: contains non-alphanumeric character
+row 454: value invalid: not a valid number
+row 455: timestamp invalid: not a valid integer
+row 455: sensorID invalid: contains non-alphanumeric character
+row 455: value invalid: not a valid number
+row 456: timestamp invalid: not a valid integer
+row 456: sensorID invalid: contains non-alphanumeric character
+row 456: value invalid: not a valid number
+row 457: timestamp invalid: not a valid integer
+row 457: sensorID invalid: contains non-alphanumeric character
+row 457: value invalid: not a valid number
+row 458: timestamp invalid: not a valid integer
+row 458: sensorID invalid: contains non-alphanumeric character
+row 458: value invalid: not a valid number
+row 459: timestamp invalid: not a valid integer
+row 459: sensorID invalid: contains non-alphanumeric character
+row 459: value invalid: not a valid number
+row 460: timestamp invalid: not a valid integer
+row 460: sensorID invalid: contains non-alphanumeric character
+row 460: value invalid: not a valid number
+row 461: timestamp invalid: not a valid integer
+row 461: sensorID invalid: contains non-alphanumeric character
+row 461: value invalid: not a valid number
+row 462: timestamp invalid: not a valid integer
+row 462: sensorID invalid: contains non-alphanumeric character
+row 462: value invalid: not a valid number
+row 463: timestamp invalid: not a valid integer
+row 463: sensorID invalid: contains non-alphanumeric character
+row 463: value invalid: not a valid number
+row 464: timestamp invalid: not a valid integer
+row 464: sensorID invalid: contains non-alphanumeric character
+row 464: value invalid: not a valid number
+row 465: timestamp invalid: not a valid integer
+row 465: sensorID invalid: contains non-alphanumeric character
+row 465: value invalid: not a valid number
+row 466: timestamp invalid: not a valid integer
+row 466: sensorID invalid: contains non-alphanumeric character
+row 466: value invalid: not a valid number
+row 467: timestamp invalid: not a valid integer
+row 467: sensorID invalid: contains non-alphanumeric character
+row 467: value invalid: not a valid number
+row 468: timestamp invalid: not a valid integer
+row 468: sensorID invalid: contains non-alphanumeric character
+row 468: value invalid: not a valid number
+row 469: timestamp invalid: not a valid integer
+row 469: sensorID invalid: contains non-alphanumeric character
+row 469: value invalid: not a valid number
+row 470: timestamp invalid: not a valid integer
+row 470: sensorID invalid: contains non-alphanumeric character
+row 470: value invalid: not a valid number
+row 471: timestamp invalid: not a valid integer
+row 471: sensorID invalid: contains non-alphanumeric character
+row 471: value invalid: not a valid number
+row 472: timestamp invalid: not a valid integer
+row 472: sensorID invalid: contains non-alphanumeric character
+row 472: value invalid: not a valid number
+row 473: timestamp invalid: not a valid integer
+row 473: sensorID invalid: contains non-alphanumeric character
+row 473: value invalid: not a valid number
+row 474: timestamp invalid: not a valid integer
+row 474: sensorID invalid: contains non-alphanumeric character
+row 474: value invalid: not a valid number
+row 475: timestamp invalid: not a valid integer
+row 475: sensorID invalid: contains non-alphanumeric character
+row 475: value invalid: not a valid number
+row 476: timestamp invalid: not a valid integer
+row 476: sensorID invalid: contains non-alphanumeric character
+row 476: value invalid: not a valid number
+row 477: timestamp invalid: not a valid integer
+row 477: sensorID invalid: contains non-alphanumeric character
+row 477: value invalid: not a valid number
+row 478: timestamp invalid: not a valid integer
+row 478: sensorID invalid: contains non-alphanumeric character
+row 478: value invalid: not a valid number
+row 479: timestamp invalid: not a valid integer
+row 479: sensorID invalid: contains non-alphanumeric character
+row 479: value invalid: not a valid number
+row 480: timestamp invalid: not a valid integer
+row 480: sensorID invalid: contains non-alphanumeric character
+row 480: value invalid: not a valid number
+row 481: timestamp invalid: not a valid integer
+row 481: sensorID invalid: contains non-alphanumeric character
+row 481: value invalid: not a valid number
+row 482: timestamp invalid: not a valid integer
+row 482: sensorID invalid: contains non-alphanumeric character
+row 482: value invalid: not a valid number
+row 483: timestamp invalid: not a valid integer
+row 483: sensorID invalid: contains non-alphanumeric character
+row 483: value invalid: not a valid number
+row 484: timestamp invalid: not a valid integer
+row 484: sensorID invalid: contains non-alphanumeric character
+row 484: value invalid: not a valid number
+row 485: timestamp invalid: not a valid integer
+row 485: sensorID invalid: contains non-alphanumeric character
+row 485: value invalid: not a valid number
+row 486: timestamp invalid: not a valid integer
+row 486: sensorID invalid: contains non-alphanumeric character
+row 486: value invalid: not a valid number
+row 487: timestamp invalid: not a valid integer
+row 487: sensorID invalid: contains non-alphanumeric character
+row 487: value invalid: not a valid number
+row 488: timestamp invalid: not a valid integer
+row 488: sensorID invalid: contains non-alphanumeric character
+row 488: value invalid: not a valid number
+row 489: timestamp invalid: not a valid integer
+row 489: sensorID invalid: contains non-alphanumeric character
+row 489: value invalid: not a valid number
+row 490: timestamp invalid: not a valid integer
+row 490: sensorID invalid: contains non-alphanumeric character
+row 490: value invalid: not a valid number
+row 491: timestamp invalid: not a valid integer
+row 491: sensorID invalid: contains non-alphanumeric character
+row 491: value invalid: not a valid number
+row 492: timestamp invalid: not a valid integer
+row 492: sensorID invalid: contains non-alphanumeric character
+row 492: value invalid: not a valid number
+row 493: timestamp invalid: not a valid integer
+row 493: sensorID invalid: contains non-alphanumeric character
+row 493: value invalid: not a valid number
+row 494: timestamp invalid: not a valid integer
+row 494: sensorID invalid: contains non-alphanumeric character
+row 494: value invalid: not a valid number
+row 495: timestamp invalid: not a valid integer
+row 495: sensorID invalid: contains non-alphanumeric character
+row 495: value invalid: not a valid number
+row 496: timestamp invalid: not a valid integer
+row 496: sensorID invalid: contains non-alphanumeric character
+row 496: value invalid: not a valid number
+row 497: timestamp invalid: not a valid integer
+row 497: sensorID invalid: contains non-alphanumeric character
+row 497: value invalid: not a valid number
+row 498: timestamp invalid: not a valid integer
+row 498: sensorID invalid: contains non-alphanumeric character
+row 498: value invalid: not a valid number
+row 499: timestamp invalid: not a valid integer
+row 499: sensorID invalid: contains non-alphanumeric character
+row 499: value invalid: not a valid number
+row 500: timestamp invalid: not a valid integer
+row 500: sensorID invalid: contains non-alphanumeric character
+row 500: value invalid: not a valid number
+row 501: timestamp invalid: not a valid integer
+row 501: sensorID invalid: contains non-alphanumeric character
+row 501: value invalid: not a valid number
+row 502: timestamp invalid: not a valid integer
+row 502: sensorID invalid: contains non-alphanumeric character
+row 502: value invalid: not a valid number
+row 503: timestamp invalid: not a valid integer
+row 503: sensorID invalid: contains non-alphanumeric character
+row 503: value invalid: not a valid number
+row 504: timestamp invalid: not a valid integer
+row 504: sensorID invalid: contains non-alphanumeric character
+row 504: value invalid: not a valid number
+row 505: timestamp invalid: not a valid integer
+row 505: sensorID invalid: contains non-alphanumeric character
+row 505: value invalid: not a valid number
+row 506: timestamp invalid: not a valid integer
+row 506: sensorID invalid: contains non-alphanumeric character
+row 506: value invalid: not a valid number
+row 507: timestamp invalid: not a valid integer
+row 507: sensorID invalid: contains non-alphanumeric character
+row 507: value invalid: not a valid number
+row 508: timestamp invalid: not a valid integer
+row 508: sensorID invalid: contains non-alphanumeric character
+row 508: value invalid: not a valid number
+row 509: timestamp invalid: not a valid integer
+row 509: sensorID invalid: contains non-alphanumeric character
+row 509: value invalid: not a valid number
+row 510: timestamp invalid: not a valid integer
+row 510: sensorID invalid: contains non-alphanumeric character
+row 510: value invalid: not a valid number
+row 511: timestamp invalid: not a valid integer
+row 511: sensorID invalid: contains non-alphanumeric character
+row 511: value invalid: not a valid number
+row 512: timestamp invalid: not a valid integer
+row 512: sensorID invalid: contains non-alphanumeric character
+row 512: value invalid: not a valid number
+row 513: timestamp invalid: not a valid integer
+row 513: sensorID invalid: contains non-alphanumeric character
+row 513: value invalid: not a valid number
+row 514: timestamp invalid: not a valid integer
+row 514: sensorID invalid: contains non-alphanumeric character
+row 514: value invalid: not a valid number
+row 515: timestamp invalid: not a valid integer
+row 515: sensorID invalid: contains non-alphanumeric character
+row 515: value invalid: not a valid number
+row 516: timestamp invalid: not a valid integer
+row 516: sensorID invalid: contains non-alphanumeric character
+row 516: value invalid: not a valid number
+row 517: timestamp invalid: not a valid integer
+row 517: sensorID invalid: contains non-alphanumeric character
+row 517: value invalid: not a valid number
+row 518: timestamp invalid: not a valid integer
+row 518: sensorID invalid: contains non-alphanumeric character
+row 518: value invalid: not a valid number
+row 519: timestamp invalid: not a valid integer
+row 519: sensorID invalid: contains non-alphanumeric character
+row 519: value invalid: not a valid number
+row 520: timestamp invalid: not a valid integer
+row 520: sensorID invalid: contains non-alphanumeric character
+row 520: value invalid: not a valid number
+row 521: timestamp invalid: not a valid integer
+row 521: sensorID invalid: contains non-alphanumeric character
+row 521: value invalid: not a valid number
+row 522: timestamp invalid: not a valid integer
+row 522: sensorID invalid: contains non-alphanumeric character
+row 522: value invalid: not a valid number
+row 523: timestamp invalid: not a valid integer
+row 523: sensorID invalid: contains non-alphanumeric character
+row 523: value invalid: not a valid number
+row 524: timestamp invalid: not a valid integer
+row 524: sensorID invalid: contains non-alphanumeric character
+row 524: value invalid: not a valid number
+row 525: timestamp invalid: not a valid integer
+row 525: sensorID invalid: contains non-alphanumeric character
+row 525: value invalid: not a valid number
+row 526: timestamp invalid: not a valid integer
+row 526: sensorID invalid: contains non-alphanumeric character
+row 526: value invalid: not a valid number
+row 527: timestamp invalid: not a valid integer
+row 527: sensorID invalid: contains non-alphanumeric character
+row 527: value invalid: not a valid number
+row 528: timestamp invalid: not a valid integer
+row 528: sensorID invalid: contains non-alphanumeric character
+row 528: value invalid: not a valid number
+row 529: timestamp invalid: not a valid integer
+row 529: sensorID invalid: contains non-alphanumeric character
+row 529: value invalid: not a valid number
+row 530: timestamp invalid: not a valid integer
+row 530: sensorID invalid: contains non-alphanumeric character
+row 530: value invalid: not a valid number
+row 531: timestamp invalid: not a valid integer
+row 531: sensorID invalid: contains non-alphanumeric character
+row 531: value invalid: not a valid number
+row 532: timestamp invalid: not a valid integer
+row 532: sensorID invalid: contains non-alphanumeric character
+row 532: value invalid: not a valid number
+row 533: timestamp invalid: not a valid integer
+row 533: sensorID invalid: contains non-alphanumeric character
+row 533: value invalid: not a valid number
+row 534: timestamp invalid: not a valid integer
+row 534: sensorID invalid: contains non-alphanumeric character
+row 534: value invalid: not a valid number
+row 535: timestamp invalid: not a valid integer
+row 535: sensorID invalid: contains non-alphanumeric character
+row 535: value invalid: not a valid number
+row 536: timestamp invalid: not a valid integer
+row 536: sensorID invalid: contains non-alphanumeric character
+row 536: value invalid: not a valid number
+row 537: timestamp invalid: not a valid integer
+row 537: sensorID invalid: contains non-alphanumeric character
+row 537: value invalid: not a valid number
+row 538: timestamp invalid: not a valid integer
+row 538: sensorID invalid: contains non-alphanumeric character
+row 538: value invalid: not a valid number
+row 539: timestamp invalid: not a valid integer
+row 539: sensorID invalid: contains non-alphanumeric character
+row 539: value invalid: not a valid number
+row 540: timestamp invalid: not a valid integer
+row 540: sensorID invalid: contains non-alphanumeric character
+row 540: value invalid: not a valid number
+row 541: timestamp invalid: not a valid integer
+row 541: sensorID invalid: contains non-alphanumeric character
+row 541: value invalid: not a valid number
+row 542: timestamp invalid: not a valid integer
+row 542: sensorID invalid: contains non-alphanumeric character
+row 542: value invalid: not a valid number
+row 543: timestamp invalid: not a valid integer
+row 543: sensorID invalid: contains non-alphanumeric character
+row 543: value invalid: not a valid number
+row 544: timestamp invalid: not a valid integer
+row 544: sensorID invalid: contains non-alphanumeric character
+row 544: value invalid: not a valid number
+row 545: timestamp invalid: not a valid integer
+row 545: sensorID invalid: contains non-alphanumeric character
+row 545: value invalid: not a valid number
+row 546: timestamp invalid: not a valid integer
+row 546: sensorID invalid: contains non-alphanumeric character
+row 546: value invalid: not a valid number
+row 547: timestamp invalid: not a valid integer
+row 547: sensorID invalid: contains non-alphanumeric character
+row 547: value invalid: not a valid number
+row 548: timestamp invalid: not a valid integer
+row 548: sensorID invalid: contains non-alphanumeric character
+row 548: value invalid: not a valid number
+row 549: timestamp invalid: not a valid integer
+row 549: sensorID invalid: contains non-alphanumeric character
+row 549: value invalid: not a valid number
+row 550: timestamp invalid: not a valid integer
+row 550: sensorID invalid: contains non-alphanumeric character
+row 550: value invalid: not a valid number
+row 551: timestamp invalid: not a valid integer
+row 551: sensorID invalid: contains non-alphanumeric character
+row 551: value invalid: not a valid number
+row 552: timestamp invalid: not a valid integer
+row 552: sensorID invalid: contains non-alphanumeric character
+row 552: value invalid: not a valid number
+row 553: timestamp invalid: not a valid integer
+row 553: sensorID invalid: contains non-alphanumeric character
+row 553: value invalid: not a valid number
+row 554: timestamp invalid: not a valid integer
+row 554: sensorID invalid: contains non-alphanumeric character
+row 554: value invalid: not a valid number
+row 555: timestamp invalid: not a valid integer
+row 555: sensorID invalid: contains non-alphanumeric character
+row 555: value invalid: not a valid number
+row 556: timestamp invalid: not a valid integer
+row 556: sensorID invalid: contains non-alphanumeric character
+row 556: value invalid: not a valid number
+row 557: timestamp invalid: not a valid integer
+row 557: sensorID invalid: contains non-alphanumeric character
+row 557: value invalid: not a valid number
+row 558: timestamp invalid: not a valid integer
+row 558: sensorID invalid: contains non-alphanumeric character
+row 558: value invalid: not a valid number
+row 559: timestamp invalid: not a valid integer
+row 559: sensorID invalid: contains non-alphanumeric character
+row 559: value invalid: not a valid number
+row 560: timestamp invalid: not a valid integer
+row 560: sensorID invalid: contains non-alphanumeric character
+row 560: value invalid: not a valid number
+row 561: timestamp invalid: not a valid integer
+row 561: sensorID invalid: contains non-alphanumeric character
+row 561: value invalid: not a valid number
+row 562: timestamp invalid: not a valid integer
+row 562: sensorID invalid: contains non-alphanumeric character
+row 562: value invalid: not a valid number
+row 563: timestamp invalid: not a valid integer
+row 563: sensorID invalid: contains non-alphanumeric character
+row 563: value invalid: not a valid number
+row 564: timestamp invalid: not a valid integer
+row 564: sensorID invalid: contains non-alphanumeric character
+row 564: value invalid: not a valid number
+row 565: timestamp invalid: not a valid integer
+row 565: sensorID invalid: contains non-alphanumeric character
+row 565: value invalid: not a valid number
+row 566: timestamp invalid: not a valid integer
+row 566: sensorID invalid: contains non-alphanumeric character
+row 566: value invalid: not a valid number
+row 567: timestamp invalid: not a valid integer
+row 567: sensorID invalid: contains non-alphanumeric character
+row 567: value invalid: not a valid number
+row 568: timestamp invalid: not a valid integer
+row 568: sensorID invalid: contains non-alphanumeric character
+row 568: value invalid: not a valid number
+row 569: timestamp invalid: not a valid integer
+row 569: sensorID invalid: contains non-alphanumeric character
+row 569: value invalid: not a valid number
+row 570: timestamp invalid: not a valid integer
+row 570: sensorID invalid: contains non-alphanumeric character
+row 570: value invalid: not a valid number
+row 571: timestamp invalid: not a valid integer
+row 571: sensorID invalid: contains non-alphanumeric character
+row 571: value invalid: not a valid number
+row 572: timestamp invalid: not a valid integer
+row 572: sensorID invalid: contains non-alphanumeric character
+row 572: value invalid: not a valid number
+row 573: timestamp invalid: not a valid integer
+row 573: sensorID invalid: contains non-alphanumeric character
+row 573: value invalid: not a valid number
+row 574: timestamp invalid: not a valid integer
+row 574: sensorID invalid: contains non-alphanumeric character
+row 574: value invalid: not a valid number
+row 575: timestamp invalid: not a valid integer
+row 575: sensorID invalid: contains non-alphanumeric character
+row 575: value invalid: not a valid number
+row 576: timestamp invalid: not a valid integer
+row 576: sensorID invalid: contains non-alphanumeric character
+row 576: value invalid: not a valid number
+row 577: timestamp invalid: not a valid integer
+row 577: sensorID invalid: contains non-alphanumeric character
+row 577: value invalid: not a valid number
+row 578: timestamp invalid: not a valid integer
+row 578: sensorID invalid: contains non-alphanumeric character
+row 578: value invalid: not a valid number
+row 579: timestamp invalid: not a valid integer
+row 579: sensorID invalid: contains non-alphanumeric character
+row 579: value invalid: not a valid number
+row 580: timestamp invalid: not a valid integer
+row 580: sensorID invalid: contains non-alphanumeric character
+row 580: value invalid: not a valid number
+row 581: timestamp invalid: not a valid integer
+row 581: sensorID invalid: contains non-alphanumeric character
+row 581: value invalid: not a valid number
+row 582: timestamp invalid: not a valid integer
+row 582: sensorID invalid: contains non-alphanumeric character
+row 582: value invalid: not a valid number
+row 583: timestamp invalid: not a valid integer
+row 583: sensorID invalid: contains non-alphanumeric character
+row 583: value invalid: not a valid number
+row 584: timestamp invalid: not a valid integer
+row 584: sensorID invalid: contains non-alphanumeric character
+row 584: value invalid: not a valid number
+row 585: timestamp invalid: not a valid integer
+row 585: sensorID invalid: contains non-alphanumeric character
+row 585: value invalid: not a valid number
+row 586: timestamp invalid: not a valid integer
+row 586: sensorID invalid: contains non-alphanumeric character
+row 586: value invalid: not a valid number
+row 587: timestamp invalid: not a valid integer
+row 587: sensorID invalid: contains non-alphanumeric character
+row 587: value invalid: not a valid number
+row 588: timestamp invalid: not a valid integer
+row 588: sensorID invalid: contains non-alphanumeric character
+row 588: value invalid: not a valid number
+row 589: timestamp invalid: not a valid integer
+row 589: sensorID invalid: contains non-alphanumeric character
+row 589: value invalid: not a valid number
+row 590: timestamp invalid: not a valid integer
+row 590: sensorID invalid: contains non-alphanumeric character
+row 590: value invalid: not a valid number
+row 591: timestamp invalid: not a valid integer
+row 591: sensorID invalid: contains non-alphanumeric character
+row 591: value invalid: not a valid number
+row 592: timestamp invalid: not a valid integer
+row 592: sensorID invalid: contains non-alphanumeric character
+row 592: value invalid: not a valid number
+row 593: timestamp invalid: not a valid integer
+row 593: sensorID invalid: contains non-alphanumeric character
+row 593: value invalid: not a valid number
+row 594: timestamp invalid: not a valid integer
+row 594: sensorID invalid: contains non-alphanumeric character
+row 594: value invalid: not a valid number
+row 595: timestamp invalid: not a valid integer
+row 595: sensorID invalid: contains non-alphanumeric character
+row 595: value invalid: not a valid number
+row 596: timestamp invalid: not a valid integer
+row 596: sensorID invalid: contains non-alphanumeric character
+row 596: value invalid: not a valid number
+row 597: timestamp invalid: not a valid integer
+row 597: sensorID invalid: contains non-alphanumeric character
+row 597: value invalid: not a valid number
+row 598: timestamp invalid: not a valid integer
+row 598: sensorID invalid: contains non-alphanumeric character
+row 598: value invalid: not a valid number
+row 599: timestamp invalid: not a valid integer
+row 599: sensorID invalid: contains non-alphanumeric character
+row 599: value invalid: not a valid number
+row 600: timestamp invalid: not a valid integer
+row 600: sensorID invalid: contains non-alphanumeric character
+row 600: value invalid: not a valid number
+row 601: timestamp invalid: not a valid integer
+row 601: sensorID invalid: contains non-alphanumeric character
+row 601: value invalid: not a valid number
+row 602: timestamp invalid: not a valid integer
+row 602: sensorID invalid: contains non-alphanumeric character
+row 602: value invalid: not a valid number
+row 603: timestamp invalid: not a valid integer
+row 603: sensorID invalid: contains non-alphanumeric character
+row 603: value invalid: not a valid number
+row 604: timestamp invalid: not a valid integer
+row 604: sensorID invalid: contains non-alphanumeric character
+row 604: value invalid: not a valid number
+row 605: timestamp invalid: not a valid integer
+row 605: sensorID invalid: contains non-alphanumeric character
+row 605: value invalid: not a valid number
+row 606: timestamp invalid: not a valid integer
+row 606: sensorID invalid: contains non-alphanumeric character
+row 606: value invalid: not a valid number
+row 607: timestamp invalid: not a valid integer
+row 607: sensorID invalid: contains non-alphanumeric character
+row 607: value invalid: not a valid number
+row 608: timestamp invalid: not a valid integer
+row 608: sensorID invalid: contains non-alphanumeric character
+row 608: value invalid: not a valid number
+row 609: timestamp invalid: not a valid integer
+row 609: sensorID invalid: contains non-alphanumeric character
+row 609: value invalid: not a valid number
+row 610: timestamp invalid: not a valid integer
+row 610: sensorID invalid: contains non-alphanumeric character
+row 610: value invalid: not a valid number
+row 611: timestamp invalid: not a valid integer
+row 611: sensorID invalid: contains non-alphanumeric character
+row 611: value invalid: not a valid number
+row 612: timestamp invalid: not a valid integer
+row 612: sensorID invalid: contains non-alphanumeric character
+row 612: value invalid: not a valid number
+row 613: timestamp invalid: not a valid integer
+row 613: sensorID invalid: contains non-alphanumeric character
+row 613: value invalid: not a valid number
+row 614: timestamp invalid: not a valid integer
+row 614: sensorID invalid: contains non-alphanumeric character
+row 614: value invalid: not a valid number
+row 615: timestamp invalid: not a valid integer
+row 615: sensorID invalid: contains non-alphanumeric character
+row 615: value invalid: not a valid number
+row 616: timestamp invalid: not a valid integer
+row 616: sensorID invalid: contains non-alphanumeric character
+row 616: value invalid: not a valid number
+row 617: timestamp invalid: not a valid integer
+row 617: sensorID invalid: contains non-alphanumeric character
+row 617: value invalid: not a valid number
+row 618: timestamp invalid: not a valid integer
+row 618: sensorID invalid: contains non-alphanumeric character
+row 618: value invalid: not a valid number
+row 619: timestamp invalid: not a valid integer
+row 619: sensorID invalid: contains non-alphanumeric character
+row 619: value invalid: not a valid number
+row 620: timestamp invalid: not a valid integer
+row 620: sensorID invalid: contains non-alphanumeric character
+row 620: value invalid: not a valid number
+row 621: timestamp invalid: not a valid integer
+row 621: sensorID invalid: contains non-alphanumeric character
+row 621: value invalid: not a valid number
+row 622: timestamp invalid: not a valid integer
+row 622: sensorID invalid: contains non-alphanumeric character
+row 622: value invalid: not a valid number
+row 623: timestamp invalid: not a valid integer
+row 623: sensorID invalid: contains non-alphanumeric character
+row 623: value invalid: not a valid number
+row 624: timestamp invalid: not a valid integer
+row 624: sensorID invalid: contains non-alphanumeric character
+row 624: value invalid: not a valid number
+row 625: timestamp invalid: not a valid integer
+row 625: sensorID invalid: contains non-alphanumeric character
+row 625: value invalid: not a valid number
+row 626: timestamp invalid: not a valid integer
+row 626: sensorID invalid: contains non-alphanumeric character
+row 626: value invalid: not a valid number
+row 627: timestamp invalid: not a valid integer
+row 627: sensorID invalid: contains non-alphanumeric character
+row 627: value invalid: not a valid number
+row 628: timestamp invalid: not a valid integer
+row 628: sensorID invalid: contains non-alphanumeric character
+row 628: value invalid: not a valid number
+row 629: timestamp invalid: not a valid integer
+row 629: sensorID invalid: contains non-alphanumeric character
+row 629: value invalid: not a valid number
+row 630: timestamp invalid: not a valid integer
+row 630: sensorID invalid: contains non-alphanumeric character
+row 630: value invalid: not a valid number
+row 631: timestamp invalid: not a valid integer
+row 631: sensorID invalid: contains non-alphanumeric character
+row 631: value invalid: not a valid number
+row 632: timestamp invalid: not a valid integer
+row 632: sensorID invalid: contains non-alphanumeric character
+row 632: value invalid: not a valid number
+row 633: timestamp invalid: not a valid integer
+row 633: sensorID invalid: contains non-alphanumeric character
+row 633: value invalid: not a valid number
+row 634: timestamp invalid: not a valid integer
+row 634: sensorID invalid: contains non-alphanumeric character
+row 634: value invalid: not a valid number
+row 635: timestamp invalid: not a valid integer
+row 635: sensorID invalid: contains non-alphanumeric character
+row 635: value invalid: not a valid number
+row 636: timestamp invalid: not a valid integer
+row 636: sensorID invalid: contains non-alphanumeric character
+row 636: value invalid: not a valid number
+row 637: timestamp invalid: not a valid integer
+row 637: sensorID invalid: contains non-alphanumeric character
+row 637: value invalid: not a valid number
+row 638: timestamp invalid: not a valid integer
+row 638: sensorID invalid: contains non-alphanumeric character
+row 638: value invalid: not a valid number
+row 639: timestamp invalid: not a valid integer
+row 639: sensorID invalid: contains non-alphanumeric character
+row 639: value invalid: not a valid number
+row 640: timestamp invalid: not a valid integer
+row 640: sensorID invalid: contains non-alphanumeric character
+row 640: value invalid: not a valid number
+row 641: timestamp invalid: not a valid integer
+row 641: sensorID invalid: contains non-alphanumeric character
+row 641: value invalid: not a valid number
+row 642: timestamp invalid: not a valid integer
+row 642: sensorID invalid: contains non-alphanumeric character
+row 642: value invalid: not a valid number
+row 643: timestamp invalid: not a valid integer
+row 643: sensorID invalid: contains non-alphanumeric character
+row 643: value invalid: not a valid number
+row 644: timestamp invalid: not a valid integer
+row 644: sensorID invalid: contains non-alphanumeric character
+row 644: value invalid: not a valid number
+row 645: timestamp invalid: not a valid integer
+row 645: sensorID invalid: contains non-alphanumeric character
+row 645: value invalid: not a valid number
+row 646: timestamp invalid: not a valid integer
+row 646: sensorID invalid: contains non-alphanumeric character
+row 646: value invalid: not a valid number
+row 647: timestamp invalid: not a valid integer
+row 647: sensorID invalid: contains non-alphanumeric character
+row 647: value invalid: not a valid number
+row 648: timestamp invalid: not a valid integer
+row 648: sensorID invalid: contains non-alphanumeric character
+row 648: value invalid: not a valid number
+row 649: timestamp invalid: not a valid integer
+row 649: sensorID invalid: contains non-alphanumeric character
+row 649: value invalid: not a valid number
+row 650: timestamp invalid: not a valid integer
+row 650: sensorID invalid: contains non-alphanumeric character
+row 650: value invalid: not a valid number
+row 651: timestamp invalid: not a valid integer
+row 651: sensorID invalid: contains non-alphanumeric character
+row 651: value invalid: not a valid number
+row 652: timestamp invalid: not a valid integer
+row 652: sensorID invalid: contains non-alphanumeric character
+row 652: value invalid: not a valid number
+row 653: timestamp invalid: not a valid integer
+row 653: sensorID invalid: contains non-alphanumeric character
+row 653: value invalid: not a valid number
+row 654: timestamp invalid: not a valid integer
+row 654: sensorID invalid: contains non-alphanumeric character
+row 654: value invalid: not a valid number
+row 655: timestamp invalid: not a valid integer
+row 655: sensorID invalid: contains non-alphanumeric character
+row 655: value invalid: not a valid number
+row 656: timestamp invalid: not a valid integer
+row 656: sensorID invalid: contains non-alphanumeric character
+row 656: value invalid: not a valid number
+row 657: timestamp invalid: not a valid integer
+row 657: sensorID invalid: contains non-alphanumeric character
+row 657: value invalid: not a valid number
+row 658: timestamp invalid: not a valid integer
+row 658: sensorID invalid: contains non-alphanumeric character
+row 658: value invalid: not a valid number
+row 659: timestamp invalid: not a valid integer
+row 659: sensorID invalid: contains non-alphanumeric character
+row 659: value invalid: not a valid number
+row 660: timestamp invalid: not a valid integer
+row 660: sensorID invalid: contains non-alphanumeric character
+row 660: value invalid: not a valid number
+row 661: timestamp invalid: not a valid integer
+row 661: sensorID invalid: contains non-alphanumeric character
+row 661: value invalid: not a valid number
+row 662: timestamp invalid: not a valid integer
+row 662: sensorID invalid: contains non-alphanumeric character
+row 662: value invalid: not a valid number
+row 663: timestamp invalid: not a valid integer
+row 663: sensorID invalid: contains non-alphanumeric character
+row 663: value invalid: not a valid number
+row 664: timestamp invalid: not a valid integer
+row 664: sensorID invalid: contains non-alphanumeric character
+row 664: value invalid: not a valid number
+row 665: timestamp invalid: not a valid integer
+row 665: sensorID invalid: contains non-alphanumeric character
+row 665: value invalid: not a valid number
+row 666: timestamp invalid: not a valid integer
+row 666: sensorID invalid: contains non-alphanumeric character
+row 666: value invalid: not a valid number
+row 667: timestamp invalid: not a valid integer
+row 667: sensorID invalid: contains non-alphanumeric character
+row 667: value invalid: not a valid number
+row 668: timestamp invalid: not a valid integer
+row 668: sensorID invalid: contains non-alphanumeric character
+row 668: value invalid: not a valid number
+row 669: timestamp invalid: not a valid integer
+row 669: sensorID invalid: contains non-alphanumeric character
+row 669: value invalid: not a valid number
+row 670: timestamp invalid: not a valid integer
+row 670: sensorID invalid: contains non-alphanumeric character
+row 670: value invalid: not a valid number
+row 671: timestamp invalid: not a valid integer
+row 671: sensorID invalid: contains non-alphanumeric character
+row 671: value invalid: not a valid number
+row 672: timestamp invalid: not a valid integer
+row 672: sensorID invalid: contains non-alphanumeric character
+row 672: value invalid: not a valid number
+row 673: timestamp invalid: not a valid integer
+row 673: sensorID invalid: contains non-alphanumeric character
+row 673: value invalid: not a valid number
+row 674: timestamp invalid: not a valid integer
+row 674: sensorID invalid: contains non-alphanumeric character
+row 674: value invalid: not a valid number
+row 675: timestamp invalid: not a valid integer
+row 675: sensorID invalid: contains non-alphanumeric character
+row 675: value invalid: not a valid number
+row 676: timestamp invalid: not a valid integer
+row 676: sensorID invalid: contains non-alphanumeric character
+row 676: value invalid: not a valid number
+row 677: timestamp invalid: not a valid integer
+row 677: sensorID invalid: contains non-alphanumeric character
+row 677: value invalid: not a valid number
+row 678: timestamp invalid: not a valid integer
+row 678: sensorID invalid: contains non-alphanumeric character
+row 678: value invalid: not a valid number
+row 679: timestamp invalid: not a valid integer
+row 679: sensorID invalid: contains non-alphanumeric character
+row 679: value invalid: not a valid number
+row 680: timestamp invalid: not a valid integer
+row 680: sensorID invalid: contains non-alphanumeric character
+row 680: value invalid: not a valid number
+row 681: timestamp invalid: not a valid integer
+row 681: sensorID invalid: contains non-alphanumeric character
+row 681: value invalid: not a valid number
+row 682: timestamp invalid: not a valid integer
+row 682: sensorID invalid: contains non-alphanumeric character
+row 682: value invalid: not a valid number
+row 683: timestamp invalid: not a valid integer
+row 683: sensorID invalid: contains non-alphanumeric character
+row 683: value invalid: not a valid number
+row 684: timestamp invalid: not a valid integer
+row 684: sensorID invalid: contains non-alphanumeric character
+row 684: value invalid: not a valid number
+row 685: timestamp invalid: not a valid integer
+row 685: sensorID invalid: contains non-alphanumeric character
+row 685: value invalid: not a valid number
+row 686: timestamp invalid: not a valid integer
+row 686: sensorID invalid: contains non-alphanumeric character
+row 686: value invalid: not a valid number
+row 687: timestamp invalid: not a valid integer
+row 687: sensorID invalid: contains non-alphanumeric character
+row 687: value invalid: not a valid number
+row 688: timestamp invalid: not a valid integer
+row 688: sensorID invalid: contains non-alphanumeric character
+row 688: value invalid: not a valid number
+row 689: timestamp invalid: not a valid integer
+row 689: sensorID invalid: contains non-alphanumeric character
+row 689: value invalid: not a valid number
+row 690: timestamp invalid: not a valid integer
+row 690: sensorID invalid: contains non-alphanumeric character
+row 690: value invalid: not a valid number
+row 691: timestamp invalid: not a valid integer
+row 691: sensorID invalid: contains non-alphanumeric character
+row 691: value invalid: not a valid number
+row 692: timestamp invalid: not a valid integer
+row 692: sensorID invalid: contains non-alphanumeric character
+row 692: value invalid: not a valid number
+row 693: timestamp invalid: not a valid integer
+row 693: sensorID invalid: contains non-alphanumeric character
+row 693: value invalid: not a valid number
+row 694: timestamp invalid: not a valid integer
+row 694: sensorID invalid: contains non-alphanumeric character
+row 694: value invalid: not a valid number
+row 695: timestamp invalid: not a valid integer
+row 695: sensorID invalid: contains non-alphanumeric character
+row 695: value invalid: not a valid number
+row 696: timestamp invalid: not a valid integer
+row 696: sensorID invalid: contains non-alphanumeric character
+row 696: value invalid: not a valid number
+row 697: timestamp invalid: not a valid integer
+row 697: sensorID invalid: contains non-alphanumeric character
+row 697: value invalid: not a valid number
+row 698: timestamp invalid: not a valid integer
+row 698: sensorID invalid: contains non-alphanumeric character
+row 698: value invalid: not a valid number
+row 699: timestamp invalid: not a valid integer
+row 699: sensorID invalid: contains non-alphanumeric character
+row 699: value invalid: not a valid number
+row 700: timestamp invalid: not a valid integer
+row 700: sensorID invalid: contains non-alphanumeric character
+row 700: value invalid: not a valid number
+row 701: timestamp invalid: not a valid integer
+row 701: sensorID invalid: contains non-alphanumeric character
+row 701: value invalid: not a valid number
+row 702: timestamp invalid: not a valid integer
+row 702: sensorID invalid: contains non-alphanumeric character
+row 702: value invalid: not a valid number
+row 703: timestamp invalid: not a valid integer
+row 703: sensorID invalid: contains non-alphanumeric character
+row 703: value invalid: not a valid number
+row 704: timestamp invalid: not a valid integer
+row 704: sensorID invalid: contains non-alphanumeric character
+row 704: value invalid: not a valid number
+row 705: timestamp invalid: not a valid integer
+row 705: sensorID invalid: contains non-alphanumeric character
+row 705: value invalid: not a valid number
+row 706: timestamp invalid: not a valid integer
+row 706: sensorID invalid: contains non-alphanumeric character
+row 706: value invalid: not a valid number
+row 707: timestamp invalid: not a valid integer
+row 707: sensorID invalid: contains non-alphanumeric character
+row 707: value invalid: not a valid number
+row 708: timestamp invalid: not a valid integer
+row 708: sensorID invalid: contains non-alphanumeric character
+row 708: value invalid: not a valid number
+row 709: timestamp invalid: not a valid integer
+row 709: sensorID invalid: contains non-alphanumeric character
+row 709: value invalid: not a valid number
+row 710: timestamp invalid: not a valid integer
+row 710: sensorID invalid: contains non-alphanumeric character
+row 710: value invalid: not a valid number
+row 711: timestamp invalid: not a valid integer
+row 711: sensorID invalid: contains non-alphanumeric character
+row 711: value invalid: not a valid number
+row 712: timestamp invalid: not a valid integer
+row 712: sensorID invalid: contains non-alphanumeric character
+row 712: value invalid: not a valid number
+row 713: timestamp invalid: not a valid integer
+row 713: sensorID invalid: contains non-alphanumeric character
+row 713: value invalid: not a valid number
+row 714: timestamp invalid: not a valid integer
+row 714: sensorID invalid: contains non-alphanumeric character
+row 714: value invalid: not a valid number
+row 715: timestamp invalid: not a valid integer
+row 715: sensorID invalid: contains non-alphanumeric character
+row 715: value invalid: not a valid number
+row 716: timestamp invalid: not a valid integer
+row 716: sensorID invalid: contains non-alphanumeric character
+row 716: value invalid: not a valid number
+row 717: timestamp invalid: not a valid integer
+row 717: sensorID invalid: contains non-alphanumeric character
+row 717: value invalid: not a valid number
+row 718: timestamp invalid: not a valid integer
+row 718: sensorID invalid: contains non-alphanumeric character
+row 718: value invalid: not a valid number
+row 719: timestamp invalid: not a valid integer
+row 719: sensorID invalid: contains non-alphanumeric character
+row 719: value invalid: not a valid number
+row 720: timestamp invalid: not a valid integer
+row 720: sensorID invalid: contains non-alphanumeric character
+row 720: value invalid: not a valid number
+row 721: timestamp invalid: not a valid integer
+row 721: sensorID invalid: contains non-alphanumeric character
+row 721: value invalid: not a valid number
+validated 721 rows, 2162 errors
+=== device-04.csv ===
+validated 16 rows, 0 errors
+=== device-05.csv ===
+validated 17 rows, 0 errors
+=== device-06.csv ===
+validated 20 rows, 0 errors
+exit: 1

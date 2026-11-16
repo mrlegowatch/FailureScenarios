@@ -1,0 +1,13 @@
+mkdir -p build/unsafe
+c++ -std=c++20 -Wall -Wextra -g -fsanitize=address -c -o build/unsafe/InitLog.o InitLog.cpp
+c++ -std=c++20 -Wall -Wextra -g -fsanitize=address -c -o build/unsafe/main.o main.cpp
+c++ -std=c++20 -Wall -Wextra -g -fsanitize=address -c -o build/unsafe/OutputChain.o OutputChain.cpp
+c++ -std=c++20 -Wall -Wextra -g -fsanitize=address -c -o build/unsafe/DelayLineFactory.o DelayLineFactory.cpp
+c++ -std=c++20 -Wall -Wextra -g -fsanitize=address -c -o build/unsafe/FilterRegistry.o FilterRegistry.cpp
+c++ -std=c++20 -Wall -Wextra -g -fsanitize=address -c -o build/unsafe/Gain.o Gain.cpp
+c++ -std=c++20 -Wall -Wextra -g -fsanitize=address -c -o build/unsafe/LowPassFilter.o LowPassFilter.cpp
+c++ -std=c++20 -Wall -Wextra -g -fsanitize=address -c -o build/unsafe/Delay.o Delay.cpp
+c++ -std=c++20 -Wall -Wextra -g -fsanitize=address -c -o build/unsafe/Reverb.o Reverb.cpp
+c++ -std=c++20 -Wall -Wextra -g -fsanitize=address -c -o build/unsafe/Chorus.o Chorus.cpp
+c++ -std=c++20 -Wall -Wextra -g -fsanitize=address -o build/unsafe/AudioFilters build/unsafe/InitLog.o build/unsafe/main.o build/unsafe/OutputChain.o build/unsafe/DelayLineFactory.o build/unsafe/FilterRegistry.o build/unsafe/Gain.o build/unsafe/LowPassFilter.o build/unsafe/Delay.o build/unsafe/Reverb.o build/unsafe/Chorus.o
+exit: 0

@@ -1,0 +1,57 @@
+[ 1] gFactory         constructed  (pool=8 buffers)
+[ 2] gRegistry        constructed
+[ 3] GainRegistrar    constructed  (registered "Gain")
+[ 4] LPFRegistrar     constructed  (registered "LowPassFilter")
+[ 5] DelayRegistrar   constructed  (registered "Delay")
+[ 6] ReverbRegistrar  constructed  (registered "Reverb")
+[ 7] OutputChain.cpp  gDefaultOutputChain  init  STARTING
+[ 8] borrow()         called  inUse_.size()=8
+[ 9] borrow()         called  inUse_.size()=8
+[10] borrow()         called  inUse_.size()=8
+[11] borrow()         called  inUse_.size()=8
+[12] OutputChain      gDefaultOutputChain  constructed  (Delays borrowed)
+[13] ChorusRegistrar  constructed  (registered "Chorus")
+[14] === main() started ===
+[15] borrow()         called  inUse_.size()=8
+[16] borrow()         called  inUse_.size()=8
+[17] borrow()         called  inUse_.size()=8
+[18] borrow()         called  inUse_.size()=8
+[19] release()        handle=7
+[20] release()        handle=6
+[21] release()        handle=5
+[22] release()        handle=4
+[23] === main() returning ===
+[24] ChorusRegistrar  DESTROYED
+[25] OutputChain      gDefaultOutputChain  DESTROYING   (about to release Delays)
+[26] release()        handle=3
+[27] release()        handle=2
+[28] release()        handle=1
+[29] release()        handle=0
+[30] OutputChain.cpp  gDefaultOutputChain  fini  COMPLETE
+[31] ReverbRegistrar  DESTROYED
+[32] DelayRegistrar   DESTROYED
+[33] LPFRegistrar     DESTROYED
+[34] GainRegistrar    DESTROYED
+[35] gRegistry        DESTROYED
+[36] gFactory         DESTROYED
+Standalone Reverb — impulse response (4096 samples)
+  peak   : 0.700000
+  energy : 0.512500
+  RMS    : 0.011186
+  t=   0 (dry)  :  0.700000  (expected  0.700000)
+  t=1013 (tap1) :  0.075000  (expected  0.075000)
+  t=1327 (tap2) :  0.075000  (expected  0.075000)
+  t=1637 (tap3) :  0.075000  (expected  0.075000)
+  t=2053 (tap4) :  0.075000  (expected  0.075000)
+
+gDefaultOutputChain — impulse response (4096 samples)
+  peak   : 0.700000
+  energy : 0.512500
+  RMS    : 0.011186
+  t=   0 (dry)  :  0.700000  (expected  0.700000)
+  t=1013 (tap1) :  0.075000  (expected  0.075000)
+  t=1327 (tap2) :  0.075000  (expected  0.075000)
+  t=1637 (tap3) :  0.075000  (expected  0.075000)
+  t=2053 (tap4) :  0.075000  (expected  0.075000)
+
+exit: 0

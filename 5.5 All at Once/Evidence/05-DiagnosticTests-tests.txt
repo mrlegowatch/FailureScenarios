@@ -1,0 +1,87 @@
+[Computing dependencies]
+􀟈  Test run started.
+􀄵  Testing Library Version: 2084
+􀄵  Target Platform: arm64e-apple-macos14.0
+􀟈  Suite "Bug 4 — semiMinorAxis replaces semiMajorAxis in Ramanujan second factor (non-circle only)" started.
+􀟈  Suite "Bug 3 — Half-inverted guard in boundingInset() (zero-width inputs)" started.
+􀟈  Suite "Bug 1 — Typo: "triang1e" (digit 1) vs. "triangle" (letter l)" started.
+􀟈  Suite "Bug 2 — Swapped width:/height: at rectangle area call site (silent — commutative)" started.
+􀟈  Test correctStringMapsToRectangle() started.
+􀟈  Test bothDimensionsPositiveUnaffected() started.
+􀟈  Test positiveWidthZeroHeightReturnsZero() started.
+􀟈  Test triangleShapeDataGeometryIsRectangle() started.
+􀟈  Test zeroWidthPositiveHeightShouldReturnZero() started.
+􀟈  Test trianglePerimeterUsesRectangleFormula() started.
+􀟈  Test rectangleViewModelAreaPassesDespiteSwap() started.
+􀟈  Test ellipsePerimeterIsWrongForNonCircularInput() started.
+􀟈  Test nonCircleSecondFactorDiverges() started.
+􀟈  Test ellipseCaseIsNotSwapped() started.
+􀟈  Test bothDimensionsZeroShouldReturnZero() started.
+􀟈  Test rectangleAreaIsCommutative() started.
+􀟈  Test triangleAreaUsesRectangleFormula() started.
+􀟈  Test circlePerimeterCorrectDespiteBug() started.
+􁁛  Test bothDimensionsPositiveUnaffected() passed after 0.001 seconds.
+􁁛  Test positiveWidthZeroHeightReturnsZero() passed after 0.001 seconds.
+􀟈  Test ellipsePerimeterMatchesBuggyFormula() started.
+􀟈  Test circleSecondFactorIsUnaffected() started.
+􁁛  Test nonCircleSecondFactorDiverges() passed after 0.001 seconds.
+􀢄  Test zeroWidthPositiveHeightShouldReturnZero() recorded an issue at DiagnosticTests.swift:127:9: Expectation failed: vm.boundingInset() == 0.0
+􀄵  // FAILS: (0<=0 || 5>0) == true → guard passes → returns 4.0 * 2.0 = 8.0
+􀄵  vm.boundingInset() == 0.0 → false
+􀄵    vm.boundingInset() → 8.0
+􀢄  Test correctStringMapsToRectangle() recorded an issue at DiagnosticTests.swift:29:9: Expectation failed: Geometry(kind: "triangle") == .triangle
+􀄵  // FAILS: returns .rectangle because "triangle" ≠ "triang1e"
+􀄵  Geometry(kind: "triangle") == .triangle → false
+􀄵    Geometry(kind: "triangle") → .rectangle
+􀢄  Test trianglePerimeterUsesRectangleFormula() recorded an issue at DiagnosticTests.swift:53:9: Expectation failed: ShapeViewModel(shapeData: data).computedPerimeter() == expected
+􀄵  // FAILS: returns 20.0 (rectangle: 2×(6+4)) instead of ≈ 17.21
+􀄵  ShapeViewModel(shapeData: data).computedPerimeter() == expected → false
+􀄵    ShapeViewModel(shapeData: data).computedPerimeter() → 20.0
+􀄵    expected → 17.21110255092798
+􁁛  Test circlePerimeterCorrectDespiteBug() passed after 0.001 seconds.
+􁁛  Test ellipsePerimeterMatchesBuggyFormula() passed after 0.001 seconds.
+􀢄  Test correctStringMapsToRectangle() failed after 0.001 seconds with 1 issue.
+􀄵  // The correctly spelled string "triangle" falls through to default → .rectangle.
+􀢄  Test trianglePerimeterUsesRectangleFormula() failed after 0.001 seconds with 1 issue.
+􀄵  // Consequence: triangle perimeter uses the rectangle formula (2(w+h) = 20) instead of
+􀄵  // the right-triangle formula (w + h + √(w²+h²) ≈ 17.21).
+􀢄  Test triangleAreaUsesRectangleFormula() recorded an issue at DiagnosticTests.swift:43:9: Expectation failed: ShapeViewModel(shapeData: data).computedArea() == 12
+􀄵  // FAILS: returns 24.0 (rectangle: 6 × 4) instead of 12.0 (triangle: 0.5 × 6 × 4)
+􀄵  ShapeViewModel(shapeData: data).computedArea() == 12 → false
+􀄵    ShapeViewModel(shapeData: data).computedArea() → 24.0
+􀄵    12 → 12.0
+􁁛  Test rectangleViewModelAreaPassesDespiteSwap() passed after 0.001 seconds.
+􁁛  Test rectangleAreaIsCommutative() passed after 0.001 seconds.
+􀢄  Test triangleAreaUsesRectangleFormula() failed after 0.001 seconds with 1 issue.
+􀄵  // Consequence: triangle area uses the rectangle formula (w × h) instead of (0.5 × w × h).
+􀢄  Test ellipsePerimeterIsWrongForNonCircularInput() recorded an issue at DiagnosticTests.swift:206:9: Expectation failed: Geometry.ellipse.perimeter(width: 10, height: 6) == expectedPerimeter
+􀄵  // FAILS: code computes π(3×8 − √((18)(12))) = π(24 − √216) ≈ 29.226
+􀄵  Geometry.ellipse.perimeter(width: 10, height: 6) == expectedPerimeter → false
+􀄵    Geometry.ellipse.perimeter(width: 10, height: 6) → 29.226429800327928
+􀄵    expectedPerimeter → 25.526986393758545
+􀢄  Test bothDimensionsZeroShouldReturnZero() recorded an issue at DiagnosticTests.swift:135:9: Expectation failed: vm.boundingInset() == 0.0
+􀄵  // FAILS: (0<=0 || 0>0) == true → guard passes → returns 4.0 * 2.0 = 8.0
+􀄵  vm.boundingInset() == 0.0 → false
+􀄵    vm.boundingInset() → 8.0
+􀢄  Test zeroWidthPositiveHeightShouldReturnZero() failed after 0.001 seconds with 1 issue.
+􀄵  // Zero width, positive height: guard should short-circuit to 0.0, but doesn't.
+􁁛  Test ellipseCaseIsNotSwapped() passed after 0.001 seconds.
+􀢄  Test triangleShapeDataGeometryIsRectangle() recorded an issue at DiagnosticTests.swift:36:9: Expectation failed: data.geometry == .triangle
+􀄵  // FAILS: data.geometry == .rectangle, not .triangle
+􀄵  data.geometry == .triangle → false
+􀄵    data.geometry → .rectangle
+􁁛  Test circleSecondFactorIsUnaffected() passed after 0.001 seconds.
+􀢄  Test ellipsePerimeterIsWrongForNonCircularInput() failed after 0.001 seconds with 1 issue.
+􀄵  // The perimeter computed by the buggy code for width=10, height=6 is wrong.
+􀢄  Test bothDimensionsZeroShouldReturnZero() failed after 0.001 seconds with 1 issue.
+􀄵  // Both dimensions zero: the most degenerate case also slips through.
+􁁛  Suite "Bug 2 — Swapped width:/height: at rectangle area call site (silent — commutative)" passed after 0.001 seconds.
+􀢄  Test triangleShapeDataGeometryIsRectangle() failed after 0.001 seconds with 1 issue.
+􀄵  // ShapeData.geometry uses kind: "triangle", so it too resolves to .rectangle.
+􀢄  Suite "Bug 4 — semiMinorAxis replaces semiMajorAxis in Ramanujan second factor (non-circle only)" failed after 0.001 seconds with 1 issue.
+􀢄  Suite "Bug 3 — Half-inverted guard in boundingInset() (zero-width inputs)" failed after 0.001 seconds with 2 issues.
+􀢄  Suite "Bug 1 — Typo: "triang1e" (digit 1) vs. "triangle" (letter l)" failed after 0.001 seconds with 4 issues.
+􀢄  Test run with 16 tests in 4 suites failed after 0.001 seconds with 7 issues.
+Note: Some test targets reported failures:
+  - DiagnosticTests (Swift Testing)
+exit: 1

@@ -1,0 +1,30 @@
+== worker 21237
+(lldb) process attach --pid 21237
+Process 21237 stopped
+* thread #1, queue = 'com.apple.main-thread', stop reason = signal SIGSTOP
+       frame #0: 0x000000019db90be8 libsystem_kernel.dylib`__write_nocancel + 8
+libsystem_kernel.dylib`__write_nocancel:
+->  0x19db90be8 <+8>:  b.lo   0x19db90c08               ; <+40>
+    0x19db90bec <+12>: pacibsp 
+    0x19db90bf0 <+16>: stp    x29, x30, [sp, #-0x10]!
+    0x19db90bf4 <+20>: mov    x29, sp
+Target 0: (Baseline) stopped.
+Executable binary set to "/Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.11 Nothing to Report/build/swiftpm/out/Products/Debug/Baseline".
+Architecture set to: arm64-apple-macosx-.
+(lldb) bt
+* thread #1, queue = 'com.apple.main-thread', stop reason = signal SIGSTOP
+   * frame #0: 0x000000019db90be8 libsystem_kernel.dylib`__write_nocancel + 8
+     frame #1: 0x000000019da8b294 libsystem_c.dylib`__swrite + 24
+     frame #2: 0x000000019da6b970 libsystem_c.dylib`_swrite + 108
+     frame #3: 0x000000019da696bc libsystem_c.dylib`__sflush + 232
+     frame #4: 0x000000019da6955c libsystem_c.dylib`fflush + 112
+     frame #5: 0x000000019dae350c libc++.1.dylib`std::__1::__stdoutbuf<char>::sync() + 164
+     frame #6: 0x000000019dae33d8 libc++.1.dylib`std::__1::basic_ostream<char, std::__1::char_traits<char>>::flush() + 152
+     frame #7: 0x000000019dae0980 libc++.1.dylib`std::__1::basic_istream<char, std::__1::char_traits<char>>::sentry::sentry(std::__1::basic_istream<char, std::__1::char_traits<char>>&, bool) + 112
+     frame #8: 0x000000010031698c Baseline`std::__1::basic_istream<char, std::__1::char_traits<char>>& std::__1::getline[abi:dee220106]<char, std::__1::char_traits<char>, std::__1::allocator<char>>(__is=0x0000000203707678, __str="VIB03B,0.97,g,1705284042", __dlm='\n') at istream:1272:51
+     frame #9: 0x0000000100315488 Baseline`std::__1::basic_istream<char, std::__1::char_traits<char>>& std::__1::getline[abi:dee220106]<char, std::__1::char_traits<char>, std::__1::allocator<char>>(__is=0x0000000203707678, __str="VIB03B,0.97,g,1705284042") at istream:1343:10
+     frame #10: 0x00000001003145b4 Baseline`runWorker() at main.cpp:117:12
+     frame #11: 0x0000000100314520 Baseline`main(argc=2, argv=0x000000016faeb748) at main.cpp:264:16
+     frame #12: 0x000000019d7fbe80 dyld`start + 6688
+(lldb) detach
+Process 21237 detached

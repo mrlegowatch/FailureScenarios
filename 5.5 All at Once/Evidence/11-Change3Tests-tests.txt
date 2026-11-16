@@ -1,0 +1,70 @@
+[Computing dependencies]
+􀟈  Test run started.
+􀄵  Testing Library Version: 2084
+􀄵  Target Platform: arm64e-apple-macos14.0
+􀟈  Suite "Change 1 — Geometry.init(kind:) and ShapeData.geometry" started.
+􀟈  Suite "Change 3 — ShapeData.isEmpty and guard !shapeData.isEmpty" started.
+􀟈  Suite "Change 2 — Geometry labeled params, circle internal radius, ShapeData computed properties" started.
+􀟈  Test unknownKindDefaultsToRectangle() started.
+􀟈  Test kindRectangleMapsToRectangle() started.
+􀟈  Test shapeDataGeometryForRectangle() started.
+􀟈  Test kindTriangleMapsToTriangle() started.
+􀟈  Test shapeDataGeometryForTriangle() started.
+􀟈  Test boundingInsetReturnsNonZeroWhenNotEmpty() started.
+􀟈  Test shapeDataGeometryForCircle() started.
+􀟈  Test displayLabelReturnsNormalLabelWhenNotEmpty() started.
+􀟈  Test boundingInsetReturnsZeroWhenWidthIsZero() started.
+􀟈  Test kindCircleMapsToCircle() started.
+􀟈  Test displayLabelReturnsEmptyLabelWhenWidthIsZero() started.
+􀟈  Test shapeDataComputedAreaRectangle() started.
+􀟈  Test geometryPerimeterCircle() started.
+􀟈  Test geometryPerimeterTriangle() started.
+􀟈  Test isEmptyTrueWhenBothZero() started.
+􀟈  Test geometryAreaCircle() started.
+􀟈  Test isEmptyTrueWhenWidthIsZero() started.
+􀟈  Test boundingInsetReturnsZeroWhenHeightIsZero() started.
+􀟈  Test isEmptyTrueWhenHeightIsZero() started.
+􀟈  Test shapeDataComputedAreaCircle() started.
+􀟈  Test shapeDataComputedPerimeterRectangle() started.
+􀟈  Test shapeDataComputedPerimeterCircle() started.
+􀟈  Test geometryPerimeterRectangle() started.
+􀟈  Test displayLabelReturnsEmptyLabelWhenHeightIsZero() started.
+􀟈  Test geometryAreaRectangle() started.
+􀟈  Test shapeDataComputedAreaTriangle() started.
+􀟈  Test isEmptyFalseWhenBothPositive() started.
+􀟈  Test geometryAreaTriangle() started.
+􀟈  Test shapeDataComputedPerimeterTriangle() started.
+􁁛  Test unknownKindDefaultsToRectangle() passed after 0.001 seconds.
+􁁛  Test shapeDataGeometryForCircle() passed after 0.001 seconds.
+􁁛  Test shapeDataGeometryForTriangle() passed after 0.001 seconds.
+􁁛  Test kindTriangleMapsToTriangle() passed after 0.001 seconds.
+􁁛  Test kindCircleMapsToCircle() passed after 0.001 seconds.
+􁁛  Test isEmptyTrueWhenBothZero() passed after 0.001 seconds.
+􁁛  Test shapeDataGeometryForRectangle() passed after 0.001 seconds.
+􁁛  Test kindRectangleMapsToRectangle() passed after 0.001 seconds.
+􁁛  Test displayLabelReturnsNormalLabelWhenNotEmpty() passed after 0.001 seconds.
+􁁛  Test boundingInsetReturnsNonZeroWhenNotEmpty() passed after 0.001 seconds.
+􁁛  Test geometryPerimeterTriangle() passed after 0.001 seconds.
+􁁛  Test displayLabelReturnsEmptyLabelWhenHeightIsZero() passed after 0.001 seconds.
+􁁛  Test shapeDataComputedPerimeterRectangle() passed after 0.001 seconds.
+􁁛  Test boundingInsetReturnsZeroWhenHeightIsZero() passed after 0.001 seconds.
+􁁛  Test shapeDataComputedAreaCircle() passed after 0.001 seconds.
+􁁛  Test boundingInsetReturnsZeroWhenWidthIsZero() passed after 0.001 seconds.
+􁁛  Test isEmptyTrueWhenWidthIsZero() passed after 0.001 seconds.
+􁁛  Test geometryPerimeterCircle() passed after 0.001 seconds.
+􁁛  Test shapeDataComputedAreaTriangle() passed after 0.001 seconds.
+􁁛  Test displayLabelReturnsEmptyLabelWhenWidthIsZero() passed after 0.001 seconds.
+􁁛  Test geometryAreaCircle() passed after 0.001 seconds.
+􁁛  Test geometryPerimeterRectangle() passed after 0.001 seconds.
+􁁛  Test geometryAreaTriangle() passed after 0.001 seconds.
+􁁛  Test shapeDataComputedPerimeterTriangle() passed after 0.001 seconds.
+􁁛  Test shapeDataComputedPerimeterCircle() passed after 0.001 seconds.
+􁁛  Test shapeDataComputedAreaRectangle() passed after 0.001 seconds.
+􁁛  Suite "Change 1 — Geometry.init(kind:) and ShapeData.geometry" passed after 0.001 seconds.
+􁁛  Test isEmptyTrueWhenHeightIsZero() passed after 0.001 seconds.
+􁁛  Test geometryAreaRectangle() passed after 0.001 seconds.
+􁁛  Test isEmptyFalseWhenBothPositive() passed after 0.001 seconds.
+􁁛  Suite "Change 3 — ShapeData.isEmpty and guard !shapeData.isEmpty" passed after 0.001 seconds.
+􁁛  Suite "Change 2 — Geometry labeled params, circle internal radius, ShapeData computed properties" passed after 0.001 seconds.
+􁁛  Test run with 29 tests in 3 suites passed after 0.001 seconds.
+exit: 0

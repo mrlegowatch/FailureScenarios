@@ -1,0 +1,107 @@
+[Computing dependencies]
+􀟈  Test run started.
+􀄵  Testing Library Version: 2084
+􀄵  Target Platform: arm64e-apple-macos14.0
+􀟈  Suite ViewModelComputedAreaTests started.
+􀟈  Suite BoundingInsetTests started.
+􀟈  Suite GeometryPerimeterTests started.
+􀟈  Suite GeometryAreaTests started.
+􀟈  Suite DisplayLabelTests started.
+􀟈  Suite ViewModelComputedPerimeterTests started.
+􀟈  Test selectedNotHighlighted() started.
+􀟈  Test zeroWidthReturnsZero() started.
+􀟈  Test selectedAndHighlighted() started.
+􀟈  Test circle() started.
+􀟈  Test ellipse() started.
+􀟈  Test notSelectedFilled() started.
+􀟈  Test ellipse() started.
+􀟈  Test rectangle() started.
+􀟈  Test rectangle() started.
+􀟈  Test triangle() started.
+􀟈  Test notSelectedNotFilled() started.
+􀟈  Test normalRectangle() started.
+􀟈  Test triangle() started.
+􀟈  Test normalTriangle() started.
+􀟈  Test emptyDimensionsWhenWidthIsZero() started.
+􀟈  Test zeroHeightReturnsZero() started.
+􀟈  Test normalEllipse() started.
+􀟈  Test selectedNotHighlighted() started.
+􀟈  Test normalCircle() started.
+􀟈  Test circle() started.
+􀟈  Test emptyDimensionsWhenHeightIsZero() started.
+􀟈  Test selectedAndHighlighted() started.
+􀟈  Test emptyWhenShowsLabelFalse() started.
+􀟈  Test rectangle() started.
+􀟈  Test triangle() started.
+􀟈  Test circle() started.
+􀟈  Test circle() started.
+􀟈  Test ellipse() started.
+􀟈  Test triangle() started.
+􁁛  Test notSelectedFilled() passed after 0.001 seconds.
+􀟈  Test rectangle() started.
+􀢄  Test zeroWidthReturnsZero() recorded an issue at BuggyRefactorTests.swift:179:9: Expectation failed: vm.boundingInset() == 0.0
+􀄵  vm.boundingInset() == 0.0 → false
+􀄵    vm.boundingInset() → 8.0
+􁁛  Test selectedNotHighlighted() passed after 0.001 seconds.
+􁁛  Test selectedAndHighlighted() passed after 0.001 seconds.
+􀢄  Test normalTriangle() recorded an issue at BuggyRefactorTests.swift:151:9: Expectation failed: ShapeViewModel(shapeData: data).displayLabel() == "triangle area=12.0"
+􀄵  ShapeViewModel(shapeData: data).displayLabel() == "triangle area=12.0" → false
+􀄵    ShapeViewModel(shapeData: data).displayLabel() → "triangle area=24.0"
+􀟈  Test ellipse() started.
+􁁛  Test rectangle() passed after 0.001 seconds.
+􁁛  Test notSelectedNotFilled() passed after 0.001 seconds.
+􁁛  Test triangle() passed after 0.001 seconds.
+􁁛  Test circle() passed after 0.001 seconds.
+􀢄  Test selectedAndHighlighted() recorded an issue at BuggyRefactorTests.swift:169:9: Expectation failed: vm.displayLabel() == "triangle [selected, highlighted] area=12.0"
+􀄵  vm.displayLabel() == "triangle [selected, highlighted] area=12.0" → false
+􀄵    vm.displayLabel() → "triangle [selected, highlighted] area=24.0"
+􁁛  Test normalRectangle() passed after 0.001 seconds.
+􀢄  Test ellipse() recorded an issue at BuggyRefactorTests.swift:58:9: Expectation failed: Geometry.ellipse.perimeter(width: 10, height: 6) == expected
+􀄵  Geometry.ellipse.perimeter(width: 10, height: 6) == expected → false
+􀄵    Geometry.ellipse.perimeter(width: 10, height: 6) → 29.226429800327928
+􀄵    expected → 25.526986393758545
+􁁛  Test normalCircle() passed after 0.001 seconds.
+􁁛  Test ellipse() passed after 0.001 seconds.
+􁁛  Test triangle() passed after 0.001 seconds.
+􁁛  Test rectangle() passed after 0.001 seconds.
+􁁛  Test selectedNotHighlighted() passed after 0.001 seconds.
+􀢄  Test triangle() recorded an issue at BuggyRefactorTests.swift:78:9: Expectation failed: ShapeViewModel(shapeData: data).computedArea() == 12
+􀄵  ShapeViewModel(shapeData: data).computedArea() == 12 → false
+􀄵    ShapeViewModel(shapeData: data).computedArea() → 24.0
+􀄵    12 → 12.0
+􁁛  Test rectangle() passed after 0.001 seconds.
+􀢄  Test selectedAndHighlighted() failed after 0.001 seconds with 1 issue.
+􀢄  Test normalTriangle() failed after 0.001 seconds with 1 issue.
+􁁛  Test zeroHeightReturnsZero() passed after 0.001 seconds.
+􀢄  Test ellipse() recorded an issue at BuggyRefactorTests.swift:115:9: Expectation failed: ShapeViewModel(shapeData: data).computedPerimeter() == expected
+􀄵  ShapeViewModel(shapeData: data).computedPerimeter() == expected → false
+􀄵    ShapeViewModel(shapeData: data).computedPerimeter() → 29.226429800327928
+􀄵    expected → 25.526986393758545
+􁁛  Test emptyWhenShowsLabelFalse() passed after 0.001 seconds.
+􁁛  Test circle() passed after 0.001 seconds.
+􀢄  Test zeroWidthReturnsZero() failed after 0.001 seconds with 1 issue.
+􁁛  Test circle() passed after 0.001 seconds.
+􀢄  Test triangle() recorded an issue at BuggyRefactorTests.swift:106:9: Expectation failed: ShapeViewModel(shapeData: data).computedPerimeter() == expected
+􀄵  ShapeViewModel(shapeData: data).computedPerimeter() == expected → false
+􀄵    ShapeViewModel(shapeData: data).computedPerimeter() → 20.0
+􀄵    expected → 17.21110255092798
+􀢄  Test ellipse() failed after 0.001 seconds with 1 issue.
+􁁛  Test normalEllipse() passed after 0.001 seconds.
+􁁛  Test emptyDimensionsWhenWidthIsZero() passed after 0.001 seconds.
+􁁛  Test circle() passed after 0.001 seconds.
+􁁛  Test emptyDimensionsWhenHeightIsZero() passed after 0.001 seconds.
+􀢄  Suite GeometryPerimeterTests failed after 0.001 seconds with 1 issue.
+􁁛  Test rectangle() passed after 0.001 seconds.
+􀢄  Test triangle() failed after 0.001 seconds with 1 issue.
+􁁛  Suite GeometryAreaTests passed after 0.001 seconds.
+􀢄  Test triangle() failed after 0.001 seconds with 1 issue.
+􁁛  Test ellipse() passed after 0.001 seconds.
+􀢄  Test ellipse() failed after 0.001 seconds with 1 issue.
+􀢄  Suite BoundingInsetTests failed after 0.001 seconds with 1 issue.
+􀢄  Suite ViewModelComputedAreaTests failed after 0.001 seconds with 1 issue.
+􀢄  Suite DisplayLabelTests failed after 0.001 seconds with 2 issues.
+􀢄  Suite ViewModelComputedPerimeterTests failed after 0.001 seconds with 2 issues.
+􀢄  Test run with 31 tests in 6 suites failed after 0.001 seconds with 7 issues.
+Note: Some test targets reported failures:
+  - BuggyRefactorTests (Swift Testing)
+exit: 1

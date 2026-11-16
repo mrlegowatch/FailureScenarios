@@ -1,0 +1,17 @@
+􀟈  Test run started.
+􀄵  Testing Library Version: 2084
+􀄵  Target Platform: arm64e-apple-macos14.0
+􀟈  Suite "Dispatcher" started.
+􀟈  Suite "WorkSession" started.
+􀟈  Test "register adds subscriber" started.
+􀟈  Test "broadcast delivers event to each registered subscriber" started.
+􀟈  Test "unregistered subscriber no longer receives broadcasts" started.
+􀟈  Test "complete unregisters subscriber from dispatcher" started.
+􁁛  Test "unregistered subscriber no longer receives broadcasts" passed after 0.001 seconds.
+􁁛  Test "broadcast delivers event to each registered subscriber" passed after 0.001 seconds.
+􁁛  Test "register adds subscriber" passed after 0.001 seconds.
+􁁛  Test "complete unregisters subscriber from dispatcher" passed after 0.001 seconds.
+􁁛  Suite "Dispatcher" passed after 0.001 seconds.
+􁁛  Suite "WorkSession" passed after 0.001 seconds.
+􁁛  Test run with 4 tests in 2 suites passed after 0.001 seconds.
+exit: 0

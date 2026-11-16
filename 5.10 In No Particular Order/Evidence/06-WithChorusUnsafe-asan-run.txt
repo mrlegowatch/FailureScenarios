@@ -1,0 +1,47 @@
+[ 1] OutputChain.cpp  gDefaultOutputChain  init  STARTING
+[ 2] borrow()         called  inUse_.size()=0
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==23176==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x0001043c94ec bp 0x00016ba39610 sp 0x00016ba395d0 T0)
+==23176==The signal is caused by a READ memory access.
+==23176==Hint: address points to the zero page.
+    #0 0x0001043c94ec in std::__1::__bit_reference<std::__1::vector<bool, std::__1::allocator<bool>>, true>::operator bool[abi:nqe220106]() const __bit_reference:140
+    #1 0x0001043c9278 in DelayLineFactory::borrow() DelayLineFactory.cpp:18
+    #2 0x0001043d4b44 in Delay::Delay(unsigned long) Delay.cpp:8
+    #3 0x0001043d4c24 in Delay::Delay(unsigned long) Delay.cpp:11
+    #4 0x0001043d61d0 in Reverb::Reverb() Reverb.cpp:12
+    #5 0x0001043d629c in Reverb::Reverb() Reverb.cpp:16
+    #6 0x0001043c8868 in OutputChain::OutputChain() OutputChain.cpp:4
+    #7 0x0001043c88c8 in OutputChain::OutputChain() OutputChain.cpp:4
+    #8 0x0001043c8b38 in __cxx_global_var_init.2 OutputChain.cpp:36
+    #9 0x0001043c8b78 in _GLOBAL__sub_I_OutputChain.cpp OutputChain.cpp
+    #10 0x00019d7aadec in dyld4::LibSystemHelpers::callInitializer(int, char const* const*, char const* const*, char const* const*, dyld4::ProgramVars const*, void (*)(int, char const* const*, char const* const*, char const* const*, dyld4::ProgramVars const*)) const+0x24 (libdyld.dylib:arm64e+0x7dec)
+    #11 0x00019d82d734 in invocation function for block in dyld4::Loader::findAndRunAllInitializers(dyld4::RuntimeState&) const::$_0::operator()() const+0x144 (dyld:arm64e+0x63734)
+    #12 0x00019d861068 in invocation function for block in mach_o::Image::forEachInitializer(void (unsigned int) block_pointer) const+0x50 (dyld:arm64e+0x97068)
+    #13 0x00019d858504 in mach_o::Header::SegmentInfo mach_o::Header::parse_segment_command<true>(mach_o::Header::LoadCommandInfo const&, unsigned short, void (mach_o::Header::SegmentInfo const&, mach_o::Header::SectionInfo const&) block_pointer, mach_o::Error*) const+0x240 (dyld:arm64e+0x8e504)
+    #14 0x00019d85d970 in invocation function for block in mach_o::Header::forEachSection(void (mach_o::Header::SectionInfo const&, bool&) block_pointer) const+0x98 (dyld:arm64e+0x93970)
+    #15 0x00019d857000 in mach_o::Header::forEachLoadCommand(void (mach_o::Header::LoadCommandInfo const&, bool&) block_pointer, mach_o::Error*) const+0xe0 (dyld:arm64e+0x8d000)
+    #16 0x00019d85b078 in mach_o::Header::forEachSection(void (mach_o::Header::SectionInfo const&, bool&) block_pointer) const+0x7c (dyld:arm64e+0x91078)
+    #17 0x00019d860f98 in mach_o::Image::forEachInitializer(void (unsigned int) block_pointer) const+0xf0 (dyld:arm64e+0x96f98)
+    #18 0x00019d828610 in dyld4::Loader::findAndRunAllInitializers(dyld4::RuntimeState&) const+0x2a4 (dyld:arm64e+0x5e610)
+    #19 0x00019d81ffdc in dyld4::JustInTimeLoader::runInitializers(dyld4::RuntimeState&) const+0x20 (dyld:arm64e+0x55fdc)
+    #20 0x00019d828c04 in dyld4::Loader::runInitializersBottomUp(dyld4::RuntimeState&, lsl::Vector<AuthenticatedValue<dyld4::Loader const*>>&, lsl::Vector<AuthenticatedValue<dyld4::Loader const*>>&) const+0x1e4 (dyld:arm64e+0x5ec04)
+    #21 0x00019d82d7f4 in dyld4::Loader::runInitializersBottomUpPlusUpwardLinks(dyld4::RuntimeState&) const::$_0::operator()() const+0x78 (dyld:arm64e+0x637f4)
+    #22 0x00019d828d54 in dyld4::Loader::runInitializersBottomUpPlusUpwardLinks(dyld4::RuntimeState&) const+0xc0 (dyld:arm64e+0x5ed54)
+    #23 0x00019d7fdd10 in dyld4::prepare(dyld4::APIs&, mach_o::UnsafeHeader const*)+0x1270 (dyld:arm64e+0x33d10)
+    #24 0x00019d7fca80 in dyld4::start(dyld4::KernelArgs*, void*, void*, unsigned long long)::$_1::operator()() const+0x13c (dyld:arm64e+0x32a80)
+    #25 0x00019d7fbe20 in start+0x19c0 (dyld:arm64e+0x31e20)
+
+==23176==Register values:
+ x[0] = 0x000000016ba39640   x[1] = 0x0000000000000001   x[2] = 0x0000000000000001   x[3] = 0x0000000000000103  
+ x[4] = 0x0000000000000000   x[5] = 0x000000016ba39610   x[6] = 0x00000001043c8b60   x[7] = 0x0000000000000000  
+ x[8] = 0x0000008000020000   x[9] = 0x000000016ba39640  x[10] = 0x0000000000000000  x[11] = 0x0000000000000000  
+x[12] = 0x000000016ba394e8  x[13] = 0x000000016ba394e0  x[14] = 0x0000000000000000  x[15] = 0x0000000000000000  
+x[16] = 0x000000019dbd8944  x[17] = 0x0000000104cd9088  x[18] = 0x0000000000000000  x[19] = 0x000000016ba39680  
+x[20] = 0x00000001043c8b60  x[21] = 0x000000016ba39e80  x[22] = 0x00000001043c4150  x[23] = 0x00000001043c4380  
+x[24] = 0x000000016ba399f8  x[25] = 0x000000016ba39b80  x[26] = 0x000000016ba399e8  x[27] = 0x0000000000000053  
+x[28] = 0x0000000203426a70     fp = 0x000000016ba39610     lr = 0x00000001043c927c     sp = 0x000000016ba395d0  
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV __bit_reference:140 in std::__1::__bit_reference<std::__1::vector<bool, std::__1::allocator<bool>>, true>::operator bool[abi:nqe220106]() const
+==23176==ABORTING
+exit: 134

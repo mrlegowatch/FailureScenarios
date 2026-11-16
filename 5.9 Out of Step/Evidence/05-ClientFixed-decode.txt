@@ -1,0 +1,38 @@
+Fixtures/old_data.json decoded with fixed types:
+
+  id: 1, name: Morning Run, status: active, currentCount: 14, freezesRemaining: nil, schemaVersion: 0
+  id: 2, name: Daily Reading, status: broken, currentCount: 3, freezesRemaining: nil, schemaVersion: 0
+  id: 3, name: 30-Day Yoga, status: completed, currentCount: 30, freezesRemaining: nil, schemaVersion: 0
+  id: 4, name: Meditation, status: active, currentCount: 7, freezesRemaining: nil, schemaVersion: 0
+  id: 5, name: Cold Shower, status: broken, currentCount: 0, freezesRemaining: nil, schemaVersion: 0
+
+Fixtures/synced_record.json decoded with fixed types:
+
+  id: 1, name: Morning Run, status: active, currentCount: 14, freezesRemaining: 1, schemaVersion: 1
+
+Structural integrity check (re-encode, re-decode, round-trip):
+================================================================
+
+Step 1 — Re-encode each record
+----------------------------------------------------------------
+  id 1 (old_data.json): 133 bytes  well-formed: YES
+  id 2 (old_data.json): 134 bytes  well-formed: YES
+  id 3 (old_data.json): 133 bytes  well-formed: YES
+  id 4 (old_data.json): 131 bytes  well-formed: YES
+  id 5 (old_data.json): 132 bytes  well-formed: YES
+  id 1 (synced_record.json): 130 bytes  well-formed: YES
+  All well-formed: YES
+
+Step 2 — Re-decode and compare
+----------------------------------------------------------------
+  id 1 (old_data.json): MATCH
+  id 2 (old_data.json): MATCH
+  id 3 (old_data.json): MATCH
+  id 4 (old_data.json): MATCH
+  id 5 (old_data.json): MATCH
+  id 1 (synced_record.json): MATCH
+
+================================================================
+RESULT: PASS
+
+All 6 records survive the encode/decode round trip unchanged.

@@ -1,0 +1,299 @@
+--- run 1
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 2
+􀢄  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() recorded an issue at SessionRegistryDiagnosticTests.swift:54:9: Expectation failed: totalCreations == 1
+􀄵  Expected 1 session creation; got 2 — race fired.
+􀄵  totalCreations == 1 → false
+􀄵    totalCreations → 2
+􀢄  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() failed with 1 issue.
+􀢄  Suite SessionRegistryDiagnosticTests failed with 1 issue.
+􀄵  // This suite exists solely to expose the check-then-act race in
+􀄵  // SessionRegistry. It is NOT a correctness test: a passing result would
+􀄵  // indicate the race has been fixed (or the scheduler happened not to
+􀄵  // interleave, which the addDelay: true case makes effectively impossible).
+􀄵  //
+􀄵  // The test is parameterized over addDelay so both the race-widened path
+􀄵  // (addDelay: true) and the unperturbed path (addDelay: false) are verified.
+􀄵  // This is self-contained and does not require SESSIONREGISTRY_ADD_DELAY to
+􀄵  // be set in the scheme.
+􀄵  // ════════════════════════════════════════════════════════════════════════════
+􀢄  Test run with 1 test in 1 suite failed with 1 issue.
+Note: Some test targets reported failures:
+  - SessionRegistryWithNaiveFix2Tests (Swift Testing)
+exit: 1
+--- run 3
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 4
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 5
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 6
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 7
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 8
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 9
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 10
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 11
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 12
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 13
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 14
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 15
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 16
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 17
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 18
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 19
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 20
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 21
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 22
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 23
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 24
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 25
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 26
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 27
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 28
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 29
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 30
+􀢄  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() recorded an issue at SessionRegistryDiagnosticTests.swift:54:9: Expectation failed: totalCreations == 1
+􀄵  Expected 1 session creation; got 2 — race fired.
+􀄵  totalCreations == 1 → false
+􀄵    totalCreations → 2
+􀢄  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() failed with 1 issue.
+􀢄  Suite SessionRegistryDiagnosticTests failed with 1 issue.
+􀄵  // This suite exists solely to expose the check-then-act race in
+􀄵  // SessionRegistry. It is NOT a correctness test: a passing result would
+􀄵  // indicate the race has been fixed (or the scheduler happened not to
+􀄵  // interleave, which the addDelay: true case makes effectively impossible).
+􀄵  //
+􀄵  // The test is parameterized over addDelay so both the race-widened path
+􀄵  // (addDelay: true) and the unperturbed path (addDelay: false) are verified.
+􀄵  // This is self-contained and does not require SESSIONREGISTRY_ADD_DELAY to
+􀄵  // be set in the scheme.
+􀄵  // ════════════════════════════════════════════════════════════════════════════
+􀢄  Test run with 1 test in 1 suite failed with 1 issue.
+Note: Some test targets reported failures:
+  - SessionRegistryWithNaiveFix2Tests (Swift Testing)
+exit: 1
+--- run 31
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 32
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 33
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 34
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 35
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 36
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 37
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 38
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 39
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 40
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 41
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 42
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 43
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 44
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 45
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 46
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 47
+􀢄  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() recorded an issue at SessionRegistryDiagnosticTests.swift:54:9: Expectation failed: totalCreations == 1
+􀄵  Expected 1 session creation; got 2 — race fired.
+􀄵  totalCreations == 1 → false
+􀄵    totalCreations → 2
+􀢄  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() failed with 1 issue.
+􀢄  Suite SessionRegistryDiagnosticTests failed with 1 issue.
+􀄵  // This suite exists solely to expose the check-then-act race in
+􀄵  // SessionRegistry. It is NOT a correctness test: a passing result would
+􀄵  // indicate the race has been fixed (or the scheduler happened not to
+􀄵  // interleave, which the addDelay: true case makes effectively impossible).
+􀄵  //
+􀄵  // The test is parameterized over addDelay so both the race-widened path
+􀄵  // (addDelay: true) and the unperturbed path (addDelay: false) are verified.
+􀄵  // This is self-contained and does not require SESSIONREGISTRY_ADD_DELAY to
+􀄵  // be set in the scheme.
+􀄵  // ════════════════════════════════════════════════════════════════════════════
+􀢄  Test run with 1 test in 1 suite failed with 1 issue.
+Note: Some test targets reported failures:
+  - SessionRegistryWithNaiveFix2Tests (Swift Testing)
+exit: 1
+--- run 48
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 49
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+--- run 50
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+=== 50 runs: 47 passed, 3 failed, 0 crashed

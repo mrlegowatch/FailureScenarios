@@ -1,0 +1,21 @@
+􀟈  Test run started.
+􀄵  Testing Library Version: 2084
+􀄵  Target Platform: arm64e-apple-macos14.0
+􀟈  Suite IntegrityCheckTests started.
+􀟈  Test completedStatusRoundTrips() started.
+􀟈  Test activeStatusRoundTrips() started.
+􀟈  Test brokenStatusRoundTrips() started.
+􀟈  Test freezesRemainingZeroIsHonored() started.
+􀟈  Test freezesRemainingNonDefaultValueIsHonored() started.
+􀟈  Test freezesRemainingDefaultsToOneWhenAbsent() started.
+􀟈  Test frozenStatusRoundTrips() started.
+􁁛  Test freezesRemainingDefaultsToOneWhenAbsent() passed after 0.001 seconds.
+􁁛  Test freezesRemainingZeroIsHonored() passed after 0.001 seconds.
+􁁛  Test freezesRemainingNonDefaultValueIsHonored() passed after 0.001 seconds.
+􁁛  Test completedStatusRoundTrips() passed after 0.001 seconds.
+􁁛  Test brokenStatusRoundTrips() passed after 0.001 seconds.
+􁁛  Test frozenStatusRoundTrips() passed after 0.001 seconds.
+􁁛  Test activeStatusRoundTrips() passed after 0.001 seconds.
+􁁛  Suite IntegrityCheckTests passed after 0.001 seconds.
+􁁛  Test run with 7 tests in 1 suite passed after 0.001 seconds.
+exit: 0

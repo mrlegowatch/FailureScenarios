@@ -1,0 +1,6 @@
+DiagnosticTests, 20 runs: 16 failed, 4 passed
+DiagnosticTests.DiagnosticTests, 20 runs: 20 failed, 0 passed
+SubscriberFixedTests, 20 runs: 4 failed, 16 passed
+SubscriberFixedHashTableVariantTests, 20 runs: 5 failed, 15 passed
+SubscriberFixedHashTablePooledTests, 20 runs: 4 failed, 16 passed
+exit: 0

@@ -1,0 +1,278 @@
+==================
+WARNING: ThreadSanitizer: Swift access race (pid=11858)
+  Modifying access of Swift variable at 0x000109002530 by thread T6:
+    #0 SessionRegistry.session(for:create:) SessionRegistry.swift:33 (SessionRegistry:arm64+0x10000203c)
+    #1 swift::runJobInEstablishedExecutorContext(swift::Job*, swift::SerialExecutorRef, swift::TaskExecutorRef) <null> (libswift_Concurrency.dylib:arm64e+0x2c4c)
+
+  Previous read of size 8 at 0x000109002530 by thread T2:
+    #0 SessionRegistry.session(for:create:) SessionRegistry.swift:28 (SessionRegistry:arm64+0x100001b40)
+    #1 swift::runJobInEstablishedExecutorContext(swift::Job*, swift::SerialExecutorRef, swift::TaskExecutorRef) <null> (libswift_Concurrency.dylib:arm64e+0x2c4c)
+
+  Location is heap block of size 24 at 0x000109002520 allocated by main thread:
+    #0 malloc <null> (libclang_rt.tsan_osx_dynamic.dylib:arm64e+0x67d68)
+    #1 _malloc_type_malloc_outlined <null> (libsystem_malloc.dylib:arm64e+0x1edb0)
+    #2 async_Main main.swift:22 (SessionRegistry:arm64+0x100003020)
+    #3 swift::runJobInEstablishedExecutorContext(swift::Job*, swift::SerialExecutorRef, swift::TaskExecutorRef) <null> (libswift_Concurrency.dylib:arm64e+0x2c4c)
+    #4 start <null> (dyld:arm64e+0x31e7c)
+
+  Thread T6 (tid=287978, running) is a GCD worker thread
+
+  Thread T2 (tid=287974, running) is a GCD worker thread
+
+SUMMARY: ThreadSanitizer: Swift access race SessionRegistry.swift:33 in SessionRegistry.session(for:create:)
+==================
+==================
+WARNING: ThreadSanitizer: Swift access race (pid=11858)
+  Modifying access of Swift variable at 0x000109002530 by thread T4:
+    #0 SessionRegistry.session(for:create:) SessionRegistry.swift:33 (SessionRegistry:arm64+0x10000203c)
+    #1 swift::runJobInEstablishedExecutorContext(swift::Job*, swift::SerialExecutorRef, swift::TaskExecutorRef) <null> (libswift_Concurrency.dylib:arm64e+0x2c4c)
+
+  Previous modifying access of Swift variable at 0x000109002530 by thread T5:
+    #0 SessionRegistry.session(for:create:) SessionRegistry.swift:33 (SessionRegistry:arm64+0x10000203c)
+    #1 swift::runJobInEstablishedExecutorContext(swift::Job*, swift::SerialExecutorRef, swift::TaskExecutorRef) <null> (libswift_Concurrency.dylib:arm64e+0x2c4c)
+
+  Location is heap block of size 24 at 0x000109002520 allocated by main thread:
+    #0 malloc <null> (libclang_rt.tsan_osx_dynamic.dylib:arm64e+0x67d68)
+    #1 _malloc_type_malloc_outlined <null> (libsystem_malloc.dylib:arm64e+0x1edb0)
+    #2 async_Main main.swift:22 (SessionRegistry:arm64+0x100003020)
+    #3 swift::runJobInEstablishedExecutorContext(swift::Job*, swift::SerialExecutorRef, swift::TaskExecutorRef) <null> (libswift_Concurrency.dylib:arm64e+0x2c4c)
+    #4 start <null> (dyld:arm64e+0x31e7c)
+
+  Thread T4 (tid=287976, running) is a GCD worker thread
+
+  Thread T5 (tid=287977, running) is a GCD worker thread
+
+SUMMARY: ThreadSanitizer: Swift access race SessionRegistry.swift:33 in SessionRegistry.session(for:create:)
+==================
+==================
+WARNING: ThreadSanitizer: Swift access race (pid=11858)
+  Modifying access of Swift variable at 0x000109002530 by thread T7:
+    #0 SessionRegistry.session(for:create:) SessionRegistry.swift:33 (SessionRegistry:arm64+0x10000204c)
+    #1 swift::runJobInEstablishedExecutorContext(swift::Job*, swift::SerialExecutorRef, swift::TaskExecutorRef) <null> (libswift_Concurrency.dylib:arm64e+0x2c4c)
+
+  Previous modifying access of Swift variable at 0x000109002530 by thread T6:
+    #0 SessionRegistry.session(for:create:) SessionRegistry.swift:33 (SessionRegistry:arm64+0x10000204c)
+    #1 swift::runJobInEstablishedExecutorContext(swift::Job*, swift::SerialExecutorRef, swift::TaskExecutorRef) <null> (libswift_Concurrency.dylib:arm64e+0x2c4c)
+
+  Location is heap block of size 24 at 0x000109002520 allocated by main thread:
+    #0 malloc <null> (libclang_rt.tsan_osx_dynamic.dylib:arm64e+0x67d68)
+    #1 _malloc_type_malloc_outlined <null> (libsystem_malloc.dylib:arm64e+0x1edb0)
+    #2 async_Main main.swift:22 (SessionRegistry:arm64+0x100003020)
+    #3 swift::runJobInEstablishedExecutorContext(swift::Job*, swift::SerialExecutorRef, swift::TaskExecutorRef) <null> (libswift_Concurrency.dylib:arm64e+0x2c4c)
+    #4 start <null> (dyld:arm64e+0x31e7c)
+
+  Thread T7 (tid=287979, running) is a GCD worker thread
+
+  Thread T6 (tid=287978, running) is a GCD worker thread
+
+SUMMARY: ThreadSanitizer: Swift access race SessionRegistry.swift:33 in SessionRegistry.session(for:create:)
+==================
+==================
+WARNING: ThreadSanitizer: Swift access race (pid=11858)
+  Modifying access of Swift variable at 0x000109002530 by thread T4:
+    #0 SessionRegistry.session(for:create:) SessionRegistry.swift:33 (SessionRegistry:arm64+0x10000204c)
+    #1 swift::runJobInEstablishedExecutorContext(swift::Job*, swift::SerialExecutorRef, swift::TaskExecutorRef) <null> (libswift_Concurrency.dylib:arm64e+0x2c4c)
+
+  Previous modifying access of Swift variable at 0x000109002530 by thread T8:
+    #0 SessionRegistry.session(for:create:) SessionRegistry.swift:33 (SessionRegistry:arm64+0x10000203c)
+    #1 swift::runJobInEstablishedExecutorContext(swift::Job*, swift::SerialExecutorRef, swift::TaskExecutorRef) <null> (libswift_Concurrency.dylib:arm64e+0x2c4c)
+
+  Location is heap block of size 24 at 0x000109002520 allocated by main thread:
+    #0 malloc <null> (libclang_rt.tsan_osx_dynamic.dylib:arm64e+0x67d68)
+    #1 _malloc_type_malloc_outlined <null> (libsystem_malloc.dylib:arm64e+0x1edb0)
+*** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[__NSCFNumber count]: unrecognized selector sent to instance 0x8000000000000000'
+*** First throw call stack:
+(
+	0   CoreFoundation                      0x000000019dd028c0 __exceptionPreprocess + 176
+	1   libobjc.A.dylib                     0x000000019d76060c objc_exception_throw + 88
+	2   CoreFoundation                      0x000000019ddcacac -[NSObject(NSObject) __retain_OA] + 0
+	3   CoreFoundation                      0x000000019dc6ff70 ___forwarding___ + 1504
+	4   CoreFoundation                      0x000000019dc6f8d0 __forwarding_prep_0___ + 96
+	5   libswiftCore.dylib                  0x00000001b214e7c8 $sSD8_VariantV8setValue_6forKeyyq_n_xtF + 84
+	6   libswiftCore.dylib                  0x00000001b22bb068 $sSDyq_Sgxcis + 512
+	7   SessionRegistry                     0x0000000100132074 $s15SessionRegistryAAC7session3for6createAA0A0VSS_AGyYaYCXEtYaFTQ0_ + 584
+	8   SessionRegistry                     0x0000000100137265 $s15SessionRegistryyScGySS_SStGzYaXEfU0_SS_SStyYacfU_TQ1_ + 1
+	9   SessionRegistry                     0x0000000100139ca5 $s15SessionRegistryyScGySS_SStGzYaXEfU0_SS_SStyYacfU_TATQ0_ + 1
+	10  SessionRegistry                     0x0000000100139e79 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTQ0_ + 1
+	11  SessionRegistry                     0x000000010013a081 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTATQ0_ + 1
+	12  libswift_Concurrency.dylib          0x00000002ca4ced41 _ZL23completeTaskWithClosurePN5swift12AsyncContextEPNS_10SwiftErrorE + 1
+)
+*** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[__NSCFNumber count]: unrecognized selector sent to instance 0x8000000000000000'
+*** First throw call stack:
+(
+	0   CoreFoundation                      0x000000019dd028c0 __exceptionPreprocess + 176
+	1   libobjc.A.dylib                     0x000000019d76060c objc_exception_throw + 88
+	2   CoreFoundation                      0x000000019ddcacac -[NSObject(NSObject) __retain_OA] + 0
+	3   CoreFoundation                      0x000000019dc6ff70 ___forwarding___ + 1504
+	4   CoreFoundation                      0x000000019dc6f8d0 __forwarding_prep_0___ + 96
+	5   libswiftCore.dylib                  0x00000001b214e7c8 $sSD8_VariantV8setValue_6forKeyyq_n_xtF + 84
+	6   libswiftCore.dylib                  0x00000001b22bb068 $sSDyq_Sgxcis + 512
+	7   SessionRegistry                     0x0000000100132074 $s15SessionRegistryAAC7session3for6createAA0A0VSS_AGyYaYCXEtYaFTQ0_ + 584
+	8   SessionRegistry                     0x0000000100137265 $s15SessionRegistryyScGySS_SStGzYaXEfU0_SS_SStyYacfU_TQ1_ + 1
+	9   SessionRegistry                     0x0000000100139ca5 $s15SessionRegistryyScGySS_SStGzYaXEfU0_SS_SStyYacfU_TATQ0_ + 1
+	10  SessionRegistry                     0x0000000100139e79 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTQ0_ + 1
+	11  SessionRegistry                     0x000000010013a081 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTATQ0_ + 1
+	12  libswift_Concurrency.dylib          0x00000002ca4ced41 _ZL23completeTaskWithClosurePN5swift12AsyncContextEPNS_10SwiftErrorE + 1
+)
+    #2 async_Main main.swift:22 (SessionRegistry:arm64+0x100003020)
+*** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[__NSCFNumber count]: unrecognized selector sent to instance 0x8000000000000000'
+*** First throw call stack:
+(
+	0   CoreFoundation                      0x000000019dd028c0 __exceptionPreprocess + 176
+	1   libobjc.A.dylib                     0x000000019d76060c objc_exception_throw + 88
+	2   CoreFoundation                      0x000000019ddcacac -[NSObject(NSObject) __retain_OA] + 0
+	3   CoreFoundation                      0x000000019dc6ff70 ___forwarding___ + 1504
+	4   CoreFoundation                      0x000000019dc6f8d0 __forwarding_prep_0___ + 96
+	5   libswiftCore.dylib                  0x00000001b214e7c8 $sSD8_VariantV8setValue_6forKeyyq_n_xtF + 84
+	6   libswiftCore.dylib                  0x00000001b22bb068 $sSDyq_Sgxcis + 512
+	7   SessionRegistry                     0x0000000100132074 $s15SessionRegistryAAC7session3for6createAA0A0VSS_AGyYaYCXEtYaFTQ0_ + 584
+	8   SessionRegistry                     0x0000000100137265 $s15SessionRegistryyScGySS_SStGzYaXEfU0_SS_SStyYacfU_TQ1_ + 1
+	9   SessionRegistry                     0x0000000100139ca5 $s15SessionRegistryyScGySS_SStGzYaXEfU0_SS_SStyYacfU_TATQ0_ + 1
+	10  SessionRegistry                     0x0000000100139e79 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTQ0_ + 1
+	11  SessionRegistry                     0x000000010013a081 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTATQ0_ + 1
+	12  libswift_Concurrency.dylib          0x00000002ca4ced41 _ZL23completeTaskWithClosurePN5swift12AsyncContextEPNS_10SwiftErrorE + 1
+)
+libc++abi: *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[__NSCFNumber count]: unrecognized selector sent to instance 0x8000000000000000'
+*** First throw call stack:
+(
+	0   CoreFoundation                      0x000000019dd028c0 __exceptionPreprocess + 176
+	1   libobjc.A.dylib                     0x000000019d76060c objc_exception_throw + 88
+	2   CoreFoundation                      0x000000019ddcacac -[NSObject(NSObject) __retain_OA] + 0
+	3   CoreFoundation                      0x000000019dc6ff70 ___forwarding___ + 1504
+	4   CoreFoundation                      0x000000019dc6f8d0 __forwarding_prep_0___ + 96
+	5   libswiftCore.dylib                  0x00000001b214e7c8 $sSD8_VariantV8setValue_6forKeyyq_n_xtF + 84
+	6   libswiftCore.dylib                  0x00000001b22bb068 $sSDyq_Sgxcis + 512
+	7   SessionRegistry                     0x0000000100132074 $s15SessionRegistryAAC7session3for6createAA0A0VSS_AGyYaYCXEtYaFTQ0_ + 584
+	8   SessionRegistry                     0x0000000100137265 $s15SessionRegistryyScGySS_SStGzYaXEfU0_SS_SStyYacfU_TQ1_ + 1
+	9   SessionRegistry                     0x0000000100139ca5 $s15SessionRegistryyScGySS_SStGzYaXEfU0_SS_SStyYacfU_TATQ0_ + 1
+	10  SessionRegistry                     0x0000000100139e79 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTQ0_ + 1
+	11  SessionRegistry                     0x000000010013a081 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTATQ0_ + 1
+	12  libswift_Concurrency.dylib          0x00000002ca4ced41 _ZL23completeTaskWithClosurePN5swift12AsyncContextEPNS_10SwiftErrorE + 1
+)
+terminating due to uncaught exception of type NSException*** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[__NSCFNumber count]: unrecognized selector sent to instance 0x8000000000000000'
+*** First throw call stack:
+(
+	0   CoreFoundation                      0x000000019dd028c0 __exceptionPreprocess + 176
+	1   libobjc.A.dylib                     0x000000019d76060c objc_exception_throw + 88
+	2   CoreFoundation                      0x000000019ddcacac -[NSObject(NSObject) __retain_OA] + 0
+	3   CoreFoundation                      0x000000019dc6ff70 ___forwarding___ + 1504
+	4   CoreFoundation                      0x000000019dc6f8d0 __forwarding_prep_0___ + 96
+	5   libswiftCore.dylib                  0x00000001b214e7c8 $sSD8_VariantV8setValue_6forKeyyq_n_xtF + 84
+	6   libswiftCore.dylib                  0x00000001b22bb068 $sSDyq_Sgxcis + 512
+	7   SessionRegistry                     0x0000000100132074 $s15SessionRegistryAAC7session3for6createAA0A0VSS_AGyYaYCXEtYaFTQ0_ + 584
+	8   SessionRegistry                     0x0000000100137265 $s15SessionRegistryyScGySS_SStGzYaXEfU0_SS_SStyYacfU_TQ1_ + 1
+	9   SessionRegistry                     0x0000000100139ca5 $s15SessionRegistryyScGySS_SStGzYaXEfU0_SS_SStyYacfU_TATQ0_ + 1
+	10  SessionRegistry                     0x0000000100139e79 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTQ0_ + 1
+	11  SessionRegistry                     0x000000010013a081 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTATQ0_ + 1
+	12  libswift_Concurrency.dylib          0x00000002ca4ced41 _ZL23completeTaskWithClosurePN5swift12AsyncContextEPNS_10SwiftErrorE + 1
+)
+
+    #3 swift::runJobInEstablishedExecutorContext(swift::Job*, swift::SerialExecutorRef, swift::TaskExecutorRef) <null> (libswift_Concurrency.dylib:arm64e+0x2c4c)
+*** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[__NSCFNumber count]: unrecognized selector sent to instance 0x8000000000000000'
+*** First throw call stack:
+(
+	0   CoreFoundation                      0x000000019dd028c0 __exceptionPreprocess + 176
+	1   libobjc.A.dylib                     0x000000019d76060c objc_exception_throw + 88
+	2   CoreFoundation                      0x000000019ddcacac -[NSObject(NSObject) __retain_OA] + 0
+	3   CoreFoundation                      0x000000019dc6ff70 ___forwarding___ + 1504
+	4   CoreFoundation                      0x000000019dc6f8d0 __forwarding_prep_0___ + 96
+	5   libswiftCore.dylib                  0x00000001b214e7c8 $sSD8_VariantV8setValue_6forKeyyq_n_xtF + 84
+	6   libswiftCore.dylib                  0x00000001b22bb068 $sSDyq_Sgxcis + 512
+	7   SessionRegistry                     0x0000000100132074 $s15SessionRegistryAAC7session3for6createAA0A0VSS_AGyYaYCXEtYaFTQ0_ + 584
+	8   SessionRegistry                     0x0000000100137265 $s15SessionRegistryyScGySS_SStGzYaXEfU0_SS_SStyYacfU_TQ1_ + 1
+	9   SessionRegistry                     0x0000000100139ca5 $s15SessionRegistryyScGySS_SStGzYaXEfU0_SS_SStyYacfU_TATQ0_ + 1
+	10  SessionRegistry                     0x0000000100139e79 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTQ0_ + 1
+	11  SessionRegistry                     0x000000010013a081 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTATQ0_ + 1
+	12  libswift_Concurrency.dylib          0x00000002ca4ced41 _ZL23completeTaskWithClosurePN5swift12AsyncContextEPNS_10SwiftErrorE + 1
+)
+libc++abi: *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[__NSCFNumber count]: unrecognized selector sent to instance 0x8000000000000000'
+*** First throw call stack:
+(
+	0   CoreFoundation                      0x000000019dd028c0 __exceptionPreprocess + 176
+	1   libobjc.A.dylib                     0x000000019d76060c objc_exception_throw + 88
+	2   CoreFoundation                      0x000000019ddcacac -[NSObject(NSObject) __retain_OA] + 0
+	3   CoreFoundation                      0x000000019dc6ff70 ___forwarding___ + 1504
+	4   CoreFoundation                      0x000000019dc6f8d0 __forwarding_prep_0___ + 96
+	5   libswiftCore.dylib                  0x00000001b214e7c8 $sSD8_VariantV8setValue_6forKeyyq_n_xtF + 84
+	6   libswiftCore.dylib                  0x00000001b22bb068 $sSDyq_Sgxcis + 512
+	7   SessionRegistry                     0x0000000100132074 $s15SessionRegistryAAC7session3for6createAA0A0VSS_AGyYaYCXEtYaFTQ0_ + 584
+	8   SessionRegistry                     0x0000000100137265 $s15SessionRegistryyScGySS_SStGzYaXEfU0_SS_SStyYacfU_TQ1_ + 1
+	9   SessionRegistry                     0x0000000100139ca5 $s15SessionRegistryyScGySS_SStGzYaXEfU0_SS_SStyYacfU_TATQ0_ + 1
+	10  SessionRegistry                     0x0000000100139e79 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTQ0_ + 1
+	11  SessionRegistry                     0x000000010013a081 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTATQ0_ + 1
+	12  libswift_Concurrency.dylib          0x00000002ca4ced41 _ZL23completeTaskWithClosurePN5swift12AsyncContextEPNS_10SwiftErrorE + 1
+)
+terminating due to uncaught exception of type NSException
+*** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[__NSCFNumber count]: unrecognized selector sent to instance 0x8000000000000000'
+*** First throw call stack:
+(
+	0   CoreFoundation                      0x000000019dd028c0 __exceptionPreprocess + 176
+	1   libobjc.A.dylib                     0x000000019d76060c objc_exception_throw + 88
+	2   CoreFoundation                      0x000000019ddcacac -[NSObject(NSObject) __retain_OA] + 0
+	3   CoreFoundation                      0x000000019dc6ff70 ___forwarding___ + 1504
+	4   CoreFoundation                      0x000000019dc6f8d0 __forwarding_prep_0___ + 96
+	5   libswiftCore.dylib                  0x00000001b214e7c8 $sSD8_VariantV8setValue_6forKeyyq_n_xtF + 84
+	6   libswiftCore.dylib                  0x00000001b22bb068 $sSDyq_Sgxcis + 512
+	7   SessionRegistry                     0x0000000100132074 $s15SessionRegistryAAC7session3for6createAA0A0VSS_AGyYaYCXEtYaFTQ0_ + 584
+	8   SessionRegistry                     0x0000000100137265 $s15SessionRegistryyScGySS_SStGzYaXEfU0_SS_SStyYacfU_TQ1_ + 1
+	9   SessionRegistry                     0x0000000100139ca5 $s15SessionRegistryyScGySS_SStGzYaXEfU0_SS_SStyYacfU_TATQ0_ + 1
+	10  SessionRegistry                     0x0000000100139e79 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTQ0_ + 1
+	11  SessionRegistry                     0x000000010013a081 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTATQ0_ + 1
+	12  libswift_Concurrency.dylib          0x00000002ca4ced41 _ZL23completeTaskWithClosurePN5swift12AsyncContextEPNS_10SwiftErrorE + 1
+)
+libc++abi: terminating due to uncaught exception of type NSException*** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[__NSCFNumber count]: unrecognized selector sent to instance 0x8000000000000000'
+*** First throw call stack:
+(
+	0   CoreFoundation                      0x000000019dd028c0 __exceptionPreprocess + 176
+	1   libobjc.A.dylib                     0x000000019d76060c objc_exception_throw + 88
+	2   CoreFoundation                      0x000000019ddcacac -[NSObject(NSObject) __retain_OA] + 0
+	3   CoreFoundation                      0x000000019dc6ff70 ___forwarding___ + 1504
+	4   CoreFoundation                      0x000000019dc6f8d0 __forwarding_prep_0___ + 96
+	5   libswiftCore.dylib                  0x00000001b214e7c8 $sSD8_VariantV8setValue_6forKeyyq_n_xtF + 84
+	6   libswiftCore.dylib                  0x00000001b22bb068 $sSDyq_Sgxcis + 512
+	7   SessionRegistry                     0x0000000100132074 $s15SessionRegistryAAC7session3for6createAA0A0VSS_AGyYaYCXEtYaFTQ0_ + 584
+	8   SessionRegistry                     0x0000000100137265 $s15SessionRegistryyScGySS_SStGzYaXEfU0_SS_SStyYacfU_TQ1_ + 1
+	9   SessionRegistry                     0x0000000100139ca5 $s15SessionRegistryyScGySS_SStGzYaXEfU0_SS_SStyYacfU_TATQ0_ + 1
+	10  SessionRegistry                     0x0000000100139e79 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTQ0_ + 1
+	11  SessionRegistry                     0x000000010013a081 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTATQ0_ + 1
+	12  libswift_Concurrency.dylib          0x00000002ca4ced41 _ZL23completeTaskWithClosurePN5swift12AsyncContextEPNS_10SwiftErrorE + 1
+)
+    #4 start <null> (dyld:arm64e+0x31e7c)
+*** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[__NSCFNumber count]: unrecognized selector sent to instance 0x8000000000000000'
+*** First throw call stack:
+(
+	0   CoreFoundation                      0x000000019dd028c0 __exceptionPreprocess + 176
+	1   libobjc.A.dylib                     0x000000019d76060c objc_exception_throw + 88
+	2   CoreFoundation                      0x000000019ddcacac -[NSObject(NSObject) __retain_OA] + 0
+	3   CoreFoundation                      0x000000019dc6ff70 ___forwarding___ + 1504
+	4   CoreFoundation                      0x000000019dc6f8d0 __forwarding_prep_0___ + 96
+	5   libswiftCore.dylib                  0x00000001b214e7c8 $sSD8_VariantV8setValue_6forKeyyq_n_xtF + 84
+	6   libswiftCore.dylib                  0x00000001b22bb068 $sSDyq_Sgxcis + 512
+	7   SessionRegistry                     0x0000000100132074 $s15SessionRegistryAAC7session3for6createAA0A0VSS_AGyYaYCXEtYaFTQ0_ + 584
+	8   SessionRegistry                     0x0000000100137265 $s15SessionRegistryyScGySS_SStGzYaXEfU0_SS_SStyYacfU_TQ1_ + 1
+	9   SessionRegistry                     0x0000000100139ca5 $s15SessionRegistryyScGySS_SStGzYaXEfU0_SS_SStyYacfU_TATQ0_ + 1
+	10  SessionRegistry                     0x0000000100139e79 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTQ0_ + 1
+	11  SessionRegistry                     0x000000010013a081 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTATQ0_ + 1
+	12  libswift_Concurrency.dylib          0x00000002ca4ced41 _ZL23completeTaskWithClosurePN5swift12AsyncContextEPNS_10SwiftErrorE + 1
+)
+
+
+libc++abi: libc++abi: *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[__NSCFNumber count]: unrecognized selector sent to instance 0x8000000000000000'
+*** First throw call stack:
+(
+	0   CoreFoundation                      0x000000019dd028c0 __exceptionPreprocess + 176
+	1   libobjc.A.dylib                     0x000000019d76060c objc_exception_throw + 88
+	2   CoreFoundation                      0x000000019ddcacac -[NSObject(NSObject) __retain_OA] + 0
+	3   CoreFoundation                      0x000000019dc6ff70 ___forwarding___ + 1504
+	4   CoreFoundation                      0x000000019dc6f8d0 __forwarding_prep_0___ + 96
+	5   libswiftCore.dylib                  0x00000001b214e7c8 $sSD8_VariantV8setValue_6forKeyyq_n_xtF + 84
+	6   libswiftCore.dylib                  0x00000001b22bb068 $sSDyq_Sgxcis + 512
+	7   SessionRegistry                     0x0000000100132074 $s15SessionRegistryAAC7session3for6createAA0A0VSS_AGyYaYCXEtYaFTQ0_ + 584
+	8   SessionRegistry                     0x0000000100137265 $s15SessionRegistryyScGySS_SStGzYaXEfU0_SS_SStyYacfU_TQ1_ + 1
+	9   SessionRegistry                     0x0000000100139ca5 $s15SessionRegistryyScGySS_SStGzYaXEfU0_SS_SStyYacfU_TATQ0_ + 1
+	10  SessionRegistry                     0x0000000100139e79 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTQ0_ + 1
+	11  SessionRegistry                     0x000000010013a081 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTATQ0_ + 1
+	12  libswift_Concurrency.dylib          0x00000002ca4ced41 _ZL23completeTaskWithClosurePN5swift12AsyncContextEPNS_10SwiftErrorE + 1
+)
+terminating due to uncaught exception of type NSException
+  Thread T4exit: 134

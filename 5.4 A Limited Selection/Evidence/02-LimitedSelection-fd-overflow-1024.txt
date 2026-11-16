@@ -1,0 +1,7 @@
+listen_sd = 1027, FD_SETSIZE = 1024
+listen_sd >= FD_SETSIZE: true
+Warning: ALLOW_FD_OVERFLOW is set. listen_sd (1027) >= FD_SETSIZE (1024).
+Proceeding with FD_SET despite out-of-range descriptor; memory corruption may follow.
+Waiting on select()...
+  select() failed: Invalid argument
+exit: 0

@@ -1,0 +1,195 @@
+--- run 1
+􀢄  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() recorded an issue at SessionRegistryDiagnosticTests.swift:54:9: Expectation failed: totalCreations == 1
+􀄵  Expected 1 session creation; got 12 — race fired.
+􀄵  totalCreations == 1 → false
+􀄵    totalCreations → 12
+􀢄  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() failed with 1 issue.
+􀢄  Suite SessionRegistryDiagnosticTests failed with 1 issue.
+􀄵  // This suite exists solely to expose the check-then-act race in
+􀄵  // SessionRegistry. It is NOT a correctness test: a passing result would
+􀄵  // indicate the race has been fixed (or the scheduler happened not to
+􀄵  // interleave, which the addDelay: true case makes effectively impossible).
+􀄵  //
+􀄵  // The test is parameterized over addDelay so both the race-widened path
+􀄵  // (addDelay: true) and the unperturbed path (addDelay: false) are verified.
+􀄵  // This is self-contained and does not require SESSIONREGISTRY_ADD_DELAY to
+􀄵  // be set in the scheme.
+􀄵  // ════════════════════════════════════════════════════════════════════════════
+􀢄  Test run with 1 test in 1 suite failed with 1 issue.
+Note: Some test targets reported failures:
+  - SessionRegistryWithRaceWideningTests (Swift Testing)
+exit: 1
+--- run 2
+􀢄  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() recorded an issue at SessionRegistryDiagnosticTests.swift:54:9: Expectation failed: totalCreations == 1
+􀄵  Expected 1 session creation; got 2 — race fired.
+􀄵  totalCreations == 1 → false
+􀄵    totalCreations → 2
+􀢄  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() failed with 1 issue.
+􀢄  Suite SessionRegistryDiagnosticTests failed with 1 issue.
+􀄵  // This suite exists solely to expose the check-then-act race in
+􀄵  // SessionRegistry. It is NOT a correctness test: a passing result would
+􀄵  // indicate the race has been fixed (or the scheduler happened not to
+􀄵  // interleave, which the addDelay: true case makes effectively impossible).
+􀄵  //
+􀄵  // The test is parameterized over addDelay so both the race-widened path
+􀄵  // (addDelay: true) and the unperturbed path (addDelay: false) are verified.
+􀄵  // This is self-contained and does not require SESSIONREGISTRY_ADD_DELAY to
+􀄵  // be set in the scheme.
+􀄵  // ════════════════════════════════════════════════════════════════════════════
+􀢄  Test run with 1 test in 1 suite failed with 1 issue.
+Note: Some test targets reported failures:
+  - SessionRegistryWithRaceWideningTests (Swift Testing)
+exit: 1
+--- run 3
+􀢄  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() recorded an issue at SessionRegistryDiagnosticTests.swift:54:9: Expectation failed: totalCreations == 1
+􀄵  Expected 1 session creation; got 2 — race fired.
+􀄵  totalCreations == 1 → false
+􀄵    totalCreations → 2
+􀢄  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() failed with 1 issue.
+􀢄  Suite SessionRegistryDiagnosticTests failed with 1 issue.
+􀄵  // This suite exists solely to expose the check-then-act race in
+􀄵  // SessionRegistry. It is NOT a correctness test: a passing result would
+􀄵  // indicate the race has been fixed (or the scheduler happened not to
+􀄵  // interleave, which the addDelay: true case makes effectively impossible).
+􀄵  //
+􀄵  // The test is parameterized over addDelay so both the race-widened path
+􀄵  // (addDelay: true) and the unperturbed path (addDelay: false) are verified.
+􀄵  // This is self-contained and does not require SESSIONREGISTRY_ADD_DELAY to
+􀄵  // be set in the scheme.
+􀄵  // ════════════════════════════════════════════════════════════════════════════
+􀢄  Test run with 1 test in 1 suite failed with 1 issue.
+Note: Some test targets reported failures:
+  - SessionRegistryWithRaceWideningTests (Swift Testing)
+exit: 1
+--- run 4
+􀢄  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() recorded an issue at SessionRegistryDiagnosticTests.swift:54:9: Expectation failed: totalCreations == 1
+􀄵  Expected 1 session creation; got 7 — race fired.
+􀄵  totalCreations == 1 → false
+􀄵    totalCreations → 7
+􀢄  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() failed with 1 issue.
+􀢄  Suite SessionRegistryDiagnosticTests failed with 1 issue.
+􀄵  // This suite exists solely to expose the check-then-act race in
+􀄵  // SessionRegistry. It is NOT a correctness test: a passing result would
+􀄵  // indicate the race has been fixed (or the scheduler happened not to
+􀄵  // interleave, which the addDelay: true case makes effectively impossible).
+􀄵  //
+􀄵  // The test is parameterized over addDelay so both the race-widened path
+􀄵  // (addDelay: true) and the unperturbed path (addDelay: false) are verified.
+􀄵  // This is self-contained and does not require SESSIONREGISTRY_ADD_DELAY to
+􀄵  // be set in the scheme.
+􀄵  // ════════════════════════════════════════════════════════════════════════════
+􀢄  Test run with 1 test in 1 suite failed with 1 issue.
+Note: Some test targets reported failures:
+  - SessionRegistryWithRaceWideningTests (Swift Testing)
+exit: 1
+--- run 5
+􀢄  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() recorded an issue at SessionRegistryDiagnosticTests.swift:54:9: Expectation failed: totalCreations == 1
+􀄵  Expected 1 session creation; got 3 — race fired.
+􀄵  totalCreations == 1 → false
+􀄵    totalCreations → 3
+􀢄  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() failed with 1 issue.
+􀢄  Suite SessionRegistryDiagnosticTests failed with 1 issue.
+􀄵  // This suite exists solely to expose the check-then-act race in
+􀄵  // SessionRegistry. It is NOT a correctness test: a passing result would
+􀄵  // indicate the race has been fixed (or the scheduler happened not to
+􀄵  // interleave, which the addDelay: true case makes effectively impossible).
+􀄵  //
+􀄵  // The test is parameterized over addDelay so both the race-widened path
+􀄵  // (addDelay: true) and the unperturbed path (addDelay: false) are verified.
+􀄵  // This is self-contained and does not require SESSIONREGISTRY_ADD_DELAY to
+􀄵  // be set in the scheme.
+􀄵  // ════════════════════════════════════════════════════════════════════════════
+􀢄  Test run with 1 test in 1 suite failed with 1 issue.
+Note: Some test targets reported failures:
+  - SessionRegistryWithRaceWideningTests (Swift Testing)
+exit: 1
+--- run 6
+􀢄  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() recorded an issue at SessionRegistryDiagnosticTests.swift:54:9: Expectation failed: totalCreations == 1
+􀄵  Expected 1 session creation; got 2 — race fired.
+􀄵  totalCreations == 1 → false
+􀄵    totalCreations → 2
+􀢄  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() failed with 1 issue.
+􀢄  Suite SessionRegistryDiagnosticTests failed with 1 issue.
+􀄵  // This suite exists solely to expose the check-then-act race in
+􀄵  // SessionRegistry. It is NOT a correctness test: a passing result would
+􀄵  // indicate the race has been fixed (or the scheduler happened not to
+􀄵  // interleave, which the addDelay: true case makes effectively impossible).
+􀄵  //
+􀄵  // The test is parameterized over addDelay so both the race-widened path
+􀄵  // (addDelay: true) and the unperturbed path (addDelay: false) are verified.
+􀄵  // This is self-contained and does not require SESSIONREGISTRY_ADD_DELAY to
+􀄵  // be set in the scheme.
+􀄵  // ════════════════════════════════════════════════════════════════════════════
+􀢄  Test run with 1 test in 1 suite failed with 1 issue.
+Note: Some test targets reported failures:
+  - SessionRegistryWithRaceWideningTests (Swift Testing)
+exit: 1
+--- run 7
+􀢄  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() recorded an issue at SessionRegistryDiagnosticTests.swift:54:9: Expectation failed: totalCreations == 1
+􀄵  Expected 1 session creation; got 2 — race fired.
+􀄵  totalCreations == 1 → false
+􀄵    totalCreations → 2
+􀢄  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() failed with 1 issue.
+􀢄  Suite SessionRegistryDiagnosticTests failed with 1 issue.
+􀄵  // This suite exists solely to expose the check-then-act race in
+􀄵  // SessionRegistry. It is NOT a correctness test: a passing result would
+􀄵  // indicate the race has been fixed (or the scheduler happened not to
+􀄵  // interleave, which the addDelay: true case makes effectively impossible).
+􀄵  //
+􀄵  // The test is parameterized over addDelay so both the race-widened path
+􀄵  // (addDelay: true) and the unperturbed path (addDelay: false) are verified.
+􀄵  // This is self-contained and does not require SESSIONREGISTRY_ADD_DELAY to
+􀄵  // be set in the scheme.
+􀄵  // ════════════════════════════════════════════════════════════════════════════
+􀢄  Test run with 1 test in 1 suite failed with 1 issue.
+Note: Some test targets reported failures:
+  - SessionRegistryWithRaceWideningTests (Swift Testing)
+exit: 1
+--- run 8
+􀢄  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() recorded an issue at SessionRegistryDiagnosticTests.swift:54:9: Expectation failed: totalCreations == 1
+􀄵  Expected 1 session creation; got 6 — race fired.
+􀄵  totalCreations == 1 → false
+􀄵    totalCreations → 6
+􀢄  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() failed with 1 issue.
+􀢄  Suite SessionRegistryDiagnosticTests failed with 1 issue.
+􀄵  // This suite exists solely to expose the check-then-act race in
+􀄵  // SessionRegistry. It is NOT a correctness test: a passing result would
+􀄵  // indicate the race has been fixed (or the scheduler happened not to
+􀄵  // interleave, which the addDelay: true case makes effectively impossible).
+􀄵  //
+􀄵  // The test is parameterized over addDelay so both the race-widened path
+􀄵  // (addDelay: true) and the unperturbed path (addDelay: false) are verified.
+􀄵  // This is self-contained and does not require SESSIONREGISTRY_ADD_DELAY to
+􀄵  // be set in the scheme.
+􀄵  // ════════════════════════════════════════════════════════════════════════════
+􀢄  Test run with 1 test in 1 suite failed with 1 issue.
+Note: Some test targets reported failures:
+  - SessionRegistryWithRaceWideningTests (Swift Testing)
+exit: 1
+--- run 9
+􀢄  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() recorded an issue at SessionRegistryDiagnosticTests.swift:54:9: Expectation failed: totalCreations == 1
+􀄵  Expected 1 session creation; got 3 — race fired.
+􀄵  totalCreations == 1 → false
+􀄵    totalCreations → 3
+􀢄  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() failed with 1 issue.
+􀢄  Suite SessionRegistryDiagnosticTests failed with 1 issue.
+􀄵  // This suite exists solely to expose the check-then-act race in
+􀄵  // SessionRegistry. It is NOT a correctness test: a passing result would
+􀄵  // indicate the race has been fixed (or the scheduler happened not to
+􀄵  // interleave, which the addDelay: true case makes effectively impossible).
+􀄵  //
+􀄵  // The test is parameterized over addDelay so both the race-widened path
+􀄵  // (addDelay: true) and the unperturbed path (addDelay: false) are verified.
+􀄵  // This is self-contained and does not require SESSIONREGISTRY_ADD_DELAY to
+􀄵  // be set in the scheme.
+􀄵  // ════════════════════════════════════════════════════════════════════════════
+􀢄  Test run with 1 test in 1 suite failed with 1 issue.
+Note: Some test targets reported failures:
+  - SessionRegistryWithRaceWideningTests (Swift Testing)
+exit: 1
+--- run 10
+􁁛  Test concurrentRequestsForSameNewUserShouldCreateExactlyOneSession() passed.
+􁁛  Suite SessionRegistryDiagnosticTests passed.
+􁁛  Test run with 1 test in 1 suite passed.
+exit: 0
+=== 10 runs: 1 passed, 9 failed, 0 crashed

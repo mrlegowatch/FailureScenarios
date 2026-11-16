@@ -1,0 +1,3 @@
+Baseline/main.swift:31:33: error: non-Sendable type 'SessionRegistry' of let 'registry' cannot exit main actor-isolated context [#NonSendableExitingActor]
+error: Build failed
+exit: 1

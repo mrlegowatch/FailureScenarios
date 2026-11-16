@@ -1,0 +1,37 @@
+(lldb) process attach --pid 98014
+Process 98014 stopped
+* thread #1, queue = 'com.apple.main-thread', stop reason = signal SIGSTOP
+       frame #0: 0x0000000196adcb9c libsystem_kernel.dylib`semaphore_wait_trap + 8
+libsystem_kernel.dylib`semaphore_wait_trap:
+->  0x196adcb9c <+8>: ret    
+
+libsystem_kernel.dylib`semaphore_wait_signal_trap:
+    0x196adcba0 <+0>: mov    x16, #-0x25               ; =-37 
+    0x196adcba4 <+4>: svc    #0x80
+    0x196adcba8 <+8>: ret    
+Target 0: (Instrumentation) stopped.
+Executable binary set to "/Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.8 A Test of Patience/build/swiftpm/out/Products/Debug/Instrumentation".
+Architecture set to: arm64-apple-macosx-.
+(lldb) thread list
+Process 98014 stopped
+* thread #1: tid = 0x49273da, 0x0000000196adcb9c libsystem_kernel.dylib`semaphore_wait_trap + 8, queue = 'com.apple.main-thread', stop reason = signal SIGSTOP
+  thread #4: tid = 0xf00000001, 0x00000001ab466910 libswiftCore.dylib`protocol witness for Swift.Collection.subscript.read : (τ_0_0.Index) -> τ_0_0.Element in conformance Swift._ArrayBuffer<τ_0_0> : Swift.Collection in Swift with unmangled suffix ".resume.0Tm" + 36, name = 'Task 1', queue = 'com.apple.root.default-qos.cooperative'
+  thread #3: tid = 0x49273e5, 0x0000000196ade9ec libsystem_kernel.dylib`__workq_kernreturn + 8
+(lldb) thread backtrace all
+* thread #1, queue = 'com.apple.main-thread', stop reason = signal SIGSTOP
+   * frame #0: 0x0000000196adcb9c libsystem_kernel.dylib`semaphore_wait_trap + 8
+     frame #1: 0x000000019696249c libdispatch.dylib`_dispatch_sema4_wait + 28
+     frame #2: 0x0000000196962b28 libdispatch.dylib`_dispatch_semaphore_wait_slow + 132
+     frame #3: 0x00000001024362e8 Instrumentation`main at main.swift:98:11
+     frame #4: 0x000000019674be80 dyld`start + 6688
+  thread #4, name = 'Task 1', queue = 'com.apple.root.default-qos.cooperative'
+       frame #0: 0x00000001ab466910 libswiftCore.dylib`protocol witness for Swift.Collection.subscript.read : (τ_0_0.Index) -> τ_0_0.Element in conformance Swift._ArrayBuffer<τ_0_0> : Swift.Collection in Swift with unmangled suffix ".resume.0Tm" + 36
+       frame #1: 0x00000001ab2348b0 libswiftCore.dylib`protocol witness for IteratorProtocol.next() in conformance IndexingIterator<τ_0_0> + 600
+       frame #2: 0x00000001ab261ce0 libswiftCore.dylib`Sequence<>.contains(_:) + 776
+       frame #3: 0x00000001024356c8 Instrumentation`Deduper.process(record=(id = "E7F47319-AC24-415B-87CC-716986C49F7E", source = "batch", value = 8528)) at Deduper.swift:23:39
+       frame #4: 0x0000000102436f00 Instrumentation`run() at main.swift:77:35
+    ﹍ frame #5: 0x00000001024363c8 Instrumentation`closure #1() in  at main.swift:95:11
+  thread #3
+       frame #0: 0x0000000196ade9ec libsystem_kernel.dylib`__workq_kernreturn + 8
+(lldb) detach
+Process 98014 detached

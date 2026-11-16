@@ -1,0 +1,7 @@
+ThreadSanitizer:DEADLYSIGNAL
+ThreadSanitizer:DEADLYSIGNAL
+==11776==ERROR: ThreadSanitizer: SEGV on unknown address 0x000000000010 (pc 0x0001b5344820 bp 0x00016dd9ec40 sp 0x00016dd9ebf0 T284777)
+==11776==The signal is caused by a READ memory access.
+==11776==Hint: address points to the zero page.
+[stopped by capture.sh after 180s]
+exit: 142

@@ -1,0 +1,20 @@
+=== Change2 Shape Driver ===
+
+Rectangle (10x5, filled, selected, zoom=1.5)
+  computedArea:      50.0
+  computedPerimeter: 30.0
+  displayLabel:      'rectangle [selected] area=50.0'
+  boundingInset:     3.0
+
+Circle (diameter=8, not filled, not selected, zoom=1.0)
+  computedArea:      50.2655
+  computedPerimeter: 25.1327
+  displayLabel:      'circle area=50.3'
+  boundingInset:     0.5
+
+Triangle (base=6, height=4, filled, selected+highlighted, zoom=2.0)
+  computedArea:      12.0
+  computedPerimeter: 17.2111
+  displayLabel:      'triangle [selected, highlighted] area=12.0'
+  boundingInset:     8.0
+exit: 0

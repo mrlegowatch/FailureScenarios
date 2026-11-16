@@ -1,0 +1,9 @@
+􀟈  Test run started.
+􀄵  Testing Library Version: 2084
+􀄵  Target Platform: arm64e-apple-macos14.0
+􀟈  Suite "Subscriber Lifetime" started.
+􀟈  Test "cancelled WorkSession releases its subscriber" started.
+􁁛  Test "cancelled WorkSession releases its subscriber" passed after 0.105 seconds.
+􁁛  Suite "Subscriber Lifetime" passed after 0.105 seconds.
+􁁛  Test run with 1 test in 1 suite passed after 0.106 seconds.
+exit: 0

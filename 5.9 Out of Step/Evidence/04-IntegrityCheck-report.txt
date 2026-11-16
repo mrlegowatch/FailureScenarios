@@ -1,0 +1,43 @@
+INTEGRITY CHECK: Fixtures/old_data.json
+====================================================
+
+Step 1 — Decode
+----------------------------------------------------
+  id 1  Morning Run: status=.active  currentCount=14  freezesRemaining=1
+  id 2  Daily Reading: status=.frozen  currentCount=3  freezesRemaining=1
+  id 3  30-Day Yoga: status=.broken  currentCount=30  freezesRemaining=1
+  id 4  Meditation: status=.active  currentCount=7  freezesRemaining=1
+  id 5  Cold Shower: status=.frozen  currentCount=0  freezesRemaining=1
+  5 records decoded  [OK]
+
+Step 2 — Re-encode each record
+----------------------------------------------------
+  id 1  Morning Run: 107 bytes  well-formed JSON: YES
+  id 2  Daily Reading: 108 bytes  well-formed JSON: YES
+  id 3  30-Day Yoga: 107 bytes  well-formed JSON: YES
+  id 4  Meditation: 105 bytes  well-formed JSON: YES
+  id 5  Cold Shower: 106 bytes  well-formed JSON: YES
+  All records well-formed: YES
+
+Step 3 — Decode re-encoded records
+----------------------------------------------------
+  id 1  Morning Run: status=.active  currentCount=14  freezesRemaining=1
+  id 2  Daily Reading: status=.frozen  currentCount=3  freezesRemaining=1
+  id 3  30-Day Yoga: status=.broken  currentCount=30  freezesRemaining=1
+  id 4  Meditation: status=.active  currentCount=7  freezesRemaining=1
+  id 5  Cold Shower: status=.frozen  currentCount=0  freezesRemaining=1
+  5 records decoded  [OK]
+
+Step 4 — Round-trip comparison (first decode == second decode)
+----------------------------------------------------
+  id 1  Morning Run: MATCH
+  id 2  Daily Reading: MATCH
+  id 3  30-Day Yoga: MATCH
+  id 4  Meditation: MATCH
+  id 5  Cold Shower: MATCH
+
+====================================================
+RESULT: PASS
+
+All 5 records survive the encode/decode round trip
+unchanged.

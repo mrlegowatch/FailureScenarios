@@ -1,0 +1,48 @@
+[Computing dependencies]
+􀟈  Test run started.
+􀄵  Testing Library Version: 2084
+􀄵  Target Platform: arm64e-apple-macos14.0
+􀟈  Suite "Change 1 — Geometry.init(kind:) and ShapeData.geometry" started.
+􀟈  Suite "Change 2 — Geometry labeled params, circle internal radius, ShapeData computed properties" started.
+􀟈  Test kindTriangleMapsToTriangle() started.
+􀟈  Test unknownKindDefaultsToRectangle() started.
+􀟈  Test shapeDataGeometryForRectangle() started.
+􀟈  Test geometryPerimeterRectangle() started.
+􀟈  Test shapeDataGeometryForTriangle() started.
+􀟈  Test geometryAreaRectangle() started.
+􀟈  Test kindRectangleMapsToRectangle() started.
+􀟈  Test shapeDataComputedAreaTriangle() started.
+􀟈  Test shapeDataComputedPerimeterRectangle() started.
+􀟈  Test shapeDataGeometryForCircle() started.
+􀟈  Test shapeDataComputedPerimeterCircle() started.
+􀟈  Test kindCircleMapsToCircle() started.
+􀟈  Test shapeDataComputedPerimeterTriangle() started.
+􀟈  Test geometryAreaCircle() started.
+􀟈  Test geometryPerimeterCircle() started.
+􀟈  Test geometryPerimeterTriangle() started.
+􀟈  Test shapeDataComputedAreaRectangle() started.
+􀟈  Test geometryAreaTriangle() started.
+􀟈  Test shapeDataComputedAreaCircle() started.
+􁁛  Test kindTriangleMapsToTriangle() passed after 0.001 seconds.
+􁁛  Test geometryPerimeterCircle() passed after 0.001 seconds.
+􁁛  Test shapeDataComputedAreaTriangle() passed after 0.001 seconds.
+􁁛  Test geometryAreaRectangle() passed after 0.001 seconds.
+􁁛  Test unknownKindDefaultsToRectangle() passed after 0.001 seconds.
+􁁛  Test shapeDataComputedPerimeterRectangle() passed after 0.001 seconds.
+􁁛  Test shapeDataGeometryForRectangle() passed after 0.001 seconds.
+􁁛  Test shapeDataComputedPerimeterCircle() passed after 0.001 seconds.
+􁁛  Test geometryPerimeterRectangle() passed after 0.001 seconds.
+􁁛  Test shapeDataComputedPerimeterTriangle() passed after 0.001 seconds.
+􁁛  Test shapeDataGeometryForCircle() passed after 0.001 seconds.
+􁁛  Test kindRectangleMapsToRectangle() passed after 0.001 seconds.
+􁁛  Test shapeDataComputedAreaCircle() passed after 0.001 seconds.
+􁁛  Test shapeDataComputedAreaRectangle() passed after 0.001 seconds.
+􁁛  Test shapeDataGeometryForTriangle() passed after 0.001 seconds.
+􁁛  Test geometryPerimeterTriangle() passed after 0.001 seconds.
+􁁛  Test kindCircleMapsToCircle() passed after 0.001 seconds.
+􁁛  Test geometryAreaTriangle() passed after 0.001 seconds.
+􁁛  Test geometryAreaCircle() passed after 0.001 seconds.
+􁁛  Suite "Change 1 — Geometry.init(kind:) and ShapeData.geometry" passed after 0.001 seconds.
+􁁛  Suite "Change 2 — Geometry labeled params, circle internal radius, ShapeData computed properties" passed after 0.001 seconds.
+􁁛  Test run with 19 tests in 2 suites passed after 0.001 seconds.
+exit: 0

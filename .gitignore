@@ -1,0 +1,38 @@
+# macOS
+.DS_Store
+
+# Xcode per-user state and build output
+xcuserdata/
+*.xcuserstate
+DerivedData/
+*.xcresult
+
+# Swift Package Manager: build output and Xcode's per-user package state
+.build/
+.swiftpm/
+
+# capture.sh and Makefile build output, and earlier captures capture.sh moves aside
+build/
+build_asan/
+build_ubsan/
+Notes/
+*.o
+*.profraw
+
+# Linux and Windows check scripts' output
+.build-linux*/
+.build-windows*/
+linux-check/
+windows-check/
+
+# Windows (MSVC) build output
+*.obj
+*.pdb
+*.ilk
+*.exe
+
+# Keep: the deliberately stale, prebuilt object 5.6's LinkerError step depends on
+!5.6 A Clean Bill of Health/LinkerError/readiness.o
+
+# lldb output from 5.6's runtime-crash step
+5.6 A Clean Bill of Health/RuntimeCrashSilent/*.plist

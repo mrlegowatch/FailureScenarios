@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1",
+    "name": "Morning Run",
+    "status": 0,
+    "currentCount": 14,
+    "freezesRemaining": 1
+  },
+  {
+    "id": "2",
+    "name": "Daily Reading",
+    "status": 2,
+    "currentCount": 3,
+    "freezesRemaining": 0
+  },
+  {
+    "id": "3",
+    "name": "30-Day Yoga",
+    "status": 3,
+    "currentCount": 30,
+    "freezesRemaining": 1
+  },
+  {
+    "id": "4",
+    "name": "Meditation",
+    "status": 1,
+    "currentCount": 7,
+    "freezesRemaining": 2
+  },
+  {
+    "id": "5",
+    "name": "Cold Shower",
+    "status": 2,
+    "currentCount": 0,
+    "freezesRemaining": 1
+  }
+]

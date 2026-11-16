@@ -1,0 +1,4 @@
+Resting HR (bpm):          Baseline HR (bpm):         Sleep last night (hours):  Target sleep (hours):      Workout load (0-10):       Soreness (0-10):           
+Score:           0.726
+Limiting factor: resting HR
+exit: 0

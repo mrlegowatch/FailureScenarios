@@ -1,0 +1,170 @@
+--- run 1
+error: Process '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec/swift/pm/swiftpm-testing-helper --test-bundle-path /Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.3 Off to the Races/build/swiftpm/out/Products/Debug/SessionRegistryWithNaiveFixTests.xctest/Contents/MacOS/SessionRegistryWithNaiveFixTests -c debug --scratch-path /Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.3 Off to the Races/build/swiftpm --filter ^SessionRegistryWithNaiveFixTests[./] /Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.3 Off to the Races/build/swiftpm/out/Products/Debug/SessionRegistryWithNaiveFixTests.xctest/Contents/MacOS/SessionRegistryWithNaiveFixTests --testing-library swift-testing' exited with unexpected signal code 6
+*** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[NSIndirectTaggedPointerString objectForKey:]: unrecognized selector sent to instance 0x8000000000000000'
+*** First throw call stack:
+(
+	0   CoreFoundation                      0x000000019dd028c0 __exceptionPreprocess + 176
+	1   libobjc.A.dylib                     0x000000019d76060c objc_exception_throw + 88
+	2   CoreFoundation                      0x000000019ddcacac -[NSObject(NSObject) __retain_OA] + 0
+	3   CoreFoundation                      0x000000019dc6ff70 ___forwarding___ + 1504
+	4   CoreFoundation                      0x000000019dc6f8d0 __forwarding_prep_0___ + 96
+	5   libswiftCore.dylib                  0x00000001b230c310 $sSD8_VariantV6lookupyq_SgxF + 76
+	6   SessionRegistryWithNaiveFixTests    0x00000001022c977c $s27SessionRegistryWithNaiveFix0aB0C7session3for6createAA0A0VSS_AHyYaYCXEtYaF + 420
+	7   SessionRegistryWithNaiveFixTests    0x00000001022c7bd9 $s32SessionRegistryWithNaiveFixTests0ab10DiagnosticF0V054concurrentRequestsForSameNewUserShouldCreateExactlyOneA0yyYaFyScGyytGzYaXEfU_yyYacfU_TQ1_ + 1
+	8   SessionRegistryWithNaiveFixTests    0x00000001022c890d $s32SessionRegistryWithNaiveFixTests0ab10DiagnosticF0V054concurrentRequestsForSameNewUserShouldCreateExactlyOneA0yyYaFyScGyytGzYaXEfU_yyYacfU_TATQ0_ + 1
+	9   SessionRegistryWithNaiveFixTests    0x00000001022c82b1 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTQ0_ + 1
+	10  SessionRegistryWithNaiveFixTests    0x00000001022c8ac1 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTATQ0_ + 1
+	11  libswift_Concurrency.dylib          0x00000002ca4ced41 _ZL23completeTaskWithClosurePN5swift12AsyncContextEPNS_10SwiftErrorE + 1
+)
+libc++abi: terminating due to uncaught exception of type NSException
+Note: Some test targets reported failures:
+  - SessionRegistryWithNaiveFixTests (Swift Testing)
+exit: 1
+--- run 2
+error: Process '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec/swift/pm/swiftpm-testing-helper --test-bundle-path /Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.3 Off to the Races/build/swiftpm/out/Products/Debug/SessionRegistryWithNaiveFixTests.xctest/Contents/MacOS/SessionRegistryWithNaiveFixTests -c debug --scratch-path /Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.3 Off to the Races/build/swiftpm --filter ^SessionRegistryWithNaiveFixTests[./] /Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.3 Off to the Races/build/swiftpm/out/Products/Debug/SessionRegistryWithNaiveFixTests.xctest/Contents/MacOS/SessionRegistryWithNaiveFixTests --testing-library swift-testing' exited with unexpected signal code 6
+*** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[NSTaggedPointerString objectForKey:]: unrecognized selector sent to instance 0x8000000000000000'
+*** First throw call stack:
+(
+	0   CoreFoundation                      0x000000019dd028c0 __exceptionPreprocess + 176
+	1   libobjc.A.dylib                     0x000000019d76060c objc_exception_throw + 88
+	2   CoreFoundation                      0x000000019ddcacac -[NSObject(NSObject) __retain_OA] + 0
+	3   CoreFoundation                      0x000000019dc6ff70 ___forwarding___ + 1504
+	4   CoreFoundation                      0x000000019dc6f8d0 __forwarding_prep_0___ + 96
+	5   libswiftCore.dylib                  0x00000001b230c310 $sSD8_VariantV6lookupyq_SgxF + 76
+	6   SessionRegistryWithNaiveFixTests    0x000000010113977c $s27SessionRegistryWithNaiveFix0aB0C7session3for6createAA0A0VSS_AHyYaYCXEtYaF + 420
+	7   SessionRegistryWithNaiveFixTests    0x0000000101137bd9 $s32SessionRegistryWithNaiveFixTests0ab10DiagnosticF0V054concurrentRequestsForSameNewUserShouldCreateExactlyOneA0yyYaFyScGyytGzYaXEfU_yyYacfU_TQ1_ + 1
+	8   SessionRegistryWithNaiveFixTests    0x000000010113890d $s32SessionRegistryWithNaiveFixTests0ab10DiagnosticF0V054concurrentRequestsForSameNewUserShouldCreateExactlyOneA0yyYaFyScGyytGzYaXEfU_yyYacfU_TATQ0_ + 1
+	9   SessionRegistryWithNaiveFixTests    0x00000001011382b1 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTQ0_ + 1
+	10  SessionRegistryWithNaiveFixTests    0x0000000101138ac1 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTATQ0_ + 1
+	11  libswift_Concurrency.dylib          0x00000002ca4ced41 _ZL23completeTaskWithClosurePN5swift12AsyncContextEPNS_10SwiftErrorE + 1
+)
+libc++abi: terminating due to uncaught exception of type NSException
+*** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[NSTaggedPointerString objectForKey:]: unrecognized selector sent to instance 0x8000000000000000'
+*** First throw call stack:
+(
+	0   CoreFoundation                      0x000000019dd028c0 __exceptionPreprocess + 176
+	1   libobjc.A.dylib                     0x000000019d76060c objc_exception_throw + 88
+	2   CoreFoundation                      0x000000019ddcacac -[NSObject(NSObject) __retain_OA] + 0
+	3   CoreFoundation                      0x000000019dc6ff70 ___forwarding___ + 1504
+	4   CoreFoundation                      0x000000019dc6f8d0 __forwarding_prep_0___ + 96
+	5   libswiftCore.dylib                  0x00000001b230c310 $sSD8_VariantV6lookupyq_SgxF + 76
+	6   SessionRegistryWithNaiveFixTests    0x000000010113977c $s27SessionRegistryWithNaiveFix0aB0C7session3for6createAA0A0VSS_AHyYaYCXEtYaF + 420
+	7   SessionRegistryWithNaiveFixTests    0x0000000101137bd9 $s32SessionRegistryWithNaiveFixTests0ab10DiagnosticF0V054concurrentRequestsForSameNewUserShouldCreateExactlyOneA0yyYaFyScGyytGzYaXEfU_yyYacfU_TQ1_ + 1
+	8   SessionRegistryWithNaiveFixTests    0x000000010113890d $s32SessionRegistryWithNaiveFixTests0ab10DiagnosticF0V054concurrentRequestsForSameNewUserShouldCreateExactlyOneA0yyYaFyScGyytGzYaXEfU_yyYacfU_TATQ0_ + 1
+	9   SessionRegistryWithNaiveFixTests    0x00000001011382b1 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTQ0_ + 1
+	10  SessionRegistryWithNaiveFixTests    0x0000000101138ac1 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTATQ0_ + 1
+	11  libswift_Concurrency.dylib          0x00000002ca4ced41 _ZL23completeTaskWithClosurePN5swift12AsyncContextEPNS_10SwiftErrorE + 1
+)
+libc++abi: terminating due to uncaught exception of type NSException
+Note: Some test targets reported failures:
+  - SessionRegistryWithNaiveFixTests (Swift Testing)
+exit: 1
+--- run 3
+error: Process '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec/swift/pm/swiftpm-testing-helper --test-bundle-path /Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.3 Off to the Races/build/swiftpm/out/Products/Debug/SessionRegistryWithNaiveFixTests.xctest/Contents/MacOS/SessionRegistryWithNaiveFixTests -c debug --scratch-path /Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.3 Off to the Races/build/swiftpm --filter ^SessionRegistryWithNaiveFixTests[./] /Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.3 Off to the Races/build/swiftpm/out/Products/Debug/SessionRegistryWithNaiveFixTests.xctest/Contents/MacOS/SessionRegistryWithNaiveFixTests --testing-library swift-testing' exited with unexpected signal code 6
+*** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[__NSCFNumber objectForKey:]: unrecognized selector sent to instance 0x8000000000000000'
+*** First throw call stack:
+(
+	0   CoreFoundation                      0x000000019dd028c0 __exceptionPreprocess + 176
+	1   libobjc.A.dylib                     0x000000019d76060c objc_exception_throw + 88
+	2   CoreFoundation                      0x000000019ddcacac -[NSObject(NSObject) __retain_OA] + 0
+	3   CoreFoundation                      0x000000019dc6ff70 ___forwarding___ + 1504
+	4   CoreFoundation                      0x000000019dc6f8d0 __forwarding_prep_0___ + 96
+	5   libswiftCore.dylib                  0x00000001b230c310 $sSD8_VariantV6lookupyq_SgxF + 76
+	6   SessionRegistryWithNaiveFixTests    0x00000001045a977c $s27SessionRegistryWithNaiveFix0aB0C7session3for6createAA0A0VSS_AHyYaYCXEtYaF + 420
+	7   SessionRegistryWithNaiveFixTests    0x00000001045a7bd9 $s32SessionRegistryWithNaiveFixTests0ab10DiagnosticF0V054concurrentRequestsForSameNewUserShouldCreateExactlyOneA0yyYaFyScGyytGzYaXEfU_yyYacfU_TQ1_ + 1
+	8   SessionRegistryWithNaiveFixTests    0x00000001045a890d $s32SessionRegistryWithNaiveFixTests0ab10DiagnosticF0V054concurrentRequestsForSameNewUserShouldCreateExactlyOneA0yyYaFyScGyytGzYaXEfU_yyYacfU_TATQ0_ + 1
+	9   SessionRegistryWithNaiveFixTests    0x00000001045a82b1 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTQ0_ + 1
+	10  SessionRegistryWithNaiveFixTests    0x00000001045a8ac1 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTATQ0_ + 1
+	11  libswift_Concurrency.dylib          0x00000002ca4ced41 _ZL23completeTaskWithClosurePN5swift12AsyncContextEPNS_10SwiftErrorE + 1
+)
+libc++abi: terminating due to uncaught exception of type NSException
+Note: Some test targets reported failures:
+  - SessionRegistryWithNaiveFixTests (Swift Testing)
+exit: 1
+--- run 4
+error: Process '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec/swift/pm/swiftpm-testing-helper --test-bundle-path /Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.3 Off to the Races/build/swiftpm/out/Products/Debug/SessionRegistryWithNaiveFixTests.xctest/Contents/MacOS/SessionRegistryWithNaiveFixTests -c debug --scratch-path /Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.3 Off to the Races/build/swiftpm --filter ^SessionRegistryWithNaiveFixTests[./] /Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.3 Off to the Races/build/swiftpm/out/Products/Debug/SessionRegistryWithNaiveFixTests.xctest/Contents/MacOS/SessionRegistryWithNaiveFixTests --testing-library swift-testing' exited with unexpected signal code 11
+Note: Some test targets reported failures:
+  - SessionRegistryWithNaiveFixTests (Swift Testing)
+exit: 1
+--- run 5
+error: Process '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec/swift/pm/swiftpm-testing-helper --test-bundle-path /Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.3 Off to the Races/build/swiftpm/out/Products/Debug/SessionRegistryWithNaiveFixTests.xctest/Contents/MacOS/SessionRegistryWithNaiveFixTests -c debug --scratch-path /Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.3 Off to the Races/build/swiftpm --filter ^SessionRegistryWithNaiveFixTests[./] /Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.3 Off to the Races/build/swiftpm/out/Products/Debug/SessionRegistryWithNaiveFixTests.xctest/Contents/MacOS/SessionRegistryWithNaiveFixTests --testing-library swift-testing' exited with unexpected signal code 6
+*** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[NSTaggedPointerString objectForKey:]: unrecognized selector sent to instance 0x8000000000000000'
+*** First throw call stack:
+(
+	0   CoreFoundation                      0x000000019dd028c0 __exceptionPreprocess + 176
+	1   libobjc.A.dylib                     0x000000019d76060c objc_exception_throw + 88
+	2   CoreFoundation                      0x000000019ddcacac -[NSObject(NSObject) __retain_OA] + 0
+	3   CoreFoundation                      0x000000019dc6ff70 ___forwarding___ + 1504
+	4   CoreFoundation                      0x000000019dc6f8d0 __forwarding_prep_0___ + 96
+	5   libswiftCore.dylib                  0x00000001b230c310 $sSD8_VariantV6lookupyq_SgxF + 76
+	6   SessionRegistryWithNaiveFixTests    0x0000000106ac577c $s27SessionRegistryWithNaiveFix0aB0C7session3for6createAA0A0VSS_AHyYaYCXEtYaF + 420
+	7   SessionRegistryWithNaiveFixTests    0x0000000106ac3bd9 $s32SessionRegistryWithNaiveFixTests0ab10DiagnosticF0V054concurrentRequestsForSameNewUserShouldCreateExactlyOneA0yyYaFyScGyytGzYaXEfU_yyYacfU_TQ1_ + 1
+	8   SessionRegistryWithNaiveFixTests    0x0000000106ac490d $s32SessionRegistryWithNaiveFixTests0ab10DiagnosticF0V054concurrentRequestsForSameNewUserShouldCreateExactlyOneA0yyYaFyScGyytGzYaXEfU_yyYacfU_TATQ0_ + 1
+	9   SessionRegistryWithNaiveFixTests    0x0000000106ac42b1 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTQ0_ + 1
+	10  SessionRegistryWithNaiveFixTests    0x0000000106ac4ac1 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTATQ0_ + 1
+	11  libswift_Concurrency.dylib          0x00000002ca4ced41 _ZL23completeTaskWithClosurePN5swift12AsyncContextEPNS_10SwiftErrorE + 1
+)
+libc++abi: terminating due to uncaught exception of type NSException
+Note: Some test targets reported failures:
+  - SessionRegistryWithNaiveFixTests (Swift Testing)
+exit: 1
+--- run 6
+error: Process '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec/swift/pm/swiftpm-testing-helper --test-bundle-path /Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.3 Off to the Races/build/swiftpm/out/Products/Debug/SessionRegistryWithNaiveFixTests.xctest/Contents/MacOS/SessionRegistryWithNaiveFixTests -c debug --scratch-path /Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.3 Off to the Races/build/swiftpm --filter ^SessionRegistryWithNaiveFixTests[./] /Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.3 Off to the Races/build/swiftpm/out/Products/Debug/SessionRegistryWithNaiveFixTests.xctest/Contents/MacOS/SessionRegistryWithNaiveFixTests --testing-library swift-testing' exited with unexpected signal code 11
+Note: Some test targets reported failures:
+  - SessionRegistryWithNaiveFixTests (Swift Testing)
+exit: 1
+--- run 7
+error: Process '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec/swift/pm/swiftpm-testing-helper --test-bundle-path /Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.3 Off to the Races/build/swiftpm/out/Products/Debug/SessionRegistryWithNaiveFixTests.xctest/Contents/MacOS/SessionRegistryWithNaiveFixTests -c debug --scratch-path /Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.3 Off to the Races/build/swiftpm --filter ^SessionRegistryWithNaiveFixTests[./] /Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.3 Off to the Races/build/swiftpm/out/Products/Debug/SessionRegistryWithNaiveFixTests.xctest/Contents/MacOS/SessionRegistryWithNaiveFixTests --testing-library swift-testing' exited with unexpected signal code 6
+*** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[__NSCFNumber objectForKey:]: unrecognized selector sent to instance 0x8000000000000000'
+*** First throw call stack:
+(
+	0   CoreFoundation                      0x000000019dd028c0 __exceptionPreprocess + 176
+	1   libobjc.A.dylib                     0x000000019d76060c objc_exception_throw + 88
+	2   CoreFoundation                      0x000000019ddcacac -[NSObject(NSObject) __retain_OA] + 0
+	3   CoreFoundation                      0x000000019dc6ff70 ___forwarding___ + 1504
+	4   CoreFoundation                      0x000000019dc6f8d0 __forwarding_prep_0___ + 96
+	5   libswiftCore.dylib                  0x00000001b230c310 $sSD8_VariantV6lookupyq_SgxF + 76
+	6   SessionRegistryWithNaiveFixTests    0x0000000100ef577c $s27SessionRegistryWithNaiveFix0aB0C7session3for6createAA0A0VSS_AHyYaYCXEtYaF + 420
+	7   SessionRegistryWithNaiveFixTests    0x0000000100ef3bd9 $s32SessionRegistryWithNaiveFixTests0ab10DiagnosticF0V054concurrentRequestsForSameNewUserShouldCreateExactlyOneA0yyYaFyScGyytGzYaXEfU_yyYacfU_TQ1_ + 1
+	8   SessionRegistryWithNaiveFixTests    0x0000000100ef490d $s32SessionRegistryWithNaiveFixTests0ab10DiagnosticF0V054concurrentRequestsForSameNewUserShouldCreateExactlyOneA0yyYaFyScGyytGzYaXEfU_yyYacfU_TATQ0_ + 1
+	9   SessionRegistryWithNaiveFixTests    0x0000000100ef42b1 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTQ0_ + 1
+	10  SessionRegistryWithNaiveFixTests    0x0000000100ef4ac1 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTATQ0_ + 1
+	11  libswift_Concurrency.dylib          0x00000002ca4ced41 _ZL23completeTaskWithClosurePN5swift12AsyncContextEPNS_10SwiftErrorE + 1
+)
+libc++abi: terminating due to uncaught exception of type NSException
+Note: Some test targets reported failures:
+  - SessionRegistryWithNaiveFixTests (Swift Testing)
+exit: 1
+--- run 8
+error: Process '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec/swift/pm/swiftpm-testing-helper --test-bundle-path /Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.3 Off to the Races/build/swiftpm/out/Products/Debug/SessionRegistryWithNaiveFixTests.xctest/Contents/MacOS/SessionRegistryWithNaiveFixTests -c debug --scratch-path /Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.3 Off to the Races/build/swiftpm --filter ^SessionRegistryWithNaiveFixTests[./] /Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.3 Off to the Races/build/swiftpm/out/Products/Debug/SessionRegistryWithNaiveFixTests.xctest/Contents/MacOS/SessionRegistryWithNaiveFixTests --testing-library swift-testing' exited with unexpected signal code 6
+*** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[NSTaggedPointerString objectForKey:]: unrecognized selector sent to instance 0x8000000000000000'
+*** First throw call stack:
+(
+	0   CoreFoundation                      0x000000019dd028c0 __exceptionPreprocess + 176
+	1   libobjc.A.dylib                     0x000000019d76060c objc_exception_throw + 88
+	2   CoreFoundation                      0x000000019ddcacac -[NSObject(NSObject) __retain_OA] + 0
+	3   CoreFoundation                      0x000000019dc6ff70 ___forwarding___ + 1504
+	4   CoreFoundation                      0x000000019dc6f8d0 __forwarding_prep_0___ + 96
+	5   libswiftCore.dylib                  0x00000001b230c310 $sSD8_VariantV6lookupyq_SgxF + 76
+	6   SessionRegistryWithNaiveFixTests    0x0000000102ebd77c $s27SessionRegistryWithNaiveFix0aB0C7session3for6createAA0A0VSS_AHyYaYCXEtYaF + 420
+	7   SessionRegistryWithNaiveFixTests    0x0000000102ebbbd9 $s32SessionRegistryWithNaiveFixTests0ab10DiagnosticF0V054concurrentRequestsForSameNewUserShouldCreateExactlyOneA0yyYaFyScGyytGzYaXEfU_yyYacfU_TQ1_ + 1
+	8   SessionRegistryWithNaiveFixTests    0x0000000102ebc90d $s32SessionRegistryWithNaiveFixTests0ab10DiagnosticF0V054concurrentRequestsForSameNewUserShouldCreateExactlyOneA0yyYaFyScGyytGzYaXEfU_yyYacfU_TATQ0_ + 1
+	9   SessionRegistryWithNaiveFixTests    0x0000000102ebc2b1 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTQ0_ + 1
+	10  SessionRegistryWithNaiveFixTests    0x0000000102ebcac1 $sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRTATQ0_ + 1
+	11  libswift_Concurrency.dylib          0x00000002ca4ced41 _ZL23completeTaskWithClosurePN5swift12AsyncContextEPNS_10SwiftErrorE + 1
+)
+libc++abi: terminating due to uncaught exception of type NSException
+Note: Some test targets reported failures:
+  - SessionRegistryWithNaiveFixTests (Swift Testing)
+exit: 1
+--- run 9
+error: Process '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec/swift/pm/swiftpm-testing-helper --test-bundle-path /Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.3 Off to the Races/build/swiftpm/out/Products/Debug/SessionRegistryWithNaiveFixTests.xctest/Contents/MacOS/SessionRegistryWithNaiveFixTests -c debug --scratch-path /Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.3 Off to the Races/build/swiftpm --filter ^SessionRegistryWithNaiveFixTests[./] /Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.3 Off to the Races/build/swiftpm/out/Products/Debug/SessionRegistryWithNaiveFixTests.xctest/Contents/MacOS/SessionRegistryWithNaiveFixTests --testing-library swift-testing' exited with unexpected signal code 11
+Note: Some test targets reported failures:
+  - SessionRegistryWithNaiveFixTests (Swift Testing)
+exit: 1
+--- run 10
+error: Process '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec/swift/pm/swiftpm-testing-helper --test-bundle-path /Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.3 Off to the Races/build/swiftpm/out/Products/Debug/SessionRegistryWithNaiveFixTests.xctest/Contents/MacOS/SessionRegistryWithNaiveFixTests -c debug --scratch-path /Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.3 Off to the Races/build/swiftpm --filter ^SessionRegistryWithNaiveFixTests[./] /Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.3 Off to the Races/build/swiftpm/out/Products/Debug/SessionRegistryWithNaiveFixTests.xctest/Contents/MacOS/SessionRegistryWithNaiveFixTests --testing-library swift-testing' exited with unexpected signal code 11
+Note: Some test targets reported failures:
+  - SessionRegistryWithNaiveFixTests (Swift Testing)
+exit: 1
+=== 10 runs: 0 passed, 0 failed, 10 crashed

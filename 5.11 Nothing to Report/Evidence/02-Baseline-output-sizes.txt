@@ -1,0 +1,6 @@
+device-01.csv: 28
+device-02.csv: 28
+device-03.csv: 110681
+device-04.csv: 28
+device-05.csv: 28
+device-06.csv: 28

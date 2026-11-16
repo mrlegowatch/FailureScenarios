@@ -1,0 +1,15 @@
+􀟈  Test run started.
+􀄵  Testing Library Version: 2084
+􀄵  Target Platform: arm64e-apple-macos14.0
+􀟈  Suite "NewFormatFixed — correct behavior after enum-drift fix" started.
+􀟈  Test schemaVersionDistinguishesRecordVintage() started.
+􀟈  Test reEncodedSyncedRecordPreservesSchemaVersion() started.
+􀟈  Test statusMatchesOldSchemaIntent() started.
+􀟈  Test oldRecordsHaveNilFreezesRemaining() started.
+􁁛  Test statusMatchesOldSchemaIntent() passed after 0.001 seconds.
+􁁛  Test oldRecordsHaveNilFreezesRemaining() passed after 0.001 seconds.
+􁁛  Test schemaVersionDistinguishesRecordVintage() passed after 0.001 seconds.
+􁁛  Test reEncodedSyncedRecordPreservesSchemaVersion() passed after 0.001 seconds.
+􁁛  Suite "NewFormatFixed — correct behavior after enum-drift fix" passed after 0.001 seconds.
+􁁛  Test run with 4 tests in 1 suite passed after 0.001 seconds.
+exit: 0

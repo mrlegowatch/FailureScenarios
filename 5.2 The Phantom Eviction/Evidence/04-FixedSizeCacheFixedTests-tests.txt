@@ -1,0 +1,29 @@
+􀟈  Test run started.
+􀄵  Testing Library Version: 2084
+􀄵  Target Platform: arm64e-apple-macos14.0
+􀟈  Suite "FixedSizeCache – Capacity Boundary (Diagnostic)" started.
+􀟈  Suite "FixedSizeCache" started.
+􀟈  Test exactlyOldestEvictedWhenCapacityExceededByOne() started.
+􀟈  Test updatingKeyDoesNotAlterInsertionOrderForOtherKeys() started.
+􀟈  Test recentEntriesSurviveEviction() started.
+􀟈  Test overwritePreservesLatestValue() started.
+􀟈  Test storesAndRetrievesValue() started.
+􀟈  Test returnsNilForAbsentKey() started.
+􀟈  Test allKeysRetainedWhenCacheIsExactlyFull() started.
+􀟈  Test updatingKeyDoesNotEvictNeighbors() started.
+􀟈  Test allEntriesPresentWhenBelowCapacity() started.
+􀟈  Test oldestEntryEvictedAfterOverfill() started.
+􁁛  Test storesAndRetrievesValue() passed after 0.001 seconds.
+􁁛  Test overwritePreservesLatestValue() passed after 0.001 seconds.
+􁁛  Test returnsNilForAbsentKey() passed after 0.001 seconds.
+􁁛  Test updatingKeyDoesNotAlterInsertionOrderForOtherKeys() passed after 0.001 seconds.
+􁁛  Test oldestEntryEvictedAfterOverfill() passed after 0.001 seconds.
+􁁛  Test allEntriesPresentWhenBelowCapacity() passed after 0.001 seconds.
+􁁛  Test recentEntriesSurviveEviction() passed after 0.001 seconds.
+􁁛  Test exactlyOldestEvictedWhenCapacityExceededByOne() passed after 0.001 seconds.
+􁁛  Test allKeysRetainedWhenCacheIsExactlyFull() passed after 0.001 seconds.
+􁁛  Test updatingKeyDoesNotEvictNeighbors() passed after 0.001 seconds.
+􁁛  Suite "FixedSizeCache – Capacity Boundary (Diagnostic)" passed after 0.001 seconds.
+􁁛  Suite "FixedSizeCache" passed after 0.001 seconds.
+􁁛  Test run with 10 tests in 2 suites passed after 0.001 seconds.
+exit: 0

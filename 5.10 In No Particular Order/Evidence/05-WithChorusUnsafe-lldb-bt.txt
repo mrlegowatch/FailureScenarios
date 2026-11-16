@@ -1,0 +1,51 @@
+(lldb) target create "WithChorus/build/unsafe/AudioFilters"
+Current executable set to '/Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.10 In No Particular Order/WithChorus/build/unsafe/AudioFilters' (arm64).
+(lldb) run
+[ 1] OutputChain.cpp  gDefaultOutputChain  init  STARTING
+[ 2] borrow()         called  inUse_.size()=0
+Process 23109 launched: '/Users/mrlegowatch/Documents/DebuggingBook/FailureScenarios/5.10 In No Particular Order/WithChorus/build/unsafe/AudioFilters' (arm64)
+Process 23109 stopped
+* thread #1, queue = 'com.apple.main-thread', stop reason = EXC_BAD_ACCESS (code=1, address=0x0)
+       frame #0: 0x000000010000238c AudioFilters`std::__1::__bit_reference<std::__1::vector<bool, std::__1::allocator<bool>>, true>::operator bool[abi:nqe220106](this=0x000000016fdfd468) const at __bit_reference:140:30
+   137 	  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 __bit_reference(const __bit_reference&) = default;
+   138 	
+   139 	  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 operator bool() const _NOEXCEPT {
+-> 140 	    return static_cast<bool>(*__seg_ & __mask_);
+    	                             ^
+   141 	  }
+   142 	  [[__nodiscard__]] _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 bool operator~() const _NOEXCEPT {
+   143 	    return !static_cast<bool>(*this);
+Target 0: (AudioFilters) stopped.
+(lldb) thread list
+Process 23109 stopped
+* thread #1: tid = 0x78ad1, 0x000000010000238c AudioFilters`std::__1::__bit_reference<std::__1::vector<bool, std::__1::allocator<bool>>, true>::operator bool[abi:nqe220106](this=0x000000016fdfd468) const at __bit_reference:140:30, queue = 'com.apple.main-thread', stop reason = EXC_BAD_ACCESS (code=1, address=0x0)
+(lldb) bt
+* thread #1, queue = 'com.apple.main-thread', stop reason = EXC_BAD_ACCESS (code=1, address=0x0)
+   * frame #0: 0x000000010000238c AudioFilters`std::__1::__bit_reference<std::__1::vector<bool, std::__1::allocator<bool>>, true>::operator bool[abi:nqe220106](this=0x000000016fdfd468) const at __bit_reference:140:30
+     frame #1: 0x00000001000022b8 AudioFilters`DelayLineFactory::borrow(this=0x0000000100010070) at DelayLineFactory.cpp:18:14
+     frame #2: 0x00000001000065cc AudioFilters`Delay::Delay(this=0x0000000100010010, delaySamples=1013) at Delay.cpp:8:42
+     frame #3: 0x0000000100006614 AudioFilters`Delay::Delay(this=0x0000000100010010, delaySamples=1013) at Delay.cpp:11:1
+     frame #4: 0x0000000100006c8c AudioFilters`Reverb::Reverb(this=0x0000000100010010) at Reverb.cpp:12:7
+     frame #5: 0x0000000100006d58 AudioFilters`Reverb::Reverb(this=0x0000000100010010) at Reverb.cpp:16:1
+     frame #6: 0x0000000100001d38 AudioFilters`OutputChain::OutputChain(this=0x0000000100010010) at OutputChain.cpp:4:14
+     frame #7: 0x0000000100001d98 AudioFilters`OutputChain::OutputChain(this=0x0000000100010010) at OutputChain.cpp:4:28
+     frame #8: 0x0000000100001fa0 AudioFilters`::__cxx_global_var_init.2() at OutputChain.cpp:36:20
+     frame #9: 0x0000000100001fd4 AudioFilters`_GLOBAL__sub_I_OutputChain.cpp at OutputChain.cpp:0
+     frame #10: 0x000000019d7aadf0 libdyld.dylib`dyld4::LibSystemHelpers::callInitializer(int, char const* const*, char const* const*, char const* const*, dyld4::ProgramVars const*, void (*)(int, char const* const*, char const* const*, char const* const*, dyld4::ProgramVars const*)) const + 40
+     frame #11: 0x000000019d82d738 dyld`invocation function for block in dyld4::Loader::findAndRunAllInitializers(dyld4::RuntimeState&) const::$_0::operator()() const + 328
+     frame #12: 0x000000019d86106c dyld`invocation function for block in mach_o::Image::forEachInitializer(void (unsigned int) block_pointer) const + 84
+     frame #13: 0x000000019d858508 dyld`mach_o::Header::SegmentInfo mach_o::Header::parse_segment_command<true>(mach_o::Header::LoadCommandInfo const&, unsigned short, void (mach_o::Header::SegmentInfo const&, mach_o::Header::SectionInfo const&) block_pointer, mach_o::Error*) const + 580
+     frame #14: 0x000000019d85d974 dyld`invocation function for block in mach_o::Header::forEachSection(void (mach_o::Header::SectionInfo const&, bool&) block_pointer) const + 156
+     frame #15: 0x000000019d857004 dyld`mach_o::Header::forEachLoadCommand(void (mach_o::Header::LoadCommandInfo const&, bool&) block_pointer, mach_o::Error*) const + 228
+     frame #16: 0x000000019d85b07c dyld`mach_o::Header::forEachSection(void (mach_o::Header::SectionInfo const&, bool&) block_pointer) const + 128
+     frame #17: 0x000000019d860f9c dyld`mach_o::Image::forEachInitializer(void (unsigned int) block_pointer) const + 244
+     frame #18: 0x000000019d828614 dyld`dyld4::Loader::findAndRunAllInitializers(dyld4::RuntimeState&) const + 680
+     frame #19: 0x000000019d81ffe0 dyld`dyld4::JustInTimeLoader::runInitializers(dyld4::RuntimeState&) const + 36
+     frame #20: 0x000000019d828c08 dyld`dyld4::Loader::runInitializersBottomUp(dyld4::RuntimeState&, lsl::Vector<AuthenticatedValue<dyld4::Loader const*>>&, lsl::Vector<AuthenticatedValue<dyld4::Loader const*>>&) const + 488
+     frame #21: 0x000000019d82d7f8 dyld`dyld4::Loader::runInitializersBottomUpPlusUpwardLinks(dyld4::RuntimeState&) const::$_0::operator()() const + 124
+     frame #22: 0x000000019d828d58 dyld`dyld4::Loader::runInitializersBottomUpPlusUpwardLinks(dyld4::RuntimeState&) const + 196
+     frame #23: 0x000000019d7fdd14 dyld`dyld4::prepare(dyld4::APIs&, mach_o::UnsafeHeader const*) + 4724
+     frame #24: 0x000000019d7fca84 dyld`dyld4::start(dyld4::KernelArgs*, void*, void*, unsigned long long)::$_1::operator()() const + 320
+     frame #25: 0x000000019d7fbe24 dyld`start + 6596
+(lldb) quit
+exit: 0

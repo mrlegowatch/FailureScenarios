@@ -1,0 +1,7 @@
+listen_sd = 2003, FD_SETSIZE = 1024
+listen_sd >= FD_SETSIZE: true
+Fatal: listen_sd (2003) >= FD_SETSIZE (1024).
+FD_SET with an out-of-range descriptor is undefined behavior that corrupts
+memory outside the fd_set rather than failing predictably. Exiting safely.
+(Set ALLOW_FD_OVERFLOW=1 in the environment to skip this check and observe the UB.)
+exit: 2

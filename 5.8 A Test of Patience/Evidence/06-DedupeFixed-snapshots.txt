@@ -1,0 +1,6 @@
+Processing records...
+[snapshot @ 8s]  processed=4424359  seenRecords=4070181  last check=0.0000s
+[snapshot @ 16s]  processed=8741940  seenRecords=8042452  last check=0.0000s
+[snapshot @ 24s]  processed=13281706  seenRecords=12218769  last check=0.0000s
+Done. Processed: 20000000, Unique: 18399777, Duplicates: 1600223, Elapsed: 35.60s
+exit: 0

@@ -1,0 +1,32 @@
+[
+  {
+    "currentCount" : 14,
+    "id" : "1",
+    "name" : "Morning Run",
+    "status" : 0
+  },
+  {
+    "currentCount" : 3,
+    "id" : "2",
+    "name" : "Daily Reading",
+    "status" : 1
+  },
+  {
+    "currentCount" : 30,
+    "id" : "3",
+    "name" : "30-Day Yoga",
+    "status" : 2
+  },
+  {
+    "currentCount" : 7,
+    "id" : "4",
+    "name" : "Meditation",
+    "status" : 0
+  },
+  {
+    "currentCount" : 0,
+    "id" : "5",
+    "name" : "Cold Shower",
+    "status" : 1
+  }
+]

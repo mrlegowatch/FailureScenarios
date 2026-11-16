@@ -1,0 +1,13 @@
+mkdir -p build/safe
+c++ -std=c++20 -Wall -Wextra -g -c -o build/safe/InitLog.o InitLog.cpp
+c++ -std=c++20 -Wall -Wextra -g -c -o build/safe/main.o main.cpp
+c++ -std=c++20 -Wall -Wextra -g -c -o build/safe/DelayLineFactory.o DelayLineFactory.cpp
+c++ -std=c++20 -Wall -Wextra -g -c -o build/safe/FilterRegistry.o FilterRegistry.cpp
+c++ -std=c++20 -Wall -Wextra -g -c -o build/safe/Gain.o Gain.cpp
+c++ -std=c++20 -Wall -Wextra -g -c -o build/safe/LowPassFilter.o LowPassFilter.cpp
+c++ -std=c++20 -Wall -Wextra -g -c -o build/safe/Delay.o Delay.cpp
+c++ -std=c++20 -Wall -Wextra -g -c -o build/safe/Reverb.o Reverb.cpp
+c++ -std=c++20 -Wall -Wextra -g -c -o build/safe/OutputChain.o OutputChain.cpp
+c++ -std=c++20 -Wall -Wextra -g -c -o build/safe/Chorus.o Chorus.cpp
+c++ -std=c++20 -Wall -Wextra -g -o build/safe/AudioFilters build/safe/InitLog.o build/safe/main.o build/safe/DelayLineFactory.o build/safe/FilterRegistry.o build/safe/Gain.o build/safe/LowPassFilter.o build/safe/Delay.o build/safe/Reverb.o build/safe/OutputChain.o build/safe/Chorus.o
+exit: 0

@@ -1,0 +1,5 @@
+id: 1, name: Morning Run, status: active, currentCount: 14, freezesRemaining: 1
+id: 2, name: Daily Reading, status: broken, currentCount: 3, freezesRemaining: 0
+id: 3, name: 30-Day Yoga, status: completed, currentCount: 30, freezesRemaining: 1
+id: 4, name: Meditation, status: frozen, currentCount: 7, freezesRemaining: 2
+id: 5, name: Cold Shower, status: broken, currentCount: 0, freezesRemaining: 1

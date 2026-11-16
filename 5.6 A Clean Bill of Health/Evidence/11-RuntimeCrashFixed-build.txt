@@ -1,0 +1,5 @@
+mkdir -p build
+clang++ -g -Wall -Wextra -std=c++20 -ftrivial-auto-var-init=uninitialized -c -o build/main.o main.cpp
+clang++ -g -Wall -Wextra -std=c++20 -ftrivial-auto-var-init=uninitialized -c -o build/readiness.o readiness.cpp
+clang++ -o build/ReadinessScore build/main.o build/readiness.o
+exit: 0

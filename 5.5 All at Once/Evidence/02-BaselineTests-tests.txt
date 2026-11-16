@@ -1,0 +1,70 @@
+[Computing dependencies]
+􀟈  Test run started.
+􀄵  Testing Library Version: 2084
+􀄵  Target Platform: arm64e-apple-macos14.0
+􀟈  Suite ViewModelComputedAreaTests started.
+􀟈  Suite GeometryPerimeterTests started.
+􀟈  Suite ViewModelComputedPerimeterTests started.
+􀟈  Suite GeometryAreaTests started.
+􀟈  Suite DisplayLabelTests started.
+􀟈  Test circle() started.
+􀟈  Test circle() started.
+􀟈  Test rectangle() started.
+􀟈  Suite BoundingInsetTests started.
+􀟈  Test rectangle() started.
+􀟈  Test circle() started.
+􀟈  Test normalCircle() started.
+􀟈  Test rectangle() started.
+􀟈  Test selectedNotHighlighted() started.
+􀟈  Test emptyDimensionsWhenHeightIsZero() started.
+􀟈  Test triangle() started.
+􀟈  Test triangle() started.
+􀟈  Test emptyDimensionsWhenWidthIsZero() started.
+􀟈  Test circle() started.
+􀟈  Test normalRectangle() started.
+􀟈  Test selectedAndHighlighted() started.
+􀟈  Test normalTriangle() started.
+􀟈  Test triangle() started.
+􀟈  Test emptyWhenShowsLabelFalse() started.
+􀟈  Test zeroHeightReturnsZero() started.
+􁁛  Test circle() passed after 0.001 seconds.
+􀟈  Test selectedNotHighlighted() started.
+􁁛  Test circle() passed after 0.001 seconds.
+􀟈  Test notSelectedFilled() started.
+􀟈  Test triangle() started.
+􀟈  Test rectangle() started.
+􀟈  Test selectedAndHighlighted() started.
+􁁛  Test selectedNotHighlighted() passed after 0.001 seconds.
+􀟈  Test notSelectedNotFilled() started.
+􁁛  Test rectangle() passed after 0.001 seconds.
+􁁛  Test emptyDimensionsWhenWidthIsZero() passed after 0.001 seconds.
+􀟈  Test zeroWidthReturnsZero() started.
+􁁛  Test rectangle() passed after 0.001 seconds.
+􁁛  Test rectangle() passed after 0.001 seconds.
+􁁛  Test circle() passed after 0.001 seconds.
+􁁛  Test triangle() passed after 0.001 seconds.
+􁁛  Test normalRectangle() passed after 0.001 seconds.
+􁁛  Test circle() passed after 0.001 seconds.
+􁁛  Test normalCircle() passed after 0.001 seconds.
+􁁛  Test zeroHeightReturnsZero() passed after 0.001 seconds.
+􁁛  Test triangle() passed after 0.001 seconds.
+􁁛  Test selectedAndHighlighted() passed after 0.001 seconds.
+􁁛  Test emptyDimensionsWhenHeightIsZero() passed after 0.001 seconds.
+􁁛  Test rectangle() passed after 0.001 seconds.
+􁁛  Test triangle() passed after 0.001 seconds.
+􁁛  Test notSelectedFilled() passed after 0.001 seconds.
+􁁛  Test selectedNotHighlighted() passed after 0.001 seconds.
+􁁛  Suite ViewModelComputedAreaTests passed after 0.001 seconds.
+􁁛  Test selectedAndHighlighted() passed after 0.001 seconds.
+􁁛  Test emptyWhenShowsLabelFalse() passed after 0.001 seconds.
+􁁛  Test normalTriangle() passed after 0.001 seconds.
+􁁛  Test triangle() passed after 0.001 seconds.
+􁁛  Suite ViewModelComputedPerimeterTests passed after 0.001 seconds.
+􁁛  Test notSelectedNotFilled() passed after 0.001 seconds.
+􁁛  Test zeroWidthReturnsZero() passed after 0.001 seconds.
+􁁛  Suite GeometryAreaTests passed after 0.001 seconds.
+􁁛  Suite GeometryPerimeterTests passed after 0.001 seconds.
+􁁛  Suite DisplayLabelTests passed after 0.001 seconds.
+􁁛  Suite BoundingInsetTests passed after 0.001 seconds.
+􁁛  Test run with 26 tests in 6 suites passed after 0.001 seconds.
+exit: 0

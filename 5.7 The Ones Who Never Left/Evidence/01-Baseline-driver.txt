@@ -1,0 +1,6 @@
+Sessions run:         300
+Normal completions:   210
+Cancellations:        90
+Subscribers live:     90
+Dispatcher retained:  90
+exit: 0

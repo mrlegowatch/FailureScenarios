@@ -1,0 +1,49 @@
+􀟈  Test run started.
+􀄵  Testing Library Version: 2084
+􀄵  Target Platform: arm64e-apple-macos14.0
+􀟈  Suite "FixedSizeCache – Capacity Boundary (Diagnostic)" started.
+􀟈  Suite "FixedSizeCache" started.
+􀟈  Test recentEntriesSurviveEviction() started.
+􀟈  Test updatingKeyDoesNotEvictNeighbors() started.
+􀟈  Test oldestEntryEvictedAfterOverfill() started.
+􀟈  Test returnsNilForAbsentKey() started.
+􀟈  Test allKeysRetainedWhenCacheIsExactlyFull() started.
+􀟈  Test exactlyOldestEvictedWhenCapacityExceededByOne() started.
+􀟈  Test storesAndRetrievesValue() started.
+􀟈  Test overwritePreservesLatestValue() started.
+􀟈  Test updatingKeyDoesNotAlterInsertionOrderForOtherKeys() started.
+􀟈  Test allEntriesPresentWhenBelowCapacity() started.
+􁁛  Test returnsNilForAbsentKey() passed after 0.001 seconds.
+􁁛  Test recentEntriesSurviveEviction() passed after 0.001 seconds.
+􁁛  Test updatingKeyDoesNotEvictNeighbors() passed after 0.001 seconds.
+􁁛  Test updatingKeyDoesNotAlterInsertionOrderForOtherKeys() passed after 0.001 seconds.
+􁁛  Test oldestEntryEvictedAfterOverfill() passed after 0.001 seconds.
+􁁛  Test overwritePreservesLatestValue() passed after 0.001 seconds.
+􁁛  Test storesAndRetrievesValue() passed after 0.001 seconds.
+􁁛  Test allEntriesPresentWhenBelowCapacity() passed after 0.001 seconds.
+􁁛  Suite "FixedSizeCache" passed after 0.001 seconds.
+􀢄  Test exactlyOldestEvictedWhenCapacityExceededByOne() recorded an issue at CapacityBoundaryTests.swift:60:13: Expectation failed: cache.get(forKey: i) == i * 10
+􀄵  key 2 must survive after exactly one eviction
+􀄵  cache.get(forKey: i) == i * 10 → false
+􀄵    cache.get(forKey: i) → nil
+􀄵    i * 10 → 20
+􀢄  Test allKeysRetainedWhenCacheIsExactlyFull() recorded an issue at CapacityBoundaryTests.swift:37:13: Expectation failed: cache.get(forKey: i) == i * 10
+􀄵  key 1 must survive when the cache holds exactly 4 of 4 entries
+􀄵  cache.get(forKey: i) == i * 10 → false
+􀄵    cache.get(forKey: i) → nil
+􀄵    i * 10 → 10
+􀢄  Test exactlyOldestEvictedWhenCapacityExceededByOne() failed after 0.001 seconds with 1 issue.
+􀄵  // Insert `capacity + 1` distinct keys.
+􀄵  // Expected: key 1 (oldest) is evicted; keys 2 … capacity+1 all survive.
+􀄵  // Actual (buggy): two keys are evicted instead of one, because eviction
+􀄵  // fires one insert too early and then fires again on the final insert.
+􀢄  Test allKeysRetainedWhenCacheIsExactlyFull() failed after 0.001 seconds with 1 issue.
+􀄵  // Insert exactly `capacity` distinct keys.
+􀄵  // Expected: every key survives — the cache is full but not over capacity.
+􀄵  // Actual (buggy): the first key is evicted immediately upon the Nth insert,
+􀄵  // so only capacity-1 keys remain.
+􀢄  Suite "FixedSizeCache – Capacity Boundary (Diagnostic)" failed after 0.001 seconds with 2 issues.
+􀢄  Test run with 10 tests in 2 suites failed after 0.001 seconds with 2 issues.
+Note: Some test targets reported failures:
+  - FixedSizeCacheTests (Swift Testing)
+exit: 1

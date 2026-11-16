@@ -1,0 +1,11 @@
+mkdir -p build
+c++ -std=c++20 -Wall -Wextra -c -o build/main.o main.cpp
+c++ -std=c++20 -Wall -Wextra -c -o build/DelayLineFactory.o DelayLineFactory.cpp
+c++ -std=c++20 -Wall -Wextra -c -o build/FilterRegistry.o FilterRegistry.cpp
+c++ -std=c++20 -Wall -Wextra -c -o build/Gain.o Gain.cpp
+c++ -std=c++20 -Wall -Wextra -c -o build/LowPassFilter.o LowPassFilter.cpp
+c++ -std=c++20 -Wall -Wextra -c -o build/Delay.o Delay.cpp
+c++ -std=c++20 -Wall -Wextra -c -o build/Reverb.o Reverb.cpp
+c++ -std=c++20 -Wall -Wextra -c -o build/OutputChain.o OutputChain.cpp
+c++ -std=c++20 -Wall -Wextra -o build/AudioFilters build/main.o build/DelayLineFactory.o build/FilterRegistry.o build/Gain.o build/LowPassFilter.o build/Delay.o build/Reverb.o build/OutputChain.o
+exit: 0

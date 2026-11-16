@@ -1,0 +1,5 @@
+listen_sd = 1023, FD_SETSIZE = 1024
+listen_sd >= FD_SETSIZE: false
+Waiting on select()...
+[stopped by capture.sh after 5s]
+exit: 142

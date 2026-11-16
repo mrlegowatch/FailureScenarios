@@ -1,0 +1,43 @@
+Decoded old_data.json:
+
+id: 1, name: Morning Run, status: active, currentCount: 14, freezesRemaining: 1
+id: 2, name: Daily Reading, status: frozen, currentCount: 3, freezesRemaining: 1
+id: 3, name: 30-Day Yoga, status: broken, currentCount: 30, freezesRemaining: 1
+id: 4, name: Meditation, status: active, currentCount: 7, freezesRemaining: 1
+id: 5, name: Cold Shower, status: frozen, currentCount: 0, freezesRemaining: 1
+
+Status comparison — schema decode vs. expected:
+------------------------------------------------------------------------
+id 1  Morning Run: raw status=0  ->  decoded .active (expected: active)
+id 2  Daily Reading: raw status=1  ->  decoded .frozen (expected: broken)
+id 3  30-Day Yoga: raw status=2  ->  decoded .broken (expected: completed)
+id 4  Meditation: raw status=0  ->  decoded .active (expected: active)
+id 5  Cold Shower: raw status=1  ->  decoded .frozen (expected: broken)
+
+freezesRemaining — decoded value vs. key in old_data.json:
+------------------------------------------------------------------------
+id 1  Morning Run: decoded=1  key present: NO
+id 2  Daily Reading: decoded=1  key present: NO
+id 3  30-Day Yoga: decoded=1  key present: NO
+id 4  Meditation: decoded=1  key present: NO
+id 5  Cold Shower: decoded=1  key present: NO
+
+old_data.json (id "1")        synced_record.json
+----------------------------  ------------------
+{                             {
+  "id" : "1",                   "id": "1",
+  "name" : "Morning Run",       "name": "Morning Run",
+  "status" : 0,                 "status": 0,
+  "currentCount" : 14           "currentCount": 14,
+}                               "schemaVersion": 1
+                              }
+
+Decode synced_record.json with current Streak type:
+id: 1, name: Morning Run, status: active, currentCount: 14, freezesRemaining: 1
+
+Server ordering:  active=0  broken=1  completed=2  frozen=3
+Client ordering:  active=0  frozen=1  broken=2     completed=3
+------------------------------------------------------------------------
+raw 1: server=.broken,    client=.frozen    — broken streaks silently appear frozen
+raw 2: server=.completed, client=.broken    — completed streaks silently appear broken
+raw 3: server=.frozen,    client=.completed — frozen streaks silently appear completed

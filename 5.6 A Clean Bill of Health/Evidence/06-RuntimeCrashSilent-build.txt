@@ -1,0 +1,13 @@
+mkdir -p build
+clang++ -g -Wall -Wextra -std=c++20 -ftrivial-auto-var-init=uninitialized -c -o build/main.o main.cpp
+main.cpp:29:46: warning: variable 'result' is uninitialized when used here [-Wuninitialized]
+   29 |                       workoutLoad, soreness, result);
+      |                                              ^~~~~~
+main.cpp:27:28: note: initialize the variable 'result' to silence this warning
+   27 |     ReadinessResult *result;
+      |                            ^
+      |                             = nullptr
+1 warning generated.
+clang++ -g -Wall -Wextra -std=c++20 -ftrivial-auto-var-init=uninitialized -c -o build/readiness.o readiness.cpp
+clang++ -o build/ReadinessScore build/main.o build/readiness.o
+exit: 0

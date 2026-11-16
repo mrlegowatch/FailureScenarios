@@ -1,0 +1,13 @@
+Total requests   : 80
+Distinct users   : 8
+Session creations: 8 (expected 8; excess = 0)
+
+user1: 10 requests, 1 distinct token(s)
+user2: 10 requests, 1 distinct token(s)
+user3: 10 requests, 1 distinct token(s)
+user4: 10 requests, 1 distinct token(s)
+user5: 10 requests, 1 distinct token(s)
+user6: 10 requests, 1 distinct token(s)
+user7: 10 requests, 1 distinct token(s)
+user8: 10 requests, 1 distinct token(s)
+exit: 0

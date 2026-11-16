@@ -1,0 +1,5 @@
+mkdir -p build
+clang -g -Wall -Wextra -std=c17 -c -o build/main.o main.c
+clang -g -Wall -Wextra -std=c17 -c -o build/readiness.o readiness.c
+clang  -o build/ReadinessScore build/main.o build/readiness.o
+exit: 0

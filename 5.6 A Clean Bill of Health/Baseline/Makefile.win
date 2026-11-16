@@ -1,0 +1,28 @@
+# Makefile.win: the Windows (MSVC) version of this folder's Makefile. UNTESTED so far.
+# From a Developer Command Prompt for Visual Studio, in this folder:
+#   nmake /f Makefile.win          builds build\ReadinessScore.exe
+#   nmake /f Makefile.win clean    removes build
+# _CRT_SECURE_NO_WARNINGS keeps MSVC from flagging scanf as deprecated.
+
+CC     = cl
+CFLAGS = /nologo /std:c17 /W4 /Zi /Od /D_CRT_SECURE_NO_WARNINGS
+
+BUILD_DIR = build
+TARGET    = $(BUILD_DIR)\ReadinessScore.exe
+OBJS      = $(BUILD_DIR)\main.obj $(BUILD_DIR)\readiness.obj
+
+all: $(TARGET)
+
+$(BUILD_DIR)\main.obj: main.c readiness.h
+	@if not exist $(BUILD_DIR) mkdir $(BUILD_DIR)
+	$(CC) $(CFLAGS) /c /Fo$@ /Fd$(BUILD_DIR)/ main.c
+
+$(BUILD_DIR)\readiness.obj: readiness.c readiness.h
+	@if not exist $(BUILD_DIR) mkdir $(BUILD_DIR)
+	$(CC) $(CFLAGS) /c /Fo$@ /Fd$(BUILD_DIR)/ readiness.c
+
+$(TARGET): $(OBJS)
+	$(CC) /nologo /Zi /Fe$@ $(OBJS)
+
+clean:
+	@if exist $(BUILD_DIR) rmdir /s /q $(BUILD_DIR)

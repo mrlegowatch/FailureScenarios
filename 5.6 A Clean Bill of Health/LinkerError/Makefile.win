@@ -1,0 +1,38 @@
+# Makefile.win: the Windows (MSVC) version of this folder's Makefile. UNTESTED so far.
+# From a Developer Command Prompt for Visual Studio, in this folder:
+#   nmake /f Makefile.win stale    once: recreates the stale object as readiness.obj
+#   nmake /f Makefile.win          expected to fail at link time (LNK2019), as the case shows
+#   nmake /f Makefile.win clean    removes build (and leaves readiness.obj alone)
+# The checked-in readiness.o is a macOS object, so Windows needs its own stale copy. stale
+# builds it the way it was first built: with readiness.hpp included inside extern "C" { ... },
+# so compute_readiness keeps C linkage. dumpbin /symbols readiness.obj shows the result.
+
+CXX      = cl
+CXXFLAGS = /nologo /std:c++20 /EHsc /W4 /Zi /Od
+
+BUILD_DIR = build
+TARGET    = $(BUILD_DIR)\ReadinessScore.exe
+
+# Stale object, made once by "nmake /f Makefile.win stale"; there is intentionally no rule
+# that rebuilds it from the current header.
+STALE_OBJ = readiness.obj
+MAIN_OBJ  = $(BUILD_DIR)\main.obj
+
+all: $(TARGET)
+
+$(MAIN_OBJ): main.cpp readiness.hpp
+	@if not exist $(BUILD_DIR) mkdir $(BUILD_DIR)
+	$(CXX) $(CXXFLAGS) /c /Fo$@ /Fd$(BUILD_DIR)/ main.cpp
+
+$(TARGET): $(MAIN_OBJ) $(STALE_OBJ)
+	$(CXX) /nologo /Zi /Fe$@ $(MAIN_OBJ) $(STALE_OBJ)
+
+stale:
+	echo extern "C" { > stale-extern-c.h
+	echo ^#include "readiness.hpp" >> stale-extern-c.h
+	echo } >> stale-extern-c.h
+	$(CXX) $(CXXFLAGS) /FIstale-extern-c.h /c /Fo$(STALE_OBJ) readiness.cpp
+	del stale-extern-c.h
+
+clean:
+	@if exist $(BUILD_DIR) rmdir /s /q $(BUILD_DIR)

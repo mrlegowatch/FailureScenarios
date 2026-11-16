@@ -1,0 +1,22 @@
+[Computing dependencies]
+􀟈  Test run started.
+􀄵  Testing Library Version: 2084
+􀄵  Target Platform: arm64e-apple-macos14.0
+􀟈  Suite "Change 1 — Geometry.init(kind:) and ShapeData.geometry" started.
+􀟈  Test kindCircleMapsToCircle() started.
+􀟈  Test unknownKindDefaultsToRectangle() started.
+􀟈  Test shapeDataGeometryForTriangle() started.
+􀟈  Test shapeDataGeometryForRectangle() started.
+􀟈  Test kindTriangleMapsToTriangle() started.
+􀟈  Test shapeDataGeometryForCircle() started.
+􀟈  Test kindRectangleMapsToRectangle() started.
+􁁛  Test kindTriangleMapsToTriangle() passed after 0.001 seconds.
+􁁛  Test shapeDataGeometryForCircle() passed after 0.001 seconds.
+􁁛  Test shapeDataGeometryForTriangle() passed after 0.001 seconds.
+􁁛  Test unknownKindDefaultsToRectangle() passed after 0.001 seconds.
+􁁛  Test kindRectangleMapsToRectangle() passed after 0.001 seconds.
+􁁛  Test kindCircleMapsToCircle() passed after 0.001 seconds.
+􁁛  Test shapeDataGeometryForRectangle() passed after 0.001 seconds.
+􁁛  Suite "Change 1 — Geometry.init(kind:) and ShapeData.geometry" passed after 0.001 seconds.
+􁁛  Test run with 7 tests in 1 suite passed after 0.001 seconds.
+exit: 0

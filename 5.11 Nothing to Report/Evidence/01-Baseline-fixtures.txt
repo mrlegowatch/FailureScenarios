@@ -1,0 +1,12 @@
+== device-01.csv: 15 lines
+1705276800,TEMP01A,21.4,celsius
+== device-02.csv: 18 lines
+1706486400,HUM02A,58.3,percent
+== device-03.csv: 721 lines
+sensorID,value,unit,timestamp
+== device-04.csv: 16 lines
+1708000000,PRES04A,1013.2,hPa
+== device-05.csv: 17 lines
+1710500000,CO205A,421.5,ppm
+== device-06.csv: 20 lines
+1712100000,PWR06A,2345.6,watts

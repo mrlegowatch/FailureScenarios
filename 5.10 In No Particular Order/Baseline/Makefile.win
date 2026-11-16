@@ -1,0 +1,24 @@
+# Makefile.win: the Windows (MSVC) version of this folder's Makefile. UNTESTED so far.
+# From a Developer Command Prompt for Visual Studio, in this folder:
+#   nmake /f Makefile.win          builds build\AudioFilters.exe
+#   nmake /f Makefile.win clean    removes build
+
+CXX      = cl
+CXXFLAGS = /nologo /std:c++20 /EHsc /W4 /Zi /Od
+BUILD    = build
+TARGET   = $(BUILD)\AudioFilters.exe
+
+# Link order: the order the objects are listed here is the order they're linked in.
+OBJS = $(BUILD)\main.obj $(BUILD)\DelayLineFactory.obj $(BUILD)\FilterRegistry.obj \
+       $(BUILD)\Gain.obj $(BUILD)\LowPassFilter.obj $(BUILD)\Delay.obj $(BUILD)\Reverb.obj \
+       $(BUILD)\OutputChain.obj
+
+all: $(TARGET)
+
+$(TARGET): *.cpp *.h
+	@if not exist $(BUILD) mkdir $(BUILD)
+	$(CXX) $(CXXFLAGS) /c /Fo$(BUILD)/ /Fd$(BUILD)/ *.cpp
+	$(CXX) /nologo /Zi /Fe$@ $(OBJS)
+
+clean:
+	@if exist $(BUILD) rmdir /s /q $(BUILD)

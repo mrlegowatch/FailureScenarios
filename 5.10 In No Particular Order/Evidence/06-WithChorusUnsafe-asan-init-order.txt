@@ -1,0 +1,88 @@
+[ 1] OutputChain.cpp  gDefaultOutputChain  init  STARTING
+=================================================================
+==23180==ERROR: AddressSanitizer: initialization-order-fiasco on address 0x000104611220 at pc 0x0001045f540c bp 0x00016b80d5a0 sp 0x00016b80d598
+READ of size 8 at 0x000104611220 thread T0
+    #0 0x0001045f5408 in std::__1::vector<bool, std::__1::allocator<bool>>::size[abi:nqe220106]() const vector_bool.h:247
+    #1 0x0001045f5208 in DelayLineFactory::borrow() DelayLineFactory.cpp:16
+    #2 0x000104600b44 in Delay::Delay(unsigned long) Delay.cpp:8
+    #3 0x000104600c24 in Delay::Delay(unsigned long) Delay.cpp:11
+    #4 0x0001046021d0 in Reverb::Reverb() Reverb.cpp:12
+    #5 0x00010460229c in Reverb::Reverb() Reverb.cpp:16
+    #6 0x0001045f4868 in OutputChain::OutputChain() OutputChain.cpp:4
+    #7 0x0001045f48c8 in OutputChain::OutputChain() OutputChain.cpp:4
+    #8 0x0001045f4b38 in __cxx_global_var_init.2 OutputChain.cpp:36
+    #9 0x0001045f4b78 in _GLOBAL__sub_I_OutputChain.cpp OutputChain.cpp
+    #10 0x00019d7aadec in dyld4::LibSystemHelpers::callInitializer(int, char const* const*, char const* const*, char const* const*, dyld4::ProgramVars const*, void (*)(int, char const* const*, char const* const*, char const* const*, dyld4::ProgramVars const*)) const+0x24 (libdyld.dylib:arm64e+0x7dec)
+    #11 0x00019d82d734 in invocation function for block in dyld4::Loader::findAndRunAllInitializers(dyld4::RuntimeState&) const::$_0::operator()() const+0x144 (dyld:arm64e+0x63734)
+    #12 0x00019d861068 in invocation function for block in mach_o::Image::forEachInitializer(void (unsigned int) block_pointer) const+0x50 (dyld:arm64e+0x97068)
+    #13 0x00019d858504 in mach_o::Header::SegmentInfo mach_o::Header::parse_segment_command<true>(mach_o::Header::LoadCommandInfo const&, unsigned short, void (mach_o::Header::SegmentInfo const&, mach_o::Header::SectionInfo const&) block_pointer, mach_o::Error*) const+0x240 (dyld:arm64e+0x8e504)
+    #14 0x00019d85d970 in invocation function for block in mach_o::Header::forEachSection(void (mach_o::Header::SectionInfo const&, bool&) block_pointer) const+0x98 (dyld:arm64e+0x93970)
+    #15 0x00019d857000 in mach_o::Header::forEachLoadCommand(void (mach_o::Header::LoadCommandInfo const&, bool&) block_pointer, mach_o::Error*) const+0xe0 (dyld:arm64e+0x8d000)
+    #16 0x00019d85b078 in mach_o::Header::forEachSection(void (mach_o::Header::SectionInfo const&, bool&) block_pointer) const+0x7c (dyld:arm64e+0x91078)
+    #17 0x00019d860f98 in mach_o::Image::forEachInitializer(void (unsigned int) block_pointer) const+0xf0 (dyld:arm64e+0x96f98)
+    #18 0x00019d828610 in dyld4::Loader::findAndRunAllInitializers(dyld4::RuntimeState&) const+0x2a4 (dyld:arm64e+0x5e610)
+    #19 0x00019d81ffdc in dyld4::JustInTimeLoader::runInitializers(dyld4::RuntimeState&) const+0x20 (dyld:arm64e+0x55fdc)
+    #20 0x00019d828c04 in dyld4::Loader::runInitializersBottomUp(dyld4::RuntimeState&, lsl::Vector<AuthenticatedValue<dyld4::Loader const*>>&, lsl::Vector<AuthenticatedValue<dyld4::Loader const*>>&) const+0x1e4 (dyld:arm64e+0x5ec04)
+    #21 0x00019d82d7f4 in dyld4::Loader::runInitializersBottomUpPlusUpwardLinks(dyld4::RuntimeState&) const::$_0::operator()() const+0x78 (dyld:arm64e+0x637f4)
+    #22 0x00019d828d54 in dyld4::Loader::runInitializersBottomUpPlusUpwardLinks(dyld4::RuntimeState&) const+0xc0 (dyld:arm64e+0x5ed54)
+    #23 0x00019d7fdd10 in dyld4::prepare(dyld4::APIs&, mach_o::UnsafeHeader const*)+0x1270 (dyld:arm64e+0x33d10)
+    #24 0x00019d7fca80 in dyld4::start(dyld4::KernelArgs*, void*, void*, unsigned long long)::$_1::operator()() const+0x13c (dyld:arm64e+0x32a80)
+    #25 0x00019d7fbe20 in start+0x19c0 (dyld:arm64e+0x31e20)
+
+0x000104611220 is located 32 bytes inside of global variable 'gFactory' defined in 'DelayLineFactory.cpp' (0x000104611200) of size 48
+  registered at:
+    #0 0x000104b7fd44 in __asan_register_globals+0xa0 (libclang_rt.asan_osx_dynamic.dylib:arm64e+0x13d44)
+    #1 0x000104bab750 in __asan::AsanApplyToGlobals(void (*)(__asan_global*, unsigned long), void const*)+0x7c (libclang_rt.asan_osx_dynamic.dylib:arm64e+0x3f750)
+    #2 0x000104b7fc88 in __asan_register_image_globals+0x34 (libclang_rt.asan_osx_dynamic.dylib:arm64e+0x13c88)
+    #3 0x0001045f0be4 in asan.module_ctor+0x24 (AudioFilters:arm64+0x100000be4)
+    #4 0x00019d7aadec in dyld4::LibSystemHelpers::callInitializer(int, char const* const*, char const* const*, char const* const*, dyld4::ProgramVars const*, void (*)(int, char const* const*, char const* const*, char const* const*, dyld4::ProgramVars const*)) const+0x24 (libdyld.dylib:arm64e+0x7dec)
+    #5 0x00019d82d734 in invocation function for block in dyld4::Loader::findAndRunAllInitializers(dyld4::RuntimeState&) const::$_0::operator()() const+0x144 (dyld:arm64e+0x63734)
+    #6 0x00019d861068 in invocation function for block in mach_o::Image::forEachInitializer(void (unsigned int) block_pointer) const+0x50 (dyld:arm64e+0x97068)
+    #7 0x00019d858504 in mach_o::Header::SegmentInfo mach_o::Header::parse_segment_command<true>(mach_o::Header::LoadCommandInfo const&, unsigned short, void (mach_o::Header::SegmentInfo const&, mach_o::Header::SectionInfo const&) block_pointer, mach_o::Error*) const+0x240 (dyld:arm64e+0x8e504)
+    #8 0x00019d85d970 in invocation function for block in mach_o::Header::forEachSection(void (mach_o::Header::SectionInfo const&, bool&) block_pointer) const+0x98 (dyld:arm64e+0x93970)
+    #9 0x00019d857000 in mach_o::Header::forEachLoadCommand(void (mach_o::Header::LoadCommandInfo const&, bool&) block_pointer, mach_o::Error*) const+0xe0 (dyld:arm64e+0x8d000)
+    #10 0x00019d85b078 in mach_o::Header::forEachSection(void (mach_o::Header::SectionInfo const&, bool&) block_pointer) const+0x7c (dyld:arm64e+0x91078)
+    #11 0x00019d860f98 in mach_o::Image::forEachInitializer(void (unsigned int) block_pointer) const+0xf0 (dyld:arm64e+0x96f98)
+    #12 0x00019d828610 in dyld4::Loader::findAndRunAllInitializers(dyld4::RuntimeState&) const+0x2a4 (dyld:arm64e+0x5e610)
+    #13 0x00019d81ffdc in dyld4::JustInTimeLoader::runInitializers(dyld4::RuntimeState&) const+0x20 (dyld:arm64e+0x55fdc)
+    #14 0x00019d828c04 in dyld4::Loader::runInitializersBottomUp(dyld4::RuntimeState&, lsl::Vector<AuthenticatedValue<dyld4::Loader const*>>&, lsl::Vector<AuthenticatedValue<dyld4::Loader const*>>&) const+0x1e4 (dyld:arm64e+0x5ec04)
+    #15 0x00019d82d7f4 in dyld4::Loader::runInitializersBottomUpPlusUpwardLinks(dyld4::RuntimeState&) const::$_0::operator()() const+0x78 (dyld:arm64e+0x637f4)
+    #16 0x00019d828d54 in dyld4::Loader::runInitializersBottomUpPlusUpwardLinks(dyld4::RuntimeState&) const+0xc0 (dyld:arm64e+0x5ed54)
+    #17 0x00019d7fdd10 in dyld4::prepare(dyld4::APIs&, mach_o::UnsafeHeader const*)+0x1270 (dyld:arm64e+0x33d10)
+    #18 0x00019d7fca80 in dyld4::start(dyld4::KernelArgs*, void*, void*, unsigned long long)::$_1::operator()() const+0x13c (dyld:arm64e+0x32a80)
+    #19 0x00019d7fbe20 in start+0x19c0 (dyld:arm64e+0x31e20)
+
+SUMMARY: AddressSanitizer: initialization-order-fiasco vector_bool.h:247 in std::__1::vector<bool, std::__1::allocator<bool>>::size[abi:nqe220106]() const
+Shadow bytes around the buggy address:
+  0x000104610f80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x000104611000: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x000104611080: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x000104611100: 00 00 00 00 00 00 00 00 04 f9 f9 f9 01 f9 f9 f9
+  0x000104611180: 00 00 00 00 00 00 00 00 00 00 00 00 f9 f9 f9 f9
+=>0x000104611200: f6 f6 f6 f6[f6]f6 f6 f6 f6 f6 f6 f6 f6 f6 f6 f6
+  0x000104611280: f6 f6 f6 f6 f6 f6 f6 f6 f6 f6 f6 f6 f6 f6 f6 f6
+  0x000104611300: f6 f6 f6 f6 f6 f6 f6 f6 00 00 00 00 00 00 00 00
+  0x000104611380: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x000104611400: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x000104611480: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==23180==ABORTING
+exit: 134
